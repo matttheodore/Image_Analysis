@@ -1,19 +1,3 @@
-
-// This script is written in the ImageJ Macro language and is designed to be implemented in Fiji. It takes all the files in a user-specified directory
-// (intended to be files interoperable with Bio-Formats) and performs the following operations:
-// 
-// 1. Creates a subfolder directory named after each image file name
-// 2. Reads the files into TIFF format and saves the file there
-// 3. Creates a max intensity projection
-// 4. Saves the projection as a TIFF file
-// 5. Splits the image into individual channels
-// 6. Saves each channel as a sequence of TIFF files in a subdirectory based on the channel name
-// 
-// User input is required at the start of the script to specify the initial directory and the number of channels.
-// 
-// 
-
-
 // Define the number of channels at the beginning of the script
 nChannels = 2; // You can change this value accordingly
 
@@ -39,16 +23,19 @@ for (i = 0; i < fileList.length; i++) {
         continue;
 
     // Create a directory for the current image file
-    imageDir = baseDir + fileList[i].replace('.tif', '') + File.separator; // Remove extension from directory name
+    imageDir = baseDir + fileList[i].replace('.nd2', '') + File.separator; // Remove extension from directory name
     File.makeDirectory(imageDir);
     if (!File.exists(imageDir))
         exit("Unable to create directory for image");
 
     // Open the current image file
-    run("Bio-Formats Importer", "open=[" + tmp + fileList[i] + "] autoscale color_mode=Default rois_import=[ROI manager] view=Hyperstack stack_order=XYCZT");
+    run("Bio-Formats Importer", "open=[" + tmp + fileList[i] + "] autoscale color_mode=Default concatenate_series open_all_series rois_import=[ROI manager] view=Hyperstack stack_order=XYCZT");
 
     // Save the original image
     saveAs("Tiff", imageDir + fileList[i]);
+    
+    // Update fileList[i] to .tif after conversion
+    fileList[i] = fileList[i].replace('.nd2', '.tif');
 
     // Create max intensity Z-projection
     run("Z Project...", "projection=[Max Intensity] all");
@@ -59,7 +46,6 @@ for (i = 0; i < fileList.length; i++) {
      // Create directory for max image later
         sequenceDir = imageDir + "MAX" + File.separator;
         File.makeDirectory(sequenceDir);
-
 
     // Split the channels
     run("Split Channels");
