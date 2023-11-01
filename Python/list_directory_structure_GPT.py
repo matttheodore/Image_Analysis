@@ -1,3 +1,4 @@
+
 import os
 
 def list_files_to_txt(startpath):
@@ -11,4 +12,4 @@ def list_files_to_txt(startpath):
                 txt_file.write(f"{subindent}{f}\n")
 
 # Usage example; replace the directory path with the one you want to explore.
-list_files_to_txt(r"C:\Users\Nikon\Downloads\Omni\sandbox_2")
+list_files_to_txt(r"C:\Users\Nikon\anaconda3\envs\omnipose")
