@@ -1,0 +1,345 @@
+ok. Lets make sure we are on the same page. Our short term goal is to analyze the dataset from the output of MicrobeJ (we have already successfully segmented etc) to test the internal cell fluorescence of cells in our signal channels across z stacks to see if we se a consistent downward trend that may indicate photobleaching that would effect our final data interpretation. 
+
+TO do this we first wanted to look at a small part of our dataset (representing only a single image with its channels and zstacks from teh data here), clean it a litle bit, extract some metadata for grouping parameters later, and check for any missign values etc. 
+
+below is my csv export from microbeJ for the data. Explore this a little bit and tell me what you learn about the dataset based on your knowledge of the experiment. Then I will give you my current processign script to talk through
+
+----------------------------------------------------------------------------------------
+
+below is my current script in working condition which is able to run. Can you summarize what I am doing ? Are there any repetetive portions are any issues you see arising? Anything you would reccomend I change about the script thus far ? After this I will 'feed' you my attempt at rewriting the script and running it in a more fluid environment so that we can streamline the process and the understanding of the process. 
+
+
+
+
+
+## Here is my current sript for analyzing the data coming out of the microbeJ program. Specifically still in the data exploration step and extraction the relevant measurements etc. 
+
+## Data Load 
+import pandas as pd
+
+# Load the data from the CSV file
+file_path = r"C:\Users\MicrobeJ\Downloads\data.csv"
+data = pd.read_csv(file_path)
+
+# Check the structure of the dataset (rows and columns)
+data_shape = data.shape
+
+# Identify the different data types (classes) present in each column
+data_types = data.dtypes
+
+# Calculate the number of unique values in each column, excluding the header
+unique_values_per_column = data.nunique()
+
+# Organizing the information into a dataframe for better readability
+data_structure_info = pd.DataFrame({
+    'Data Types': data_types,
+    'Unique Values': unique_values_per_column
+})
+
+print(data_shape, data_structure_info)
+
+# Checking for columns with 0 unique values to see if they contain only NaNs or a constant value
+empty_or_constant_columns = data.loc[:, data.nunique() == 0]
+
+# Checking for any missing values across the dataset
+missing_values = data.isnull().sum()
+
+# Checking for any values that are exactly 0 across the dataset
+zero_values = (data == 0).sum()
+
+# Combine the information into a dataframe for better readability
+missing_zero_info = pd.DataFrame({
+    'Missing Values': missing_values,
+    'Zero Values': zero_values
+})
+
+print(empty_or_constant_columns, missing_zero_info)
+
+
+# Making of the subset of the data only pulling possible useful varaibles
+
+# Creating a subset of the data with the specified columns
+subset_columns = [
+    'NAME.id', 'NAME.name', 'EXPERIMENT.count', 'IMAGE.meta', 'IMAGE.name', 
+    'INTENSITY.ch1', 'INTENSITY.ch2', 'INTENSITY.ch3', 'LOCATION', 'LOCATION.center', 
+    'LOCATION.dist', 'LOCATION.half', 'LOCATION.pole', 'LOCATION.side', 'LOCATION.x', 
+    'LOCATION.y', 'MAXIMA', 'MAXIMA.Maxima1', 'MAXIMA.count', 'MEDIAL', 'POSITION', 
+    'POSITION.channel', 'POSITION.frame', 'POSITION.position', 'POSITION.slice', 
+    'PROFILE_MEDIAL', 'SHAPE', 'SHAPE.angularity', 'SHAPE.area', 'SHAPE.aspectRatio', 
+    'SHAPE.circularity', 'SHAPE.curvature', 'SHAPE.feret', 'SHAPE.length', 
+    'SHAPE.morphology', 'SHAPE.orientation', 'SHAPE.perimeter', 'SHAPE.pole', 
+    'SHAPE.roundness', 'SHAPE.sinuosity', 'SHAPE.solidity', 'SHAPE.width', 'ZSCORE'
+]
+
+# Selecting the columns from the dataset
+data_subset = data[subset_columns]
+
+# Display the first few rows of the subset to confirm
+data_subset.head()
+
+
+import regex as re
+
+# A general Remapping/Renaming for Data Extraction
+def extract_z_stack(meta_string):
+    """Extract the Z stack level from the IMAGE.meta string."""
+    match = re.search(r'z:(\d+)/(\d+)', meta_string)
+    return match.group(1) if match else None
+
+def rename_z_stack(data, meta_col, z_stack_col, new_name_mapping):
+    """Rename the Z stack levels based on metadata information.
+
+    Args:
+        data (DataFrame): The pandas DataFrame containing the data.
+        meta_col (str): The column name of the metadata.
+        z_stack_col (str): The column name of the Z stack levels.
+        new_name_mapping (dict): A dictionary mapping the original Z stack levels to new names.
+
+    Returns:
+        DataFrame: The pandas DataFrame with the Z stack levels renamed.
+    """
+    # Extract the Z stack levels
+    data[z_stack_col] = data[meta_col].apply(extract_z_stack)
+    
+    # Map the Z stack levels to new names using the provided mapping
+    data[z_stack_col] = data[z_stack_col].map(new_name_mapping)
+    
+    return data
+
+# Since we don't have specific names to map, let's create an example mapping
+# This mapping will be placeholder until we know the actual naming scheme you would like
+example_new_name_mapping = {
+    '1': 1,
+    '2': 2,
+    '3': 3,
+    '4': 4,
+    '5': 5
+}
+
+# Apply the renaming function to the dataset
+renamed_data = rename_z_stack(data_subset.copy(), 'IMAGE.meta', 'z_stack', example_new_name_mapping)
+
+# Check the first few rows to confirm the renaming
+renamed_data[['IMAGE.meta', 'z_stack']].head()
+
+
+
+#import regex as re
+
+# Define a function to parse the 'IMAGE.name' column and extract the specified components
+def parse_image_name(image_name):
+    # Parse the date (first 8 characters are the date in YYYYMMDD format)
+    date = image_name[:8]
+    
+    # Use a regular expression to find the strain identifier, which seems to be in the format LZ followed by numbers
+    strain_match = re.search(r'(LZ\d+)', image_name)
+    strain = strain_match.group(1) if strain_match else None
+    
+    # Use a regular expression to find the time point (number followed by 'min')
+    time_match = re.search(r'(\d+)min', image_name)
+    time = int(time_match.group(1)) if time_match else None
+    
+    # Use a regular expression to find the condition ('inf' or similar pattern)
+    cond_match = re.search(r'min_([a-zA-Z]+)', image_name)
+    cond = cond_match.group(1) if cond_match else None
+    
+    # Use a regular expression to find the frame number (after 'T=')
+    frame_match = re.search(r'T=(\d+)', image_name)
+    frame = int(frame_match.group(1)) if frame_match else None
+    
+    return date, strain, time, cond, frame
+
+# Apply the parsing function to the 'IMAGE.name' column and create new columns
+data_subset[['date', 'strain', 'time', 'cond', 'frame']] = data_subset.apply(
+    lambda row: parse_image_name(row['IMAGE.name']), axis=1, result_type="expand"
+)
+
+# Use .loc to ensure the operation is done on the original DataFrame
+data_subset.loc[:, ['date', 'strain', 'time', 'cond', 'frame']] = data_subset.apply(
+    lambda row: parse_image_name(row['IMAGE.name']), axis=1, result_type="expand"
+)
+
+-----------------------------------------------------------------------------------------
+
+
+Below is my attempt at streamlining the script; however I am not sure if everything is ordered properly and processes properly. Can you load the script into your own environment and run it and then give me any insights from the outputs or troubleshoot any errors ?
+
+i wanted to organize the scripts into an ipynb using chunks. To do that I split it into 2 chunks. 
+
+chunk 1 is 
+
+### Loading and Exploring the data and checking for cleaning
+
+## Data Load 
+import pandas as pd
+
+# Load the data from the CSV file
+file_path = r"C:\Users\MicrobeJ\Downloads\data.csv"
+data = pd.read_csv(file_path)
+
+# Check the structure of the dataset (rows and columns)
+data_shape = data.shape
+
+# Identify the different data types (classes) present in each column
+data_types = data.dtypes
+
+# Calculate the number of unique values in each column, excluding the header
+unique_values_per_column = data.nunique()
+
+# Organizing the information into a dataframe for better readability
+data_structure_info = pd.DataFrame({
+    'Data Types': data_types,
+    'Unique Values': unique_values_per_column
+})
+
+print(data_shape, data_structure_info)
+
+# Checking for columns with 0 unique values to see if they contain only NaNs or a constant value
+empty_or_constant_columns = data.loc[:, data.nunique() == 0]
+
+# Checking for any missing values across the dataset
+missing_values = data.isnull().sum()
+
+# Checking for any values that are exactly 0 across the dataset
+zero_values = (data == 0).sum()
+
+# Combine the information into a dataframe for better readability
+missing_zero_info = pd.DataFrame({
+    'Missing Values': missing_values,
+    'Zero Values': zero_values
+})
+
+print(empty_or_constant_columns, missing_zero_info)
+
+chunk 2 is 
+
+### Subset of the Data for Analysis
+
+# Making of the subset of the data only pulling possible useful varaibles
+
+# Creating a subset of the data with the specified columns
+subset_columns = [
+    'NAME.id', 'NAME.name', 'EXPERIMENT.count', 'IMAGE.meta', 'IMAGE.name', 
+    'INTENSITY.ch1', 'INTENSITY.ch2', 'INTENSITY.ch3', 'LOCATION', 'LOCATION.center', 
+    'LOCATION.dist', 'LOCATION.half', 'LOCATION.pole', 'LOCATION.side', 'LOCATION.x', 
+    'LOCATION.y', 'MAXIMA', 'MAXIMA.Maxima1', 'MAXIMA.count', 'MEDIAL', 'POSITION', 
+    'POSITION.channel', 'POSITION.frame', 'POSITION.position', 'POSITION.slice', 
+    'PROFILE_MEDIAL', 'SHAPE', 'SHAPE.angularity', 'SHAPE.area', 'SHAPE.aspectRatio', 
+    'SHAPE.circularity', 'SHAPE.curvature', 'SHAPE.feret', 'SHAPE.length', 
+    'SHAPE.morphology', 'SHAPE.orientation', 'SHAPE.perimeter', 'SHAPE.pole', 
+    'SHAPE.roundness', 'SHAPE.sinuosity', 'SHAPE.solidity', 'SHAPE.width', 'ZSCORE'
+]
+
+
+# Selecting the columns from the dataset
+data_subset = data[subset_columns]
+
+# Display the first few rows of the subset to confirm
+data_subset.head()
+
+# A general Remapping/Renaming for Data Extraction
+def extract_z_stack(meta_string):
+    """Extract the Z stack level from the IMAGE.meta string."""
+    match = re.search(r'z:(\d+)/(\d+)', meta_string)
+    return match.group(1) if match else None
+
+def rename_z_stack(data, meta_col, z_stack_col, new_name_mapping):
+    """Rename the Z stack levels based on metadata information.
+
+    Args:
+        data (DataFrame): The pandas DataFrame containing the data.
+        meta_col (str): The column name of the metadata.
+        z_stack_col (str): The column name of the Z stack levels.
+        new_name_mapping (dict): A dictionary mapping the original Z stack levels to new names.
+
+    Returns:
+        DataFrame: The pandas DataFrame with the Z stack levels renamed.
+    """
+    # Extract the Z stack levels
+    data[z_stack_col] = data[meta_col].apply(extract_z_stack)
+    
+    # Map the Z stack levels to new names using the provided mapping
+    data[z_stack_col] = data[z_stack_col].map(new_name_mapping)
+    
+    return data
+
+
+
+# Define a function to parse the 'IMAGE.name' column and extract the specified components
+def parse_image_name(image_name):
+    # Parse the date (first 8 characters are the date in YYYYMMDD format)
+    date = image_name[:8]
+    
+    # Use a regular expression to find the strain identifier, which seems to be in the format LZ followed by numbers
+    strain_match = re.search(r'(LZ\d+)', image_name)
+    strain = strain_match.group(1) if strain_match else None
+    
+    # Use a regular expression to find the time point (number followed by 'min')
+    time_match = re.search(r'(\d+)min', image_name)
+    time = int(time_match.group(1)) if time_match else None
+    
+    # Use a regular expression to find the condition ('inf' or similar pattern)
+    cond_match = re.search(r'min_([a-zA-Z]+)', image_name)
+    cond = cond_match.group(1) if cond_match else None
+    
+    # Use a regular expression to find the frame number (after 'T=')
+    frame_match = re.search(r'T=(\d+)', image_name)
+    frame = int(frame_match.group(1)) if frame_match else None
+    
+    return date, strain, time, cond, frame
+
+# Since we don't have specific names to map, let's create an example mapping
+# This mapping will be placeholder until we know the actual naming scheme you would like
+example_new_name_mapping = {
+    '1': 1,
+    '2': 2,
+    '3': 3,
+    '4': 4,
+    '5': 5
+}
+
+
+# Apply the parsing function to the 'IMAGE.name' column and create new columns using .loc
+data_subset.loc[:, ['date', 'strain', 'time', 'cond', 'frame']] = data_subset['IMAGE.name'].apply(
+    lambda row: parse_image_name(row), result_type="expand"
+)
+
+# Define a function to extract intensity statistics from the 'INTENSITY.ch#' columns
+def microbej_extract_int_statistics(data, channel):
+    """
+    Extracts intensity statistics from a given intensity channel and adds them to the dataframe.
+    
+    Parameters:
+    data (DataFrame): The pandas DataFrame containing the intensity information.
+    channel (str): The channel number as a string to extract statistics for.
+    
+    Returns:
+    DataFrame: The original DataFrame with additional columns for intensity statistics.
+    """
+    # Extract statistics
+    data[f'ch{channel}.mean'] = data[f'INTENSITY.ch{channel}'].str.extract(r'mean=(\d+\.\d+)').astype(float)
+    data[f'ch{channel}.min'] = data[f'INTENSITY.ch{channel}'].str.extract(r'min=(\d+\.\d+)').astype(float)
+    data[f'ch{channel}.max'] = data[f'INTENSITY.ch{channel}'].str.extract(r'max=(\d+\.\d+)').astype(float)
+    data[f'ch{channel}.stdv'] = data[f'INTENSITY.ch{channel}'].str.extract(r'stdv=(\d+\.\d+)').astype(float)
+    
+    # Return the dataframe with the new columns
+    return data
+    
+# Apply the parsing function to the 'IMAGE.name' column and create new columns using .loc
+data_subset.loc[:, ['date', 'strain', 'time', 'cond', 'frame']] = data_subset['IMAGE.name'].apply(
+
+# Apply the Z-stack extraction function
+data_subset.loc[:, 'z_stack'] = data_subset['IMAGE.meta'].apply(extract_z_stack)
+
+# Apply the intensity statistics extraction function
+for channel in range(1, 4):  # Assuming there are 3 channels as per your data
+    data_subset = microbeJ_extract_int_statistics(data_subset, channel)
+
+# Now you have a processed dataframe
+df_processed = data_subset.copy()
+
+print(df_processed.head())
+
+
+can you load and run this in your environment using my provided data attached here and make comments about the outputs and if any errors arise try to troubleshoot and address them. 
+
