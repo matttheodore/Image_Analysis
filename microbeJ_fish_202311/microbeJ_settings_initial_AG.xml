@@ -1,0 +1,3170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings>
+  <property class="com.ducret.resultJ.Property" name="">
+    <calibration class="com.ducret.resultJ.ImCalibration" fps="1.0" frameInterval="0.0" height="0.0" id="CALIBRATION" info="" pixelDepth="1.0" pixelHeight="1.0" pixelWidth="1.0" timeUnit="sec" unit="pixel" units="" width="0.0" xOrigin="0.0" yOrigin="0.0" yunit="" zOrigin="0.0" zunit=""/>
+    <integer id="IMAGE_OPENING_MODE">0</integer>
+    <boolean id="CALIBRATION_ACTIVE">false</boolean>
+    <boolean id="SET_BINARY">true</boolean>
+    <property class="com.ducret.resultJ.Property" id="bacteria" name="bacteria">
+      <string id="THRESHOLD_DEEPIJ_THRESHOLD">0.8</string>
+      <integer id="IMAGE_OPENING_MODE">0</integer>
+      <boolean id="OUTSIDE_OVERLAP">true</boolean>
+      <string id="SLICE_MAX">3</string>
+      <string id="IMAGE_FILTER_HYPERSTACK"/>
+      <string id="IMAGE_NAME_HYPERSTACK">20230801_LZ22225_60min_uninf.003.tif - T=4</string>
+      <boolean id="POSITION_RANGE">false</boolean>
+      <string id="CALIBRATION_PIXELSIZE">1</string>
+      <string id="THRESHOLD_OUTLIER_FACTOR">0</string>
+      <string id="INSIDE_TOLERANCE">0</string>
+      <string id="THRESHOLD_TEMPLATE_MIN">0.75</string>
+      <string id="POSITION_MAX">max</string>
+      <string id="THRESHOLD_LOCAL_PARAMETER1">0</string>
+      <string id="THRESHOLD_LOCAL_PARAMETER2">0</string>
+      <string id="SLICE_MIN">3</string>
+      <integer id="THRESHOLD_INTERPOLATION_METHOD">1</integer>
+      <boolean id="CURRENT_POSITION">false</boolean>
+      <boolean id="BIOFORMAT_OPENALL_SERIES">true</boolean>
+      <string id="IMAGE_DIRECTORY"/>
+      <array class="com.ducret.resultJ.Property" dimension="1" id="morphology" type="">
+        <property class="com.ducret.resultJ.Property" index="0" name="">
+          <string id="STRAIGHTEN_DILATE">0</string>
+          <string id="MAX_WIDTH">max</string>
+          <boolean id="SHAPE_CONTOUR">false</boolean>
+          <string id="MAX_SINUOSITY">max</string>
+          <string id="MAX_SYMMETRY_WIDTH">max</string>
+          <integer id="SIGNAL_TEXTURE_ANGLE">0</integer>
+          <string id="INSIDE_TOLERANCE">0</string>
+          <string id="MIN_RANGE_WIDTH">0</string>
+          <string id="MAX_RANGE_WIDTH">max</string>
+          <string id="MIN_CURVATURE">0</string>
+          <string id="MAX_AREA">max</string>
+          <boolean id="TYPE_DETECTION">false</boolean>
+          <color id="REJECTED">255;0;0;255</color>
+          <string id="STRAIGHTEN_WIDTH">20</string>
+          <boolean id="DISTANCE">false</boolean>
+          <string id="MIN_INTENSITY_AXIS">0</string>
+          <color id="CONCENTRIC_AXIS">0;0;0;0</color>
+          <string id="OUTSIDE_CRITERIUM"/>
+          <boolean id="SIGNAL_TEXTURE_SCALING">true</boolean>
+          <boolean id="ORIENTATION_LONGITUDINAL_SIGN">false</boolean>
+          <string id="MIN_SLICE_COUNT">0</string>
+          <string id="SIGNAL_ZSCORE">2</string>
+          <boolean id="SIGNAL_REGION_INTERSECTION">false</boolean>
+          <color id="LABEL_COLOR">0;255;0;255</color>
+          <boolean id="ASSOCIATION_OPTION">true</boolean>
+          <boolean id="ASSOCIATION_RESULT_LIST">false</boolean>
+          <string id="OUTSIDE_DISTMAX">0</string>
+          <string id="MIN_SYMMETRY_WIDTH">0</string>
+          <string id="BOUNDARY_SMOOTH_CUTOFF">0.1</string>
+          <string id="AXIS_SMOOTH">1</string>
+          <boolean id="SHAPE_FIT">true</boolean>
+          <string id="MAX_SKELETON_SIZE">max</string>
+          <string id="CONTACT_DISTMAX">0</string>
+          <color id="LONG_SUBAXIS">0;0;0;0</color>
+          <boolean id="SHAPE_FIT_COORD">false</boolean>
+          <boolean id="STRAIGHTEN">false</boolean>
+          <string id="MAX_POLE_COUNT">max</string>
+          <string id="AXIS_CORRECTION_TOLERANCE">0</string>
+          <integer id="ASSOCIATION_LOCATION_ORIGIN">0</integer>
+          <color id="SHORT_AXIS">0;0;0;0</color>
+          <boolean id="SIGNAL_REGION_HALF">false</boolean>
+          <color id="POLE_1">0;0;0;0</color>
+          <color id="POLE_2">0;0;0;0</color>
+          <string id="INSIDE_DISTMAX">0</string>
+          <boolean id="SIGNAL_TEXTURE">false</boolean>
+          <string id="MIN_HOLE_COUNT">0</string>
+          <string id="INSIDE_CRITERIUM"/>
+          <boolean id="FILTER_ASSOCIATION">false</boolean>
+          <boolean id="ASSOCIATION_POLYGON">false</boolean>
+          <boolean id="CLUMP">true</boolean>
+          <string id="SEGMENTATION_MIN_NBPART">3</string>
+          <color id="COLOR_INTERSECTION">0;0;0;0</color>
+          <color id="SIDE_2">0;0;0;0</color>
+          <string id="MAX_RANGE_ANGULARITY">max</string>
+          <color id="SIDE_1">0;0;0;0</color>
+          <font id="LABEL_FONT" name="SansSerif.plain" size="1" style="0"/>
+          <array class="com.ducret.resultJ.Property" dimension="1" id="TYPES" type="">
+            <property class="com.ducret.resultJ.Property" index="0" name="">
+              <array dimension="5" id="CRITERIUM" type="string">
+                <string index="0"/>
+                <string index="1"/>
+                <string index="2"/>
+                <string index="3"/>
+                <string index="4"/>
+              </array>
+              <string id="UNIT">µm</string>
+              <boolean id="ACTIVE">true</boolean>
+              <integer id="TYPE_MODE">0</integer>
+              <integer id="COLOR_LUT_MODE">0</integer>
+              <string id="BIN_MAX">100</string>
+              <string id="SEED_THRESHOLD"/>
+              <string id="SEED_PATH"/>
+              <string id="NAME"/>
+              <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+              <string id="BIN_PROPERTY"/>
+              <integer id="PANEL_MODE">0</integer>
+              <array class="java.awt.Color" dimension="5" id="COLOR" type="">
+                <color index="0">0;255;0;255</color>
+                <color index="1">0;255;0;255</color>
+                <color index="2">0;255;0;255</color>
+                <color index="3">0;255;0;255</color>
+                <color index="4">0;255;0;255</color>
+              </array>
+              <integer id="COLOR_MODE">0</integer>
+              <string id="SEED_PROPERTY"/>
+              <boolean id="ENABLED">false</boolean>
+              <array dimension="5" id="TITLE" type="string">
+                <string index="0"/>
+                <string index="1"/>
+                <string index="2"/>
+                <string index="3"/>
+                <string index="4"/>
+              </array>
+              <boolean id="ASSOCIATION">true</boolean>
+              <string id="BIN_MIN">0</string>
+            </property>
+          </array>
+          <boolean id="OUTSIDE_EXCLUSIVE">false</boolean>
+          <string id="LABEL"/>
+          <boolean id="SIGNAL_REGION_MEMBRANE">false</boolean>
+          <boolean id="ASSOCIATION_SPACING_LIST">false</boolean>
+          <integer id="POLE_MODE">0</integer>
+          <integer id="FEATURE_MODE">0</integer>
+          <string id="MAX_INTENSITY_AXIS">max</string>
+          <boolean id="DISTANCE_LIST">false</boolean>
+          <string id="MIN_AREA">0</string>
+          <string id="NAME"/>
+          <integer id="SIGNAL_ZSCORE_MODE">0</integer>
+          <string id="POLAR_LOCALISATION">auto</string>
+          <boolean id="FEATURE">false</boolean>
+          <string id="MAX_SOLIDITY">max</string>
+          <color id="MAIN_AXIS">0;0;0;0</color>
+          <string id="SIDE_FACTOR">0.9</string>
+          <string id="SIGNAL_BACKGROUND_TREATEMENT_CYCLE_COUNT">0</string>
+          <integer id="COLOR_BOUNDARY_STROKE">0</integer>
+          <boolean id="ASSOCIATION_LOCATION">true</boolean>
+          <integer id="SEGMENTATION_METHOD">0</integer>
+          <color id="COLOR_BOUNDARY_RAW">0;0;0;0</color>
+          <string id="OUTSIDE_ANGLE_MAX">180</string>
+          <string id="MAX_SLICE_COUNT">max</string>
+          <boolean id="ASSOCIATION_COVERAGE">false</boolean>
+          <string id="BOUNDARY_SMOOTH">1</string>
+          <string id="MIN_LENGTH">0</string>
+          <property class="com.ducret.resultJ.Property" id="TRACKING" name="TRACKING">
+            <boolean id="TIME_CORRECTION_ACCELERATION">true</boolean>
+            <boolean id="SUBRUN_RESULT">false</boolean>
+            <color id="TRAJECTORY_COLOR_DEFAULT">0;255;0;255</color>
+            <string id="LINEAGE_DELTAY_MAX">max</string>
+            <color id="TRAJECTORY_COLOR_ROTATING">255;255;0;255</color>
+            <string id="SUBRUN_DISPLACEMENT_DIRECTION_MIN">0</string>
+            <integer id="TIME_MARK_SIZE">1</integer>
+            <integer id="TIME_INTERPOLATION_MODE">0</integer>
+            <boolean id="LINEAGE_DIVISION_RESULT">false</boolean>
+            <string id="LINEAGE_DELTAY_MIN">0</string>
+            <string id="ACCELERATION_MIN">0</string>
+            <string id="LIFESPAN_MAX">max</string>
+            <string id="SUBRUN_DELTA_PRE_EVENT">5</string>
+            <boolean id="TYPE_DETECTION">false</boolean>
+            <integer id="LINEAGE_MODE">0</integer>
+            <string id="REVERSION_DIRECTION_MIN">0</string>
+            <string id="LINEAGE_DIST_MAX">1</string>
+            <boolean id="TIME_INTERPOLATION_BEZIER">false</boolean>
+            <boolean id="TIME_CORRECTION">true</boolean>
+            <integer id="TRACKING_COORDINATE_MODE">0</integer>
+            <boolean id="TYPE_DISPLACEMENT_ADVANCED">false</boolean>
+            <boolean id="SUBRUN_ROTATION_DIRECTION">false</boolean>
+            <string id="INTENSITY_MAX">max</string>
+            <boolean id="TYPE_DISPLACEMENT_MSD_RESULT">false</boolean>
+            <integer id="TRAJECTORY_MODE">0</integer>
+            <boolean id="SUBRUN_DISPLACEMENT_DIRECTION">false</boolean>
+            <color id="TIME_LABEL_COLOR">0;0;0;0</color>
+            <color id="TRAJECTORY_COLOR_DIFFUSING">0;0;255;255</color>
+            <string id="TIME_LABEL"/>
+            <boolean id="SUBRUN_DISPLACEMENT_DISTANCE">false</boolean>
+            <integer id="SUBRUN_MODE">0</integer>
+            <string id="SUBRUN_LIFESPAN_MAX">max</string>
+            <boolean id="TIME_CORRECTION_INTENSITY">true</boolean>
+            <string id="ROTATION_MIN">0.2</string>
+            <color id="VECTOR_VELOCITY">0;0;0;0</color>
+            <boolean id="TIME_CORRECTION_DIST">true</boolean>
+            <integer id="TRACKING_MODE">0</integer>
+            <boolean id="MOTION_DESCRIPTORS">false</boolean>
+            <font id="TIME_LABEL_FONT" name="SansSerif.plain" size="1" style="0"/>
+            <string id="TIME_POLARITY_OFFSET">0</string>
+            <boolean id="TIME_ANALYSIS">true</boolean>
+            <integer id="TIME_POLARITY_MODE">0</integer>
+            <string id="INTENSITY_MIN">0</string>
+            <string id="DIST_MOVING_THRESHOLD">1</string>
+            <string id="SUBRUN_DISPLACEMENT_DIRECTION_MAX">45</string>
+            <string id="SUBRUN_LIFESPAN_MIN">0</string>
+            <boolean id="LINEAGE">false</boolean>
+            <string id="SUBRUN_PROPERTY_RATIO_MAX">1</string>
+            <integer id="TIME_FILTER_TYPE">0</integer>
+            <boolean id="SUBRUN_DETECTION">false</boolean>
+            <string id="TIME_DIVISION_DELTA">2</string>
+            <boolean id="TYPE_DISPLACEMENT_ADVANCED_CENTER">false</boolean>
+            <string id="SUBRUN_DISPLACEMENT_THRESHOLD">default</string>
+            <string id="SUBRUN_PROPERTY_RATIO_MIN">1</string>
+            <color id="CURVATURE">0;0;0;0</color>
+            <boolean id="REVERSION_DETECTION">false</boolean>
+            <boolean id="SUBRUN_LIFESPAN_FILTER">false</boolean>
+            <boolean id="TIME_CORRECTION_ANGLE">true</boolean>
+            <boolean id="TIME_CORRECTION_AREA">true</boolean>
+            <boolean id="TIME_FILTER">false</boolean>
+            <boolean id="TIMEFLAG">false</boolean>
+            <boolean id="REVERSION_LIST">false</boolean>
+            <string id="TIME_CORRECTION_DELTA">2</string>
+            <string id="LIFESPAN_MIN">0</string>
+            <integer id="SUBRUN_PROPERTY_FILTER">0</integer>
+            <array dimension="1" id="OCCURENCE" type="integer">
+              <integer index="0">0</integer>
+            </array>
+            <integer id="REVERSION_DISTANCE_MODE">0</integer>
+            <boolean id="TYPE_DISPLACEMENT">false</boolean>
+            <string id="REVERSION_DIRECTION_MAX">30</string>
+            <integer id="TRAJECTORY_COLOR_TYPE">0</integer>
+            <string id="TIME_DIVISION_DISTANCE">2</string>
+            <boolean id="SUBRUN_ROTATION_DISTANCE">false</boolean>
+            <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+            <string id="MOVING_MIN">auto</string>
+            <string id="TIME_FILTER_DELTA">2</string>
+            <string id="TYPE_DISPLACEMENT_MSD_MAXLAG">20</string>
+            <boolean id="SUBRUN_DEBUG">false</boolean>
+            <boolean id="ASSOCIATION">true</boolean>
+            <property class="com.ducret.resultJ.Property" id="EVENTS" name="EVENTS">
+              <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+              <array dimension="1" id="CRITERIUM" type="string">
+                <string index="0"/>
+              </array>
+              <array dimension="1" id="LIFESPAN" type="string">
+                <string index="0"/>
+              </array>
+              <string id="UNIT">µm</string>
+              <boolean id="ACTIVE">true</boolean>
+              <array class="java.awt.Color" dimension="1" id="COLOR" type="">
+                <color index="0">0;255;0;255</color>
+              </array>
+              <boolean id="ENABLED">false</boolean>
+              <array dimension="1" id="TITLE" type="string">
+                <string index="0"/>
+              </array>
+              <boolean id="ASSOCIATION">true</boolean>
+            </property>
+            <string id="LINEAGE_DELTAX_MIN">0</string>
+            <string id="PROPERTIES"/>
+            <color id="TRAJECTORY_COLOR_MIXED">255;0;255;255</color>
+            <string id="START_MAX">max</string>
+            <string id="REVERSION_DISTANCE_THRESHOLD">default</string>
+            <color id="VECTOR_ACCELERATION">0;0;0;0</color>
+            <boolean id="RELATIVE_FILTER">true</boolean>
+            <color id="TRAJECTORY_COLOR_MOVING">255;200;0;255</color>
+            <array class="com.ducret.resultJ.Property" dimension="1" id="TYPES" type="">
+              <property class="com.ducret.resultJ.Property" index="0" name="">
+                <array dimension="5" id="CRITERIUM" type="string">
+                  <string index="0"/>
+                  <string index="1"/>
+                  <string index="2"/>
+                  <string index="3"/>
+                  <string index="4"/>
+                </array>
+                <string id="UNIT">µm</string>
+                <boolean id="ACTIVE">true</boolean>
+                <integer id="TYPE_MODE">0</integer>
+                <integer id="COLOR_LUT_MODE">0</integer>
+                <string id="BIN_MAX">100</string>
+                <string id="SEED_THRESHOLD"/>
+                <string id="SEED_PATH"/>
+                <string id="NAME"/>
+                <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+                <string id="BIN_PROPERTY"/>
+                <integer id="PANEL_MODE">0</integer>
+                <array class="java.awt.Color" dimension="5" id="COLOR" type="">
+                  <color index="0">0;255;0;255</color>
+                  <color index="1">0;255;0;255</color>
+                  <color index="2">0;255;0;255</color>
+                  <color index="3">0;255;0;255</color>
+                  <color index="4">0;255;0;255</color>
+                </array>
+                <integer id="COLOR_MODE">0</integer>
+                <string id="SEED_PROPERTY"/>
+                <boolean id="ENABLED">false</boolean>
+                <array dimension="5" id="TITLE" type="string">
+                  <string index="0"/>
+                  <string index="1"/>
+                  <string index="2"/>
+                  <string index="3"/>
+                  <string index="4"/>
+                </array>
+                <boolean id="ASSOCIATION">true</boolean>
+                <string id="BIN_MIN">0</string>
+              </property>
+            </array>
+            <string id="FILTER_CRITERIUM"/>
+            <color id="LINEAGE_LINKER_COLOR">0;255;255;255</color>
+            <color id="TRAJECTORY_LINKER">0;0;0;0</color>
+            <array class="java.awt.Color" dimension="1" id="COLOR" type="">
+              <color index="0">0;255;0;255</color>
+            </array>
+            <boolean id="TIME_POLARITY">true</boolean>
+            <boolean id="SUBRUN_ROTATION">false</boolean>
+            <property class="com.ducret.resultJ.Property" id="FLAGS" name="FLAGS">
+              <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+              <array dimension="1" id="CRITERIUM" type="string">
+                <string index="0"/>
+              </array>
+              <array dimension="1" id="LIFESPAN" type="integer">
+                <integer index="0">0</integer>
+              </array>
+              <string id="UNIT">µm</string>
+              <boolean id="ACTIVE">true</boolean>
+              <array class="java.awt.Color" dimension="1" id="COLOR" type="">
+                <color index="0">0;255;0;255</color>
+              </array>
+              <array dimension="1" id="OCCURENCE" type="integer">
+                <integer index="0">0</integer>
+              </array>
+              <boolean id="ENABLED">false</boolean>
+              <array dimension="1" id="TITLE" type="string">
+                <string index="0"/>
+              </array>
+              <boolean id="ASSOCIATION">true</boolean>
+            </property>
+            <string id="LINEAGE_DELTAX_MAX">max</string>
+            <array dimension="1" id="LIFESPAN" type="string">
+              <string index="0"/>
+            </array>
+            <string id="UNIT">µm</string>
+            <string id="SUBRUN_PROPERTY_NAME"/>
+            <string id="SUBRUN_DELTA_POST_EVENT">5</string>
+            <string id="TIME_CORRECTION_DISTANCE">2</string>
+            <boolean id="TYPE_BEHAVIOR">false</boolean>
+            <string id="NAME"/>
+            <color id="TRAJECTORY_COLOR_DIFFUSING_CONFINED">0;255;255;255</color>
+            <color id="REVERSION_COLOR">0;0;255;255</color>
+            <string id="TIME_POLARITY_TOLERANCE">0</string>
+            <boolean id="TIME_CORRECTION_OVERLAP">false</boolean>
+            <string id="END_MIN">0</string>
+            <array dimension="1" id="CRITERIUM" type="string">
+              <string index="0"/>
+            </array>
+            <string id="ROTATION_MAX">pi</string>
+            <boolean id="ACTIVE">false</boolean>
+            <boolean id="TIME_MODIFICATION">false</boolean>
+            <string id="ANGLE_MAX">180</string>
+            <string id="DIST_MAX">2</string>
+            <string id="END_MAX">max</string>
+            <boolean id="SUBRUN_RECURSIVE">false</boolean>
+            <boolean id="SUBRUN_PROPERTY">false</boolean>
+            <string id="ANGLE_MIN">0</string>
+            <boolean id="TIME_DIVISION">false</boolean>
+            <boolean id="SUBRUN_DISPLACEMENT">false</boolean>
+            <color id="TRAJECTORY_COLOR_NOT_MOVING">255;255;255;255</color>
+            <boolean id="TIME_OPTIONS">true</boolean>
+            <string id="CONFINEMENT_MAX">15</string>
+            <string id="AREA_MIN">0</string>
+            <color id="TRAJECTORY_COLOR">0;255;0;255</color>
+            <string id="ACCELERATION_MAX">max</string>
+            <string id="SUBRUN_PROPERTY_FILTER_SIZE">1</string>
+            <color id="TRAJECTORY_COLOR_MOVING_CONFINED">255;255;0;255</color>
+            <string id="START_MIN">0</string>
+            <string id="CONFINEMENT_MIN">1</string>
+            <string id="AREA_MAX">max</string>
+            <integer id="SUBRUN_DISPLACEMENT_MODE">0</integer>
+            <boolean id="ENABLED">false</boolean>
+            <array dimension="1" id="TITLE" type="string">
+              <string index="0"/>
+            </array>
+            <boolean id="TYPE_DISPLACEMENT_MSD">false</boolean>
+            <string id="DIST_MIN">0</string>
+            <boolean id="TIME_EVENT">false</boolean>
+          </property>
+          <boolean id="INSIDE_OVERLAP">false</boolean>
+          <string id="SIGNAL_ZSCORE_CH6">2</string>
+          <integer id="SIGNAL_REGION_MEMBRANE_MODE">0</integer>
+          <string id="SIGNAL_ZSCORE_CH5">2</string>
+          <color id="BOND">102;178;255;100</color>
+          <integer id="SIGNAL_BACKGROUND_TREATEMENT_MODE">0</integer>
+          <integer id="ASSOCIATION_INDEX">0</integer>
+          <string id="MAX_ANGULARITY">max</string>
+          <boolean id="BOUNDARY_FITSPLINE">false</boolean>
+          <boolean id="ASSOCIATION_DISTANCE">false</boolean>
+          <boolean id="EDGE_CORRECTION_DEBUG">false</boolean>
+          <integer id="BOUNDARY_SMOOTH_MODE">0</integer>
+          <string id="FEATURE_MIN_POSITION">0</string>
+          <boolean id="CONTACT_DISTANCE">false</boolean>
+          <string id="MIN_ZSCORE">0</string>
+          <color id="LONG_AXIS">255;200;0;255</color>
+          <string id="MIN_RANGE_ANGULARITY">0</string>
+          <boolean id="EDGE_CORRECTION_PROCESS">true</boolean>
+          <color id="CONTACT_COLOR">0;0;0;0</color>
+          <string id="MIN_VARIATION_WIDTH">0</string>
+          <integer id="FEATURE_TYPE">0</integer>
+          <string id="MIN_SINUOSITY">0</string>
+          <string id="FEATURE_TOLERANCE">0.1</string>
+          <boolean id="SIGNAL_REGION_POLE">false</boolean>
+          <boolean id="SECTION">true</boolean>
+          <string id="MIDCELL_LOCALISATION">auto</string>
+          <array class="com.ducret.resultJ.Property" dimension="1" id="PROFILES" type="">
+            <property class="com.ducret.resultJ.Property" index="0" name="">
+              <string id="UNIT">p</string>
+              <boolean id="ACTIVE">true</boolean>
+              <boolean id="PLOT">true</boolean>
+              <integer id="CENTER_INDEX">0</integer>
+              <string id="RESOLUTION">auto</string>
+              <boolean id="WIDTH">false</boolean>
+              <boolean id="OPTIONS">true</boolean>
+              <string id="NAME"/>
+              <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+              <boolean id="CENTER">false</boolean>
+              <integer id="PANEL_MODE">0</integer>
+              <string id="EXPANSION">0</string>
+              <boolean id="CURVATURE">false</boolean>
+              <boolean id="PLOT_RAW">false</boolean>
+              <string id="OFFSET">0</string>
+              <boolean id="PLOT_BOUNDARY">false</boolean>
+              <boolean id="ENABLED">true</boolean>
+              <integer id="INDEX">0</integer>
+              <string id="CURVATURE_DELTA">2</string>
+              <boolean id="ASSOCIATION">true</boolean>
+              <string id="THICKNESS">auto</string>
+              <integer id="PLOT_MODE">0</integer>
+            </property>
+          </array>
+          <string id="MAX_HOLE_COUNT">0</string>
+          <integer id="STRAIGHTEN_MODE">0</integer>
+          <boolean id="OUTSIDE_OVERLAP">true</boolean>
+          <string id="MIN_JUNCTION_COUNT">0</string>
+          <string id="FEATURE_SOURCE">Width</string>
+          <string id="POLE_FACTOR">1.3</string>
+          <integer id="INTERPOLATION_WIDTHMODE">1</integer>
+          <string id="AREA_CUTOFF">1000</string>
+          <string id="SIGNAL_TEXTURE_STEP">1</string>
+          <integer id="PANEL_MODE">0</integer>
+          <string id="INTERPOLATION_WIDTH">5</string>
+          <integer id="FEATURE_MODE_POSITION">0</integer>
+          <boolean id="SIGNAL_REGION_BODY">false</boolean>
+          <boolean id="SIGNAL_REGION">false</boolean>
+          <string id="MAX_FEATURE_COUNT">max</string>
+          <string id="SIGNAL_ZSCORE_CH4">2</string>
+          <string id="SIGNAL_ZSCORE_CH3">2</string>
+          <string id="SIGNAL_ZSCORE_CH2">2</string>
+          <string id="ORIENTATION_LONGITUDINAL"/>
+          <string id="MAX_ZSCORE">max</string>
+          <string id="SIGNAL_ZSCORE_CH1">2</string>
+          <string id="SIGNAL_RESOLUTION">1</string>
+          <string id="MIN_VARIATION_ANGULARITY">0</string>
+          <boolean id="OPTION">true</boolean>
+          <string id="MIN_POLE_COUNT">0</string>
+          <color id="DISTANCE_COLOR">0;0;0;0</color>
+          <string id="AXIS_CORRECTION_WIDTH">2</string>
+          <boolean id="AXIS_CORRECTION">false</boolean>
+          <string id="STRAIGHTEN_LENGTH">100</string>
+          <integer id="ASSOCIATION_RESULT_MODE">0</integer>
+          <boolean id="SHAPE">true</boolean>
+          <string id="NB_LIMIT">10000</string>
+          <string id="SIGNAL_REGION_MEMBRANE_THICKNESS">0.5</string>
+          <boolean id="ORIENTATION">true</boolean>
+          <string id="NB_MAX_ASSOCIATION_PROPERTY"/>
+          <boolean id="ASSOCIATION_SPACING">false</boolean>
+          <integer id="INSIDE_MODE">0</integer>
+          <boolean id="OUTSIDE_ASSOCIATION">false</boolean>
+          <string id="EDGE_CORRECTION_THICKNESS">10</string>
+          <boolean id="SIGNAL_TEXTURE_SYMETRY">false</boolean>
+          <string id="SEGMENTATION_NB_ITERATION">0</string>
+          <boolean id="ASSOCIATION_SET_CENTER">false</boolean>
+          <boolean id="SIGNAL_REGION_SIDE">false</boolean>
+          <string id="AXIS_RESOLUTION">2</string>
+          <string id="MIN_ANGULARITY">0</string>
+          <boolean id="AXIS_SIMPLIFICATION">true</boolean>
+          <boolean id="SIGNAL">true</boolean>
+          <integer id="SEGMENTATION_MODE">0</integer>
+          <string id="BOUNDARY_RESOLUTION">1</string>
+          <string id="MIN_FEATURE_COUNT">0</string>
+          <string id="MAX_VARIATION_ANGULARITY">max</string>
+          <color id="COLOR_INNER">0;0;0;0</color>
+          <string id="SIGNAL_BACKGROUND_LOCAL_GRID_SIZE">10</string>
+          <array class="com.ducret.resultJ.Property" dimension="1" id="FEATURES" type="">
+            <property class="com.ducret.resultJ.Property" index="0" name="">
+              <string id="FEATURE_ROIMANAGER_SUFFIX"/>
+              <string id="STRAIGHTEN_DILATE">0</string>
+              <string id="MAX_WIDTH">max</string>
+              <boolean id="SHAPE_CONTOUR">false</boolean>
+              <integer id="SIGNAL_TEXTURE_ANGLE">0</integer>
+              <string id="INSIDE_TOLERANCE">0</string>
+              <string id="MAX_AREA">max</string>
+              <boolean id="TYPE_DETECTION">false</boolean>
+              <color id="REJECTED">255;0;0;255</color>
+              <string id="STRAIGHTEN_WIDTH">20</string>
+              <float id="FEATURE_THRESHOLD_OFFSET">0.0</float>
+              <string id="MIN_RELATIVE_POSITION">0</string>
+              <string id="OUTSIDE_CRITERIUM"/>
+              <boolean id="SIGNAL_TEXTURE_SCALING">true</boolean>
+              <string id="SIGNAL_ZSCORE">2</string>
+              <boolean id="SIGNAL_REGION_INTERSECTION">false</boolean>
+              <integer id="SOURCE_INDEX">0</integer>
+              <color id="LABEL_COLOR">0;0;0;0</color>
+              <integer id="COLOCALIZATION_INDEX">0</integer>
+              <boolean id="COLOCALIZATION">false</boolean>
+              <boolean id="ASSOCIATION_OPTION">true</boolean>
+              <boolean id="ASSOCIATION_RESULT_LIST">false</boolean>
+              <string id="OUTSIDE_DISTMAX">0</string>
+              <string id="GAUSSIAN_FIT_AMPLITUDE_MAX">max</string>
+              <string id="GAUSSIAN_FIT_RADIUS">2</string>
+              <string id="MIN_GAUSSIAN_FWHM">0</string>
+              <boolean id="STRAIGHTEN">false</boolean>
+              <string id="FEATURE_MIN_DELTA">0</string>
+              <integer id="ASSOCIATION_LOCATION_ORIGIN">0</integer>
+              <boolean id="GAUSSIAN_FIT">false</boolean>
+              <integer id="FEATURE_PROFILE_METHOD">0</integer>
+              <boolean id="FEATURE_PROFILE_BOUNDARY">true</boolean>
+              <boolean id="SIGNAL_REGION_HALF">false</boolean>
+              <string id="MAX_GAUSSIAN_R2">max</string>
+              <string id="INSIDE_DISTMAX">0</string>
+              <boolean id="SIGNAL_TEXTURE">false</boolean>
+              <string id="GAUSSIAN_FIT_THRESHOLD_DISTANCE">2</string>
+              <float id="FEATURE_TOLERANCE_MAXIMA">1.0</float>
+              <string id="INSIDE_CRITERIUM"/>
+              <boolean id="FILTER_ASSOCIATION">false</boolean>
+              <boolean id="FEATURE_PROFILE_INTERSECTION">false</boolean>
+              <integer id="FEATURE_PROFILE_FILTER">1</integer>
+              <boolean id="ASSOCIATION_POLYGON">false</boolean>
+              <font id="LABEL_FONT" name="SansSerif.plain" size="1" style="0"/>
+              <array class="com.ducret.resultJ.Property" dimension="1" id="TYPES" type="">
+                <property class="com.ducret.resultJ.Property" index="0" name="">
+                  <array dimension="5" id="CRITERIUM" type="string">
+                    <string index="0"/>
+                    <string index="1"/>
+                    <string index="2"/>
+                    <string index="3"/>
+                    <string index="4"/>
+                  </array>
+                  <string id="UNIT">µm</string>
+                  <boolean id="ACTIVE">true</boolean>
+                  <integer id="TYPE_MODE">0</integer>
+                  <integer id="COLOR_LUT_MODE">0</integer>
+                  <string id="BIN_MAX">100</string>
+                  <string id="SEED_THRESHOLD"/>
+                  <string id="SEED_PATH"/>
+                  <string id="NAME"/>
+                  <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+                  <string id="BIN_PROPERTY"/>
+                  <integer id="PANEL_MODE">0</integer>
+                  <array class="java.awt.Color" dimension="5" id="COLOR" type="">
+                    <color index="0">0;255;0;255</color>
+                    <color index="1">0;255;0;255</color>
+                    <color index="2">0;255;0;255</color>
+                    <color index="3">0;255;0;255</color>
+                    <color index="4">0;255;0;255</color>
+                  </array>
+                  <integer id="COLOR_MODE">0</integer>
+                  <string id="SEED_PROPERTY"/>
+                  <boolean id="ENABLED">false</boolean>
+                  <array dimension="5" id="TITLE" type="string">
+                    <string index="0"/>
+                    <string index="1"/>
+                    <string index="2"/>
+                    <string index="3"/>
+                    <string index="4"/>
+                  </array>
+                  <boolean id="ASSOCIATION">true</boolean>
+                  <string id="BIN_MIN">0</string>
+                </property>
+              </array>
+              <boolean id="OUTSIDE_EXCLUSIVE">false</boolean>
+              <string id="LABEL"/>
+              <boolean id="SIGNAL_REGION_MEMBRANE">false</boolean>
+              <boolean id="ASSOCIATION_SPACING_LIST">false</boolean>
+              <integer id="FEATURE_MODE">0</integer>
+              <boolean id="FEATURE_CHART">false</boolean>
+              <string id="FEATURE_PROFILE_DERIVATIVE_DELTA">2</string>
+              <integer id="FILTER_TYPE">0</integer>
+              <string id="MIN_AREA">0</string>
+              <string id="NAME"/>
+              <string id="GAUSSIAN_FIT_THRESHOLD">0</string>
+              <integer id="SIGNAL_ZSCORE_MODE">0</integer>
+              <string id="POLAR_LOCALISATION">auto</string>
+              <string id="MAX_GAUSSIAN_AMPLITUDE">max</string>
+              <string id="SIGNAL_BACKGROUND_TREATEMENT_CYCLE_COUNT">0</string>
+              <integer id="COLOR_BOUNDARY_STROKE">0</integer>
+              <string id="FEATURE_PROFILE_CHANNEL_FACTOR_5">1</string>
+              <boolean id="ASSOCIATION_LOCATION">true</boolean>
+              <string id="OUTSIDE_ANGLE_MAX">180</string>
+              <boolean id="ASSOCIATION_COVERAGE">false</boolean>
+              <string id="MIN_LENGTH">0</string>
+              <integer id="FEATURE_POSITION_TYPE">0</integer>
+              <property class="com.ducret.resultJ.Property" id="TRACKING" name="TRACKING">
+                <boolean id="TIME_CORRECTION_ACCELERATION">true</boolean>
+                <boolean id="SUBRUN_RESULT">false</boolean>
+                <color id="TRAJECTORY_COLOR_DEFAULT">0;255;0;255</color>
+                <string id="LINEAGE_DELTAY_MAX">max</string>
+                <color id="TRAJECTORY_COLOR_ROTATING">255;255;0;255</color>
+                <string id="SUBRUN_DISPLACEMENT_DIRECTION_MIN">0</string>
+                <integer id="TIME_MARK_SIZE">1</integer>
+                <integer id="TIME_INTERPOLATION_MODE">0</integer>
+                <boolean id="LINEAGE_DIVISION_RESULT">false</boolean>
+                <string id="LINEAGE_DELTAY_MIN">0</string>
+                <string id="ACCELERATION_MIN">0</string>
+                <string id="LIFESPAN_MAX">max</string>
+                <string id="SUBRUN_DELTA_PRE_EVENT">5</string>
+                <boolean id="TYPE_DETECTION">false</boolean>
+                <integer id="LINEAGE_MODE">0</integer>
+                <string id="REVERSION_DIRECTION_MIN">0</string>
+                <string id="LINEAGE_DIST_MAX">1</string>
+                <boolean id="TIME_INTERPOLATION_BEZIER">false</boolean>
+                <boolean id="TIME_CORRECTION">true</boolean>
+                <integer id="TRACKING_COORDINATE_MODE">0</integer>
+                <boolean id="TYPE_DISPLACEMENT_ADVANCED">false</boolean>
+                <boolean id="SUBRUN_ROTATION_DIRECTION">false</boolean>
+                <string id="INTENSITY_MAX">max</string>
+                <boolean id="TYPE_DISPLACEMENT_MSD_RESULT">false</boolean>
+                <integer id="TRAJECTORY_MODE">0</integer>
+                <boolean id="SUBRUN_DISPLACEMENT_DIRECTION">false</boolean>
+                <color id="TIME_LABEL_COLOR">0;0;0;0</color>
+                <color id="TRAJECTORY_COLOR_DIFFUSING">0;0;255;255</color>
+                <string id="TIME_LABEL"/>
+                <boolean id="SUBRUN_DISPLACEMENT_DISTANCE">false</boolean>
+                <integer id="SUBRUN_MODE">0</integer>
+                <string id="SUBRUN_LIFESPAN_MAX">max</string>
+                <boolean id="TIME_CORRECTION_INTENSITY">true</boolean>
+                <string id="ROTATION_MIN">0.2</string>
+                <color id="VECTOR_VELOCITY">0;0;0;0</color>
+                <boolean id="TIME_CORRECTION_DIST">true</boolean>
+                <integer id="TRACKING_MODE">0</integer>
+                <boolean id="MOTION_DESCRIPTORS">false</boolean>
+                <font id="TIME_LABEL_FONT" name="SansSerif.plain" size="1" style="0"/>
+                <string id="TIME_POLARITY_OFFSET">0</string>
+                <boolean id="TIME_ANALYSIS">true</boolean>
+                <integer id="TIME_POLARITY_MODE">0</integer>
+                <string id="INTENSITY_MIN">0</string>
+                <string id="DIST_MOVING_THRESHOLD">1</string>
+                <string id="SUBRUN_DISPLACEMENT_DIRECTION_MAX">45</string>
+                <string id="SUBRUN_LIFESPAN_MIN">0</string>
+                <boolean id="LINEAGE">false</boolean>
+                <string id="SUBRUN_PROPERTY_RATIO_MAX">1</string>
+                <integer id="TIME_FILTER_TYPE">0</integer>
+                <boolean id="SUBRUN_DETECTION">false</boolean>
+                <string id="TIME_DIVISION_DELTA">2</string>
+                <boolean id="TYPE_DISPLACEMENT_ADVANCED_CENTER">false</boolean>
+                <string id="SUBRUN_DISPLACEMENT_THRESHOLD">default</string>
+                <string id="SUBRUN_PROPERTY_RATIO_MIN">1</string>
+                <color id="CURVATURE">0;0;0;0</color>
+                <boolean id="REVERSION_DETECTION">false</boolean>
+                <boolean id="SUBRUN_LIFESPAN_FILTER">false</boolean>
+                <boolean id="TIME_CORRECTION_ANGLE">true</boolean>
+                <boolean id="TIME_CORRECTION_AREA">true</boolean>
+                <boolean id="TIME_FILTER">false</boolean>
+                <boolean id="TIMEFLAG">false</boolean>
+                <boolean id="REVERSION_LIST">false</boolean>
+                <string id="TIME_CORRECTION_DELTA">2</string>
+                <string id="LIFESPAN_MIN">0</string>
+                <integer id="SUBRUN_PROPERTY_FILTER">0</integer>
+                <array dimension="1" id="OCCURENCE" type="integer">
+                  <integer index="0">0</integer>
+                </array>
+                <integer id="REVERSION_DISTANCE_MODE">0</integer>
+                <boolean id="TYPE_DISPLACEMENT">false</boolean>
+                <string id="REVERSION_DIRECTION_MAX">30</string>
+                <integer id="TRAJECTORY_COLOR_TYPE">0</integer>
+                <string id="TIME_DIVISION_DISTANCE">2</string>
+                <boolean id="SUBRUN_ROTATION_DISTANCE">false</boolean>
+                <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+                <string id="MOVING_MIN">auto</string>
+                <string id="TIME_FILTER_DELTA">2</string>
+                <string id="TYPE_DISPLACEMENT_MSD_MAXLAG">20</string>
+                <boolean id="SUBRUN_DEBUG">false</boolean>
+                <boolean id="ASSOCIATION">true</boolean>
+                <property class="com.ducret.resultJ.Property" id="EVENTS" name="EVENTS">
+                  <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+                  <array dimension="1" id="CRITERIUM" type="string">
+                    <string index="0"/>
+                  </array>
+                  <array dimension="1" id="LIFESPAN" type="string">
+                    <string index="0"/>
+                  </array>
+                  <string id="UNIT">µm</string>
+                  <boolean id="ACTIVE">true</boolean>
+                  <array class="java.awt.Color" dimension="1" id="COLOR" type="">
+                    <color index="0">0;255;0;255</color>
+                  </array>
+                  <boolean id="ENABLED">false</boolean>
+                  <array dimension="1" id="TITLE" type="string">
+                    <string index="0"/>
+                  </array>
+                  <boolean id="ASSOCIATION">true</boolean>
+                </property>
+                <string id="LINEAGE_DELTAX_MIN">0</string>
+                <string id="PROPERTIES"/>
+                <color id="TRAJECTORY_COLOR_MIXED">255;0;255;255</color>
+                <string id="START_MAX">max</string>
+                <string id="REVERSION_DISTANCE_THRESHOLD">default</string>
+                <color id="VECTOR_ACCELERATION">0;0;0;0</color>
+                <boolean id="RELATIVE_FILTER">true</boolean>
+                <color id="TRAJECTORY_COLOR_MOVING">255;200;0;255</color>
+                <array class="com.ducret.resultJ.Property" dimension="1" id="TYPES" type="">
+                  <property class="com.ducret.resultJ.Property" index="0" name="">
+                    <array dimension="5" id="CRITERIUM" type="string">
+                      <string index="0"/>
+                      <string index="1"/>
+                      <string index="2"/>
+                      <string index="3"/>
+                      <string index="4"/>
+                    </array>
+                    <string id="UNIT">µm</string>
+                    <boolean id="ACTIVE">true</boolean>
+                    <integer id="TYPE_MODE">0</integer>
+                    <integer id="COLOR_LUT_MODE">0</integer>
+                    <string id="BIN_MAX">100</string>
+                    <string id="SEED_THRESHOLD"/>
+                    <string id="SEED_PATH"/>
+                    <string id="NAME"/>
+                    <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+                    <string id="BIN_PROPERTY"/>
+                    <integer id="PANEL_MODE">0</integer>
+                    <array class="java.awt.Color" dimension="5" id="COLOR" type="">
+                      <color index="0">0;255;0;255</color>
+                      <color index="1">0;255;0;255</color>
+                      <color index="2">0;255;0;255</color>
+                      <color index="3">0;255;0;255</color>
+                      <color index="4">0;255;0;255</color>
+                    </array>
+                    <integer id="COLOR_MODE">0</integer>
+                    <string id="SEED_PROPERTY"/>
+                    <boolean id="ENABLED">false</boolean>
+                    <array dimension="5" id="TITLE" type="string">
+                      <string index="0"/>
+                      <string index="1"/>
+                      <string index="2"/>
+                      <string index="3"/>
+                      <string index="4"/>
+                    </array>
+                    <boolean id="ASSOCIATION">true</boolean>
+                    <string id="BIN_MIN">0</string>
+                  </property>
+                </array>
+                <string id="FILTER_CRITERIUM"/>
+                <color id="LINEAGE_LINKER_COLOR">0;255;255;255</color>
+                <color id="TRAJECTORY_LINKER">0;0;0;0</color>
+                <array class="java.awt.Color" dimension="1" id="COLOR" type="">
+                  <color index="0">0;255;0;255</color>
+                </array>
+                <boolean id="TIME_POLARITY">true</boolean>
+                <boolean id="SUBRUN_ROTATION">false</boolean>
+                <property class="com.ducret.resultJ.Property" id="FLAGS" name="FLAGS">
+                  <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+                  <array dimension="1" id="CRITERIUM" type="string">
+                    <string index="0"/>
+                  </array>
+                  <array dimension="1" id="LIFESPAN" type="integer">
+                    <integer index="0">0</integer>
+                  </array>
+                  <string id="UNIT">µm</string>
+                  <boolean id="ACTIVE">true</boolean>
+                  <array class="java.awt.Color" dimension="1" id="COLOR" type="">
+                    <color index="0">0;255;0;255</color>
+                  </array>
+                  <array dimension="1" id="OCCURENCE" type="integer">
+                    <integer index="0">0</integer>
+                  </array>
+                  <boolean id="ENABLED">false</boolean>
+                  <array dimension="1" id="TITLE" type="string">
+                    <string index="0"/>
+                  </array>
+                  <boolean id="ASSOCIATION">true</boolean>
+                </property>
+                <string id="LINEAGE_DELTAX_MAX">max</string>
+                <array dimension="1" id="LIFESPAN" type="string">
+                  <string index="0"/>
+                </array>
+                <string id="UNIT">µm</string>
+                <string id="SUBRUN_PROPERTY_NAME"/>
+                <string id="SUBRUN_DELTA_POST_EVENT">5</string>
+                <string id="TIME_CORRECTION_DISTANCE">2</string>
+                <boolean id="TYPE_BEHAVIOR">false</boolean>
+                <string id="NAME"/>
+                <color id="TRAJECTORY_COLOR_DIFFUSING_CONFINED">0;255;255;255</color>
+                <color id="REVERSION_COLOR">0;0;255;255</color>
+                <string id="TIME_POLARITY_TOLERANCE">0</string>
+                <boolean id="TIME_CORRECTION_OVERLAP">false</boolean>
+                <string id="END_MIN">0</string>
+                <array dimension="1" id="CRITERIUM" type="string">
+                  <string index="0"/>
+                </array>
+                <string id="ROTATION_MAX">pi</string>
+                <boolean id="ACTIVE">false</boolean>
+                <boolean id="TIME_MODIFICATION">false</boolean>
+                <string id="ANGLE_MAX">180</string>
+                <string id="DIST_MAX">2</string>
+                <string id="END_MAX">max</string>
+                <boolean id="SUBRUN_RECURSIVE">false</boolean>
+                <boolean id="SUBRUN_PROPERTY">false</boolean>
+                <string id="ANGLE_MIN">0</string>
+                <boolean id="TIME_DIVISION">false</boolean>
+                <boolean id="SUBRUN_DISPLACEMENT">false</boolean>
+                <color id="TRAJECTORY_COLOR_NOT_MOVING">255;255;255;255</color>
+                <boolean id="TIME_OPTIONS">true</boolean>
+                <string id="CONFINEMENT_MAX">15</string>
+                <string id="AREA_MIN">0</string>
+                <color id="TRAJECTORY_COLOR">0;255;0;255</color>
+                <string id="ACCELERATION_MAX">max</string>
+                <string id="SUBRUN_PROPERTY_FILTER_SIZE">1</string>
+                <color id="TRAJECTORY_COLOR_MOVING_CONFINED">255;255;0;255</color>
+                <string id="START_MIN">0</string>
+                <string id="CONFINEMENT_MIN">1</string>
+                <string id="AREA_MAX">max</string>
+                <integer id="SUBRUN_DISPLACEMENT_MODE">0</integer>
+                <boolean id="ENABLED">false</boolean>
+                <array dimension="1" id="TITLE" type="string">
+                  <string index="0"/>
+                </array>
+                <boolean id="TYPE_DISPLACEMENT_MSD">false</boolean>
+                <string id="DIST_MIN">0</string>
+                <boolean id="TIME_EVENT">false</boolean>
+              </property>
+              <boolean id="INSIDE_OVERLAP">false</boolean>
+              <string id="SIGNAL_ZSCORE_CH6">2</string>
+              <integer id="SIGNAL_REGION_MEMBRANE_MODE">0</integer>
+              <string id="FEATURE_PROFILE_FILTER_SIZE">2</string>
+              <string id="SIGNAL_ZSCORE_CH5">2</string>
+              <color id="BOND">102;178;255;100</color>
+              <integer id="SIGNAL_BACKGROUND_TREATEMENT_MODE">0</integer>
+              <integer id="ASSOCIATION_INDEX">0</integer>
+              <string id="MAX_RELATIVE_POSITION">max</string>
+              <boolean id="ASSOCIATION_DISTANCE">false</boolean>
+              <boolean id="FILTER">false</boolean>
+              <string id="FEATURE_PROFILE_RESOLUTION">auto</string>
+              <integer id="PEAK_FIT_TYPE">0</integer>
+              <string id="FEATURE_MIN_POSITION">0</string>
+              <string id="MIN_ZSCORE">0</string>
+              <color id="LONG_AXIS">0;0;0;0</color>
+              <integer id="FEATURE_TYPE">0</integer>
+              <string id="FEATURE_PROFILE_CHANNEL_FACTOR_0">1</string>
+              <string id="GAUSSIAN_FIT_ZSCORE">0-max</string>
+              <color id="PEAK">0;0;0;0</color>
+              <string id="TITLE"/>
+              <string id="FEATURE_PROFILE_CHANNEL_FACTOR_3">1</string>
+              <float id="FEATURE_TOLERANCE">0.1</float>
+              <string id="FEATURE_PROFILE_CHANNEL_FACTOR_4">1</string>
+              <boolean id="SIGNAL_REGION_POLE">false</boolean>
+              <string id="FEATURE_PROFILE_CHANNEL_FACTOR_1">1</string>
+              <string id="FEATURE_PROFILE_CHANNEL_FACTOR_2">1</string>
+              <string id="MIDCELL_LOCALISATION">auto</string>
+              <color id="FEATURE_PROFILE_CHANNEL_COLOR_2">0;0;0;0</color>
+              <color id="FEATURE_PROFILE_CHANNEL_COLOR_1">0;0;0;0</color>
+              <color id="FEATURE_PROFILE_CHANNEL_COLOR_0">0;0;0;0</color>
+              <array class="com.ducret.resultJ.Property" dimension="1" id="PROFILES" type="">
+                <property class="com.ducret.resultJ.Property" index="0" name="">
+                  <string id="UNIT">p</string>
+                  <boolean id="ACTIVE">true</boolean>
+                  <boolean id="PLOT">true</boolean>
+                  <integer id="CENTER_INDEX">0</integer>
+                  <string id="RESOLUTION">auto</string>
+                  <boolean id="WIDTH">false</boolean>
+                  <boolean id="OPTIONS">true</boolean>
+                  <string id="NAME"/>
+                  <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+                  <boolean id="CENTER">false</boolean>
+                  <integer id="PANEL_MODE">0</integer>
+                  <string id="EXPANSION">0</string>
+                  <boolean id="CURVATURE">false</boolean>
+                  <boolean id="PLOT_RAW">false</boolean>
+                  <string id="OFFSET">0</string>
+                  <boolean id="PLOT_BOUNDARY">false</boolean>
+                  <boolean id="ENABLED">false</boolean>
+                  <integer id="INDEX">0</integer>
+                  <string id="CURVATURE_DELTA">2</string>
+                  <boolean id="ASSOCIATION">true</boolean>
+                  <string id="THICKNESS">auto</string>
+                  <integer id="PLOT_MODE">0</integer>
+                </property>
+              </array>
+              <color id="FEATURE_PROFILE_CHANNEL_COLOR_5">0;0;0;0</color>
+              <integer id="STRAIGHTEN_MODE">0</integer>
+              <color id="FEATURE_PROFILE_CHANNEL_COLOR_4">0;0;0;0</color>
+              <color id="FEATURE_PROFILE_CHANNEL_COLOR_3">0;0;0;0</color>
+              <boolean id="OUTSIDE_OVERLAP">true</boolean>
+              <integer id="COLOCALIZATION_MODE">0</integer>
+              <string id="FEATURE_SOURCE">Width</string>
+              <string id="FEATURE_PROFILE_THICKNESS">auto</string>
+              <string id="SIGNAL_TEXTURE_STEP">1</string>
+              <string id="GAUSSIAN_FIT_ITERATION">1000</string>
+              <integer id="PANEL_MODE">0</integer>
+              <boolean id="GAUSSIAN_FIT_WARNING">false</boolean>
+              <integer id="FEATURE_MODE_POSITION">0</integer>
+              <string id="FEATURE_PROFILE_THICKNESS_RATIO">1</string>
+              <boolean id="SIGNAL_REGION_BODY">false</boolean>
+              <boolean id="SIGNAL_REGION">false</boolean>
+              <boolean id="SEGMENTATION_AXIS">true</boolean>
+              <string id="SIGNAL_ZSCORE_CH4">2</string>
+              <string id="SIGNAL_ZSCORE_CH3">2</string>
+              <string id="SIGNAL_ZSCORE_CH2">2</string>
+              <string id="SIGNAL_ZSCORE_CH1">2</string>
+              <string id="SIGNAL_RESOLUTION">1</string>
+              <string id="MAX_ZSCORE">max</string>
+              <boolean id="OPTION">true</boolean>
+              <string id="GAUSSIAN_FIT_AMPLITUDE_MIN">0</string>
+              <string id="STRAIGHTEN_LENGTH">100</string>
+              <integer id="ASSOCIATION_RESULT_MODE">0</integer>
+              <float id="FEATURE_ZSCORE">2.0</float>
+              <string id="MIN_RATIO">0</string>
+              <string id="FEATURE_PROFILE_DILATE">0</string>
+              <boolean id="SHAPE">true</boolean>
+              <boolean id="GAUSSIAN_FIT_OPTIMIZATION">false</boolean>
+              <string id="SIGNAL_REGION_MEMBRANE_THICKNESS">0.5</string>
+              <boolean id="PEAK_FIT">false</boolean>
+              <string id="NB_MAX_ASSOCIATION_PROPERTY"/>
+              <boolean id="ASSOCIATION_SPACING">false</boolean>
+              <integer id="INSIDE_MODE">0</integer>
+              <string id="COLOCALIZATION_THRESHOLD">0</string>
+              <boolean id="OUTSIDE_ASSOCIATION">true</boolean>
+              <float id="FEATURE_OFFSET">0.0</float>
+              <boolean id="SIGNAL_TEXTURE_SYMETRY">false</boolean>
+              <integer id="GAUSSIAN_FIT_METHOD">1</integer>
+              <boolean id="ASSOCIATION_SET_CENTER">false</boolean>
+              <boolean id="SIGNAL_REGION_SIDE">false</boolean>
+              <boolean id="SIGNAL">false</boolean>
+              <string id="FILTER_SIZE">1</string>
+              <string id="SIGNAL_BACKGROUND_LOCAL_GRID_SIZE">10</string>
+              <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+              <integer id="FEATURE_THRESHOLD_METHOD_INDEX">0</integer>
+              <integer id="SIGNAL_BACKGROUND_LOCAL_MODE">0</integer>
+              <boolean id="SIGNAL_CORRELATION">false</boolean>
+              <string id="FEATURE_PROFILE_CURVATURE_DELTA">2</string>
+              <integer id="FEATURE_THRESHOLD_MODE">0</integer>
+              <boolean id="ASSOCIATION">true</boolean>
+              <integer id="NB_MAX_ASSOCIATION_MODE">0</integer>
+              <boolean id="OUTSIDE_BEZIER_LINK">false</boolean>
+              <string id="MIN_GAUSSIAN_R2">0</string>
+              <boolean id="LOCALISATION">false</boolean>
+              <integer id="FEATURE_METHOD">0</integer>
+              <string id="MIN_GAUSSIAN_AMPLITUDE">0</string>
+              <string id="MAX_RATIO">max</string>
+              <boolean id="INSIDE_EXCLUSIVE">true</boolean>
+              <integer id="OUTSIDE_MODE">0</integer>
+              <integer id="ASSOCIATION_SPACING_MODE">0</integer>
+              <string id="FEATURE_THRESHOLD_METHOD">Default</string>
+              <string id="OUTSIDE_BEZIER_FACTOR">1</string>
+              <string id="NB_MAX_ASSOCIATION">1</string>
+              <string id="MIN_INTENSITY">0</string>
+              <string id="MIN_WIDTH">0</string>
+              <string id="CRITERIA"/>
+              <string id="UNIT">µm</string>
+              <string id="ASSOCIATION_NAME">Bacteria</string>
+              <string id="MAX_LENGTH">max</string>
+              <boolean id="SIGNAL_BACKGROUND_LOCAL_ACTIVE">false</boolean>
+              <boolean id="SEGMENTATION">false</boolean>
+              <string id="SEGMENTATION_THICKNESS">0.1</string>
+              <boolean id="SIGNAL_RAW">false</boolean>
+              <string id="MAX_GAUSSIAN_FWHM">max</string>
+              <boolean id="ACTIVE">true</boolean>
+              <boolean id="SIGNAL_BACKGROUND_TREATEMENT_DEBUG">false</boolean>
+              <string id="FILTER_OPTION">0</string>
+              <string id="FEATURE_MIN_THRESHOLD">0</string>
+              <string id="FEATURE_MODE_LABEL">Normal</string>
+              <string id="STRAIGHTEN_FACTOR">2</string>
+              <boolean id="PROFILE">false</boolean>
+              <string id="INSIDE_ZSCORE">0</string>
+              <boolean id="SIGNAL_BACKGROUND_TREATEMENT">false</boolean>
+              <boolean id="SIGNAL_BACKGROUND_LOCAL_DEBUG">false</boolean>
+              <boolean id="SIGNAL_RATIO">true</boolean>
+              <integer id="COLOCALIZATION_DISTANCE_MODE">0</integer>
+              <string id="FEATURE_MAX_DELTA">max</string>
+              <string id="OUTSIDE_ANGLE_MIN">0</string>
+              <color id="COLOR_BOUNDARY">255;200;0;255</color>
+              <color id="COLOR_MEMBRANE">0;0;0;0</color>
+              <string id="FEATURE_MAX_POSITION">1</string>
+              <boolean id="INSIDE_ASSOCIATION">true</boolean>
+              <string id="MAX_INTENSITY">max</string>
+              <string id="MIDCELL_THRESHOLD">0.1</string>
+              <string id="FEATURE_MAX_THRESHOLD">max</string>
+              <string id="PEAK_FIT_RSQUARED">0.8</string>
+              <string id="SIGNAL_DILATE">0</string>
+              <color id="COLOCALIZATION_COLOR">255;255;0;255</color>
+              <boolean id="SIGNAL_OPTIONS">true</boolean>
+              <boolean id="ENABLED">false</boolean>
+              <color id="LINKER">255;0;255;255</color>
+            </property>
+          </array>
+          <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+          <boolean id="CHAIN">false</boolean>
+          <integer id="SIGNAL_BACKGROUND_LOCAL_MODE">0</integer>
+          <boolean id="SIGNAL_CORRELATION">false</boolean>
+          <string id="CLUMP_AREA">8</string>
+          <boolean id="SEGMENTATION_EDGE">false</boolean>
+          <boolean id="ASSOCIATION">true</boolean>
+          <integer id="NB_MAX_ASSOCIATION_MODE">0</integer>
+          <boolean id="CONTACT">false</boolean>
+          <boolean id="OUTSIDE_BEZIER_LINK">false</boolean>
+          <integer id="EDGE_CORRECTION_CHANNEL">0</integer>
+          <string id="ORIENTATION_LATERAL"/>
+          <boolean id="LOCALISATION">false</boolean>
+          <integer id="MODE">3</integer>
+          <array class="com.ducret.microbeJ.SegmentationMethod" dimension="5" id="SEGMENTATION_METHODS" type="">
+            <segmentationMethod active="true" class="com.ducret.microbeJ.SegmentationMethod" filter="0" index="0" macro="" mask="true" method="0" parameter1="1.0" parameter2="0.0" smooth="false"/>
+            <segmentationMethod active="true" class="com.ducret.microbeJ.SegmentationMethod" filter="1" index="1" macro="" mask="true" method="0" parameter1="1.0" parameter2="0.0" smooth="true"/>
+            <segmentationMethod active="true" class="com.ducret.microbeJ.SegmentationMethod" filter="2" index="2" macro="" mask="true" method="0" parameter1="0.0" parameter2="0.0" smooth="true"/>
+            <segmentationMethod active="true" class="com.ducret.microbeJ.SegmentationMethod" filter="4" index="3" macro="" mask="true" method="0" parameter1="0.0" parameter2="0.0" smooth="false"/>
+            <segmentationMethod active="false" class="com.ducret.microbeJ.SegmentationMethod" filter="5" index="4" macro="" mask="true" method="0" parameter1="0.0" parameter2="0.0" smooth="false"/>
+          </array>
+          <integer id="FEATURE_METHOD">0</integer>
+          <boolean id="SEGMENTATION_OPTIMIZATION">true</boolean>
+          <string id="MAX_VARIATION_WIDTH">max</string>
+          <string id="DISTANCE_THRESHOLD">0</string>
+          <boolean id="INSIDE_EXCLUSIVE">true</boolean>
+          <integer id="OUTSIDE_MODE">0</integer>
+          <color id="QUARTER_AXIS">0;0;0;0</color>
+          <integer id="ASSOCIATION_SPACING_MODE">0</integer>
+          <string id="MIN_CIRCULARITY">0</string>
+          <boolean id="SECTION_HALVES">true</boolean>
+          <string id="OUTSIDE_BEZIER_FACTOR">1</string>
+          <string id="NB_MAX_ASSOCIATION">1</string>
+          <integer id="INTERPOLATION_MODE">2</integer>
+          <string id="MIN_INTENSITY">1</string>
+          <string id="MIN_WIDTH">0</string>
+          <string id="CRITERIA"/>
+          <string id="POLE_RESOLUTION">0</string>
+          <integer id="DISTANCE_MODE">0</integer>
+          <string id="UNIT">µm</string>
+          <string id="EDGE_CORRECTION_SIGMA">1</string>
+          <boolean id="SECTION_SIDES">false</boolean>
+          <string id="ASSOCIATION_NAME">Bacteria</string>
+          <string id="BOUNDARY_SMOOTH_ORDER">2</string>
+          <color id="TRANS_AXIS">0;0;0;0</color>
+          <string id="MAX_LENGTH">max</string>
+          <boolean id="ORIENTATION_LATERAL_SIGN">false</boolean>
+          <color id="HALF_1">0;0;0;0</color>
+          <color id="HALF_2">0;0;0;0</color>
+          <boolean id="SIGNAL_BACKGROUND_LOCAL_ACTIVE">false</boolean>
+          <boolean id="CONVEXHULL">false</boolean>
+          <boolean id="SEGMENTATION">true</boolean>
+          <property class="com.ducret.resultJ.Property" id="CHAINS" name="CHAINS">
+            <string id="FEATURE_ROIMANAGER_SUFFIX"/>
+            <string id="STRAIGHTEN_DILATE">0</string>
+            <string id="MAX_WIDTH">max</string>
+            <boolean id="SHAPE_CONTOUR">false</boolean>
+            <string id="MAX_SINUOSITY">max</string>
+            <string id="SLICE_MAX">3</string>
+            <string id="MAX_SYMMETRY_WIDTH">max</string>
+            <integer id="SIGNAL_TEXTURE_ANGLE">0</integer>
+            <boolean id="POSITION_RANGE">false</boolean>
+            <string id="INSIDE_TOLERANCE">0</string>
+            <string id="THRESHOLD_LOCAL_PARAMETER1">0</string>
+            <string id="THRESHOLD_LOCAL_PARAMETER2">0</string>
+            <string id="MIN_RANGE_WIDTH">0</string>
+            <string id="MAX_RANGE_WIDTH">max</string>
+            <string id="MIN_CURVATURE">0</string>
+            <string id="MAX_AREA">max</string>
+            <boolean id="TYPE_DETECTION">false</boolean>
+            <color id="REJECTED">255;0;0;255</color>
+            <string id="STRAIGHTEN_WIDTH">20</string>
+            <boolean id="DISTANCE">false</boolean>
+            <boolean id="BIOFORMAT_OPENALL_SERIES">true</boolean>
+            <string id="IMAGE_DIRECTORY"/>
+            <string id="POSITION_MIN">1</string>
+            <string id="MIN_INTENSITY_AXIS">0</string>
+            <color id="CONCENTRIC_AXIS">0;0;0;0</color>
+            <integer id="OUTPUT_BINARY_TYPE">0</integer>
+            <string id="OUTSIDE_CRITERIUM"/>
+            <boolean id="SIGNAL_TEXTURE_SCALING">true</boolean>
+            <boolean id="ORIENTATION_LONGITUDINAL_SIGN">false</boolean>
+            <string id="MIN_SLICE_COUNT">0</string>
+            <string id="SIGNAL_ZSCORE">2</string>
+            <boolean id="SIGNAL_REGION_INTERSECTION">false</boolean>
+            <boolean id="THRESHOLD_TREATMENT_ACTIVE">false</boolean>
+            <color id="LABEL_COLOR">0;255;0;255</color>
+            <boolean id="ASSOCIATION_OPTION">true</boolean>
+            <boolean id="ASSOCIATION_RESULT_LIST">false</boolean>
+            <string id="THRESHOLD_DEEPIJ_PATCH"/>
+            <string id="OUTSIDE_DISTMAX">0</string>
+            <integer id="THRESHOLD_PROJECTION_METHOD">0</integer>
+            <string id="MIN_SYMMETRY_WIDTH">0</string>
+            <boolean id="CALIBRATION_ACTIVE">false</boolean>
+            <string id="BOUNDARY_SMOOTH_CUTOFF">0.1</string>
+            <string id="THRESHOLD_LOCAL_RADIUS">0</string>
+            <string id="AXIS_SMOOTH">1</string>
+            <boolean id="SHAPE_FIT">false</boolean>
+            <string id="MAX_SKELETON_SIZE">max</string>
+            <string id="CONTACT_DISTMAX">0</string>
+            <boolean id="TIME_RESOLUTION_ACTIVE">false</boolean>
+            <color id="LONG_SUBAXIS">0;0;0;0</color>
+            <boolean id="SHAPE_FIT_COORD">false</boolean>
+            <boolean id="STRAIGHTEN">false</boolean>
+            <string id="MAX_POLE_COUNT">max</string>
+            <string id="THRESHOLD_RESOLUTION">0.5</string>
+            <string id="AXIS_CORRECTION_TOLERANCE">0</string>
+            <integer id="ASSOCIATION_LOCATION_ORIGIN">0</integer>
+            <color id="SHORT_AXIS">0;0;0;0</color>
+            <integer id="FEATURE_PROFILE_METHOD">0</integer>
+            <boolean id="FEATURE_PROFILE_BOUNDARY">true</boolean>
+            <boolean id="SIGNAL_REGION_HALF">false</boolean>
+            <color id="POLE_1">0;0;0;0</color>
+            <color id="POLE_2">0;0;0;0</color>
+            <string id="INSIDE_DISTMAX">0</string>
+            <boolean id="SIGNAL_TEXTURE">false</boolean>
+            <string id="MIN_HOLE_COUNT">0</string>
+            <integer id="THRESHOLD_MODE">2</integer>
+            <string id="INSIDE_CRITERIUM"/>
+            <boolean id="FILTER_ASSOCIATION">false</boolean>
+            <boolean id="FEATURE_PROFILE_INTERSECTION">false</boolean>
+            <integer id="FEATURE_PROFILE_FILTER">1</integer>
+            <boolean id="ASSOCIATION_POLYGON">false</boolean>
+            <boolean id="CLUMP">false</boolean>
+            <boolean id="VIRTUAL">false</boolean>
+            <string id="SEGMENTATION_MIN_NBPART">1</string>
+            <color id="COLOR_INTERSECTION">0;0;0;0</color>
+            <color id="SIDE_2">0;0;0;0</color>
+            <string id="MAX_RANGE_ANGULARITY">max</string>
+            <color id="SIDE_1">0;0;0;0</color>
+            <font id="LABEL_FONT" name="SansSerif.plain" size="1" style="0"/>
+            <array class="com.ducret.resultJ.Property" dimension="1" id="TYPES" type="">
+              <property class="com.ducret.resultJ.Property" index="0" name="">
+                <array dimension="5" id="CRITERIUM" type="string">
+                  <string index="0"/>
+                  <string index="1"/>
+                  <string index="2"/>
+                  <string index="3"/>
+                  <string index="4"/>
+                </array>
+                <string id="UNIT">µm</string>
+                <boolean id="ACTIVE">true</boolean>
+                <integer id="TYPE_MODE">0</integer>
+                <integer id="COLOR_LUT_MODE">0</integer>
+                <string id="BIN_MAX">100</string>
+                <string id="SEED_THRESHOLD"/>
+                <string id="SEED_PATH"/>
+                <string id="NAME"/>
+                <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+                <string id="BIN_PROPERTY"/>
+                <integer id="PANEL_MODE">0</integer>
+                <array class="java.awt.Color" dimension="5" id="COLOR" type="">
+                  <color index="0">0;255;0;255</color>
+                  <color index="1">0;255;0;255</color>
+                  <color index="2">0;255;0;255</color>
+                  <color index="3">0;255;0;255</color>
+                  <color index="4">0;255;0;255</color>
+                </array>
+                <integer id="COLOR_MODE">0</integer>
+                <string id="SEED_PROPERTY"/>
+                <boolean id="ENABLED">false</boolean>
+                <array dimension="5" id="TITLE" type="string">
+                  <string index="0"/>
+                  <string index="1"/>
+                  <string index="2"/>
+                  <string index="3"/>
+                  <string index="4"/>
+                </array>
+                <boolean id="ASSOCIATION">true</boolean>
+                <string id="BIN_MIN">0</string>
+              </property>
+            </array>
+            <boolean id="OUTSIDE_EXCLUSIVE">false</boolean>
+            <string id="LABEL"/>
+            <boolean id="SIGNAL_REGION_MEMBRANE">false</boolean>
+            <boolean id="ASSOCIATION_SPACING_LIST">false</boolean>
+            <boolean id="IMG_ORIGIN">false</boolean>
+            <integer id="POLE_MODE">0</integer>
+            <integer id="FEATURE_MODE">0</integer>
+            <string id="MAX_INTENSITY_AXIS">max</string>
+            <string id="FEATURE_PROFILE_DERIVATIVE_DELTA">2</string>
+            <boolean id="DISTANCE_LIST">false</boolean>
+            <string id="IMAGE_NAME_BINARY">*none*</string>
+            <integer id="BACKGROUND">1</integer>
+            <string id="MIN_AREA">0</string>
+            <string id="NAME"/>
+            <integer id="OUTPUT_BINARY_MODE">0</integer>
+            <array dimension="0" id="LOCATION_AREA" type="string"/>
+            <integer id="SIGNAL_ZSCORE_MODE">0</integer>
+            <string id="POLAR_LOCALISATION">auto</string>
+            <boolean id="FEATURE">false</boolean>
+            <string id="MAX_SOLIDITY">max</string>
+            <color id="MAIN_AXIS">0;0;0;0</color>
+            <string id="SIDE_FACTOR">0.9</string>
+            <string id="SIGNAL_BACKGROUND_TREATEMENT_CYCLE_COUNT">0</string>
+            <calibration class="com.ducret.resultJ.ImCalibration" fps="1.0" frameInterval="0.0" height="0.0" id="CALIBRATION" info="" pixelDepth="1.0" pixelHeight="1.0" pixelWidth="1.0" timeUnit="sec" unit="pixel" units="" width="0.0" xOrigin="0.0" yOrigin="0.0" yunit="" zOrigin="0.0" zunit=""/>
+            <integer id="COLOR_BOUNDARY_STROKE">0</integer>
+            <string id="FEATURE_PROFILE_CHANNEL_FACTOR_5">1</string>
+            <boolean id="SET_BINARY">true</boolean>
+            <boolean id="ASSOCIATION_LOCATION">true</boolean>
+            <integer id="SEGMENTATION_METHOD">0</integer>
+            <boolean id="LOCATION_RANGE">false</boolean>
+            <color id="COLOR_BOUNDARY_RAW">0;0;0;0</color>
+            <boolean id="BINARY">false</boolean>
+            <string id="THRESHOLD_TEMPLATE_COUNT">1</string>
+            <string id="OUTSIDE_ANGLE_MAX">180</string>
+            <string id="MAX_SLICE_COUNT">max</string>
+            <string id="THRESHOLD_TREATMENT"/>
+            <boolean id="ASSOCIATION_COVERAGE">false</boolean>
+            <string id="BOUNDARY_SMOOTH">1</string>
+            <string id="MIN_LENGTH">0</string>
+            <property class="com.ducret.resultJ.Property" id="TRACKING" name="TRACKING">
+              <boolean id="TIME_CORRECTION_ACCELERATION">true</boolean>
+              <boolean id="SUBRUN_RESULT">false</boolean>
+              <color id="TRAJECTORY_COLOR_DEFAULT">0;255;0;255</color>
+              <string id="LINEAGE_DELTAY_MAX">max</string>
+              <color id="TRAJECTORY_COLOR_ROTATING">255;255;0;255</color>
+              <string id="SUBRUN_DISPLACEMENT_DIRECTION_MIN">0</string>
+              <integer id="TIME_MARK_SIZE">1</integer>
+              <integer id="TIME_INTERPOLATION_MODE">0</integer>
+              <boolean id="LINEAGE_DIVISION_RESULT">false</boolean>
+              <string id="LINEAGE_DELTAY_MIN">0</string>
+              <string id="ACCELERATION_MIN">0</string>
+              <string id="LIFESPAN_MAX">max</string>
+              <string id="SUBRUN_DELTA_PRE_EVENT">5</string>
+              <boolean id="TYPE_DETECTION">false</boolean>
+              <integer id="LINEAGE_MODE">0</integer>
+              <string id="REVERSION_DIRECTION_MIN">0</string>
+              <string id="LINEAGE_DIST_MAX">1</string>
+              <boolean id="TIME_INTERPOLATION_BEZIER">false</boolean>
+              <boolean id="TIME_CORRECTION">true</boolean>
+              <integer id="TRACKING_COORDINATE_MODE">0</integer>
+              <boolean id="TYPE_DISPLACEMENT_ADVANCED">false</boolean>
+              <boolean id="SUBRUN_ROTATION_DIRECTION">false</boolean>
+              <string id="INTENSITY_MAX">max</string>
+              <boolean id="TYPE_DISPLACEMENT_MSD_RESULT">false</boolean>
+              <integer id="TRAJECTORY_MODE">0</integer>
+              <boolean id="SUBRUN_DISPLACEMENT_DIRECTION">false</boolean>
+              <color id="TIME_LABEL_COLOR">0;0;0;0</color>
+              <color id="TRAJECTORY_COLOR_DIFFUSING">0;0;255;255</color>
+              <string id="TIME_LABEL"/>
+              <boolean id="SUBRUN_DISPLACEMENT_DISTANCE">false</boolean>
+              <integer id="SUBRUN_MODE">0</integer>
+              <string id="SUBRUN_LIFESPAN_MAX">max</string>
+              <boolean id="TIME_CORRECTION_INTENSITY">true</boolean>
+              <string id="ROTATION_MIN">0.2</string>
+              <color id="VECTOR_VELOCITY">0;0;0;0</color>
+              <boolean id="TIME_CORRECTION_DIST">true</boolean>
+              <integer id="TRACKING_MODE">0</integer>
+              <boolean id="MOTION_DESCRIPTORS">false</boolean>
+              <font id="TIME_LABEL_FONT" name="SansSerif.plain" size="1" style="0"/>
+              <string id="TIME_POLARITY_OFFSET">0</string>
+              <boolean id="TIME_ANALYSIS">true</boolean>
+              <integer id="TIME_POLARITY_MODE">0</integer>
+              <string id="INTENSITY_MIN">0</string>
+              <string id="DIST_MOVING_THRESHOLD">1</string>
+              <string id="SUBRUN_DISPLACEMENT_DIRECTION_MAX">45</string>
+              <string id="SUBRUN_LIFESPAN_MIN">0</string>
+              <boolean id="LINEAGE">false</boolean>
+              <string id="SUBRUN_PROPERTY_RATIO_MAX">1</string>
+              <integer id="TIME_FILTER_TYPE">0</integer>
+              <boolean id="SUBRUN_DETECTION">false</boolean>
+              <string id="TIME_DIVISION_DELTA">2</string>
+              <boolean id="TYPE_DISPLACEMENT_ADVANCED_CENTER">false</boolean>
+              <string id="SUBRUN_DISPLACEMENT_THRESHOLD">default</string>
+              <string id="SUBRUN_PROPERTY_RATIO_MIN">1</string>
+              <color id="CURVATURE">0;0;0;0</color>
+              <boolean id="REVERSION_DETECTION">false</boolean>
+              <boolean id="SUBRUN_LIFESPAN_FILTER">false</boolean>
+              <boolean id="TIME_CORRECTION_ANGLE">true</boolean>
+              <boolean id="TIME_CORRECTION_AREA">true</boolean>
+              <boolean id="TIME_FILTER">false</boolean>
+              <boolean id="TIMEFLAG">false</boolean>
+              <boolean id="REVERSION_LIST">false</boolean>
+              <string id="TIME_CORRECTION_DELTA">2</string>
+              <string id="LIFESPAN_MIN">0</string>
+              <integer id="SUBRUN_PROPERTY_FILTER">0</integer>
+              <array dimension="1" id="OCCURENCE" type="integer">
+                <integer index="0">0</integer>
+              </array>
+              <integer id="REVERSION_DISTANCE_MODE">0</integer>
+              <boolean id="TYPE_DISPLACEMENT">false</boolean>
+              <string id="REVERSION_DIRECTION_MAX">30</string>
+              <integer id="TRAJECTORY_COLOR_TYPE">0</integer>
+              <string id="TIME_DIVISION_DISTANCE">2</string>
+              <boolean id="SUBRUN_ROTATION_DISTANCE">false</boolean>
+              <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+              <string id="MOVING_MIN">auto</string>
+              <string id="TIME_FILTER_DELTA">2</string>
+              <string id="TYPE_DISPLACEMENT_MSD_MAXLAG">20</string>
+              <boolean id="SUBRUN_DEBUG">false</boolean>
+              <boolean id="ASSOCIATION">true</boolean>
+              <property class="com.ducret.resultJ.Property" id="EVENTS" name="EVENTS">
+                <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+                <array dimension="1" id="CRITERIUM" type="string">
+                  <string index="0"/>
+                </array>
+                <array dimension="1" id="LIFESPAN" type="string">
+                  <string index="0"/>
+                </array>
+                <string id="UNIT">µm</string>
+                <boolean id="ACTIVE">true</boolean>
+                <array class="java.awt.Color" dimension="1" id="COLOR" type="">
+                  <color index="0">0;255;0;255</color>
+                </array>
+                <boolean id="ENABLED">false</boolean>
+                <array dimension="1" id="TITLE" type="string">
+                  <string index="0"/>
+                </array>
+                <boolean id="ASSOCIATION">true</boolean>
+              </property>
+              <string id="LINEAGE_DELTAX_MIN">0</string>
+              <string id="PROPERTIES"/>
+              <color id="TRAJECTORY_COLOR_MIXED">255;0;255;255</color>
+              <string id="START_MAX">max</string>
+              <string id="REVERSION_DISTANCE_THRESHOLD">default</string>
+              <color id="VECTOR_ACCELERATION">0;0;0;0</color>
+              <boolean id="RELATIVE_FILTER">true</boolean>
+              <color id="TRAJECTORY_COLOR_MOVING">255;200;0;255</color>
+              <array class="com.ducret.resultJ.Property" dimension="1" id="TYPES" type="">
+                <property class="com.ducret.resultJ.Property" index="0" name="">
+                  <array dimension="5" id="CRITERIUM" type="string">
+                    <string index="0"/>
+                    <string index="1"/>
+                    <string index="2"/>
+                    <string index="3"/>
+                    <string index="4"/>
+                  </array>
+                  <string id="UNIT">µm</string>
+                  <boolean id="ACTIVE">true</boolean>
+                  <integer id="TYPE_MODE">0</integer>
+                  <integer id="COLOR_LUT_MODE">0</integer>
+                  <string id="BIN_MAX">100</string>
+                  <string id="SEED_THRESHOLD"/>
+                  <string id="SEED_PATH"/>
+                  <string id="NAME"/>
+                  <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+                  <string id="BIN_PROPERTY"/>
+                  <integer id="PANEL_MODE">0</integer>
+                  <array class="java.awt.Color" dimension="5" id="COLOR" type="">
+                    <color index="0">0;255;0;255</color>
+                    <color index="1">0;255;0;255</color>
+                    <color index="2">0;255;0;255</color>
+                    <color index="3">0;255;0;255</color>
+                    <color index="4">0;255;0;255</color>
+                  </array>
+                  <integer id="COLOR_MODE">0</integer>
+                  <string id="SEED_PROPERTY"/>
+                  <boolean id="ENABLED">false</boolean>
+                  <array dimension="5" id="TITLE" type="string">
+                    <string index="0"/>
+                    <string index="1"/>
+                    <string index="2"/>
+                    <string index="3"/>
+                    <string index="4"/>
+                  </array>
+                  <boolean id="ASSOCIATION">true</boolean>
+                  <string id="BIN_MIN">0</string>
+                </property>
+              </array>
+              <string id="FILTER_CRITERIUM"/>
+              <color id="LINEAGE_LINKER_COLOR">0;255;255;255</color>
+              <color id="TRAJECTORY_LINKER">0;0;0;0</color>
+              <array class="java.awt.Color" dimension="1" id="COLOR" type="">
+                <color index="0">0;255;0;255</color>
+              </array>
+              <boolean id="TIME_POLARITY">true</boolean>
+              <boolean id="SUBRUN_ROTATION">false</boolean>
+              <property class="com.ducret.resultJ.Property" id="FLAGS" name="FLAGS">
+                <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+                <array dimension="1" id="CRITERIUM" type="string">
+                  <string index="0"/>
+                </array>
+                <array dimension="1" id="LIFESPAN" type="integer">
+                  <integer index="0">0</integer>
+                </array>
+                <string id="UNIT">µm</string>
+                <boolean id="ACTIVE">true</boolean>
+                <array class="java.awt.Color" dimension="1" id="COLOR" type="">
+                  <color index="0">0;255;0;255</color>
+                </array>
+                <array dimension="1" id="OCCURENCE" type="integer">
+                  <integer index="0">0</integer>
+                </array>
+                <boolean id="ENABLED">false</boolean>
+                <array dimension="1" id="TITLE" type="string">
+                  <string index="0"/>
+                </array>
+                <boolean id="ASSOCIATION">true</boolean>
+              </property>
+              <string id="LINEAGE_DELTAX_MAX">max</string>
+              <array dimension="1" id="LIFESPAN" type="string">
+                <string index="0"/>
+              </array>
+              <string id="UNIT">µm</string>
+              <string id="SUBRUN_PROPERTY_NAME"/>
+              <string id="SUBRUN_DELTA_POST_EVENT">5</string>
+              <string id="TIME_CORRECTION_DISTANCE">2</string>
+              <boolean id="TYPE_BEHAVIOR">false</boolean>
+              <string id="NAME"/>
+              <color id="TRAJECTORY_COLOR_DIFFUSING_CONFINED">0;255;255;255</color>
+              <color id="REVERSION_COLOR">0;0;255;255</color>
+              <string id="TIME_POLARITY_TOLERANCE">0</string>
+              <boolean id="TIME_CORRECTION_OVERLAP">false</boolean>
+              <string id="END_MIN">0</string>
+              <array dimension="1" id="CRITERIUM" type="string">
+                <string index="0"/>
+              </array>
+              <string id="ROTATION_MAX">pi</string>
+              <boolean id="ACTIVE">false</boolean>
+              <boolean id="TIME_MODIFICATION">false</boolean>
+              <string id="ANGLE_MAX">180</string>
+              <string id="DIST_MAX">2</string>
+              <string id="END_MAX">max</string>
+              <boolean id="SUBRUN_RECURSIVE">false</boolean>
+              <boolean id="SUBRUN_PROPERTY">false</boolean>
+              <string id="ANGLE_MIN">0</string>
+              <boolean id="TIME_DIVISION">false</boolean>
+              <boolean id="SUBRUN_DISPLACEMENT">false</boolean>
+              <color id="TRAJECTORY_COLOR_NOT_MOVING">255;255;255;255</color>
+              <boolean id="TIME_OPTIONS">true</boolean>
+              <string id="CONFINEMENT_MAX">15</string>
+              <string id="AREA_MIN">0</string>
+              <color id="TRAJECTORY_COLOR">0;255;0;255</color>
+              <string id="ACCELERATION_MAX">max</string>
+              <string id="SUBRUN_PROPERTY_FILTER_SIZE">1</string>
+              <color id="TRAJECTORY_COLOR_MOVING_CONFINED">255;255;0;255</color>
+              <string id="START_MIN">0</string>
+              <string id="CONFINEMENT_MIN">1</string>
+              <string id="AREA_MAX">max</string>
+              <integer id="SUBRUN_DISPLACEMENT_MODE">0</integer>
+              <boolean id="ENABLED">false</boolean>
+              <array dimension="1" id="TITLE" type="string">
+                <string index="0"/>
+              </array>
+              <boolean id="TYPE_DISPLACEMENT_MSD">false</boolean>
+              <string id="DIST_MIN">0</string>
+              <boolean id="TIME_EVENT">false</boolean>
+            </property>
+            <integer id="THRESHOLD_OFFSET">-11</integer>
+            <boolean id="INSIDE_OVERLAP">false</boolean>
+            <string id="SIGNAL_ZSCORE_CH6">2</string>
+            <integer id="SIGNAL_REGION_MEMBRANE_MODE">0</integer>
+            <string id="SIGNAL_ZSCORE_CH5">2</string>
+            <string id="FEATURE_PROFILE_FILTER_SIZE">2</string>
+            <color id="BOND">102;178;255;100</color>
+            <integer id="SIGNAL_BACKGROUND_TREATEMENT_MODE">0</integer>
+            <integer id="ASSOCIATION_INDEX">0</integer>
+            <string id="MAX_ANGULARITY">max</string>
+            <boolean id="BOUNDARY_FITSPLINE">false</boolean>
+            <boolean id="ASSOCIATION_DISTANCE">false</boolean>
+            <boolean id="EDGE_CORRECTION_DEBUG">false</boolean>
+            <string id="FEATURE_PROFILE_RESOLUTION">auto</string>
+            <boolean id="INCLUDE_HOLES">false</boolean>
+            <integer id="BOUNDARY_SMOOTH_MODE">0</integer>
+            <string id="FEATURE_MIN_POSITION">0</string>
+            <boolean id="CONTACT_DISTANCE">false</boolean>
+            <string id="MIN_ZSCORE">0</string>
+            <boolean id="BIOFORMAT_CONCATENATE_SERIES">true</boolean>
+            <color id="LONG_AXIS">255;200;0;255</color>
+            <string id="MIN_RANGE_ANGULARITY">0</string>
+            <boolean id="EDGE_CORRECTION_PROCESS">true</boolean>
+            <color id="CONTACT_COLOR">0;0;0;0</color>
+            <string id="MIN_VARIATION_WIDTH">0</string>
+            <integer id="FEATURE_TYPE">0</integer>
+            <string id="MIN_SINUOSITY">0</string>
+            <string id="FEATURE_PROFILE_CHANNEL_FACTOR_0">1</string>
+            <string id="FEATURE_PROFILE_CHANNEL_FACTOR_3">1</string>
+            <string id="FEATURE_TOLERANCE">0.1</string>
+            <boolean id="SIGNAL_REGION_POLE">false</boolean>
+            <string id="FEATURE_PROFILE_CHANNEL_FACTOR_4">1</string>
+            <boolean id="SECTION">false</boolean>
+            <string id="FEATURE_PROFILE_CHANNEL_FACTOR_1">1</string>
+            <string id="MIDCELL_LOCALISATION">auto</string>
+            <string id="FEATURE_PROFILE_CHANNEL_FACTOR_2">1</string>
+            <string id="THRESHOLD_DEEPIJ_THRESHOLD">0.8</string>
+            <color id="FEATURE_PROFILE_CHANNEL_COLOR_2">0;0;0;0</color>
+            <color id="FEATURE_PROFILE_CHANNEL_COLOR_1">0;0;0;0</color>
+            <array class="com.ducret.resultJ.Property" dimension="1" id="PROFILES" type="">
+              <property class="com.ducret.resultJ.Property" index="0" name="">
+                <string id="UNIT">p</string>
+                <boolean id="ACTIVE">true</boolean>
+                <boolean id="PLOT">true</boolean>
+                <integer id="CENTER_INDEX">0</integer>
+                <string id="RESOLUTION">auto</string>
+                <boolean id="WIDTH">false</boolean>
+                <boolean id="OPTIONS">true</boolean>
+                <string id="NAME"/>
+                <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+                <boolean id="CENTER">false</boolean>
+                <integer id="PANEL_MODE">0</integer>
+                <string id="EXPANSION">0</string>
+                <boolean id="CURVATURE">false</boolean>
+                <boolean id="PLOT_RAW">false</boolean>
+                <string id="OFFSET">0</string>
+                <boolean id="PLOT_BOUNDARY">false</boolean>
+                <boolean id="ENABLED">false</boolean>
+                <integer id="INDEX">0</integer>
+                <string id="CURVATURE_DELTA">2</string>
+                <boolean id="ASSOCIATION">true</boolean>
+                <string id="THICKNESS">auto</string>
+                <integer id="PLOT_MODE">0</integer>
+              </property>
+            </array>
+            <color id="FEATURE_PROFILE_CHANNEL_COLOR_0">0;0;0;0</color>
+            <integer id="IMAGE_OPENING_MODE">0</integer>
+            <string id="MAX_HOLE_COUNT">0</string>
+            <integer id="STRAIGHTEN_MODE">0</integer>
+            <color id="FEATURE_PROFILE_CHANNEL_COLOR_5">0;0;0;0</color>
+            <color id="FEATURE_PROFILE_CHANNEL_COLOR_4">0;0;0;0</color>
+            <boolean id="OUTSIDE_OVERLAP">true</boolean>
+            <color id="FEATURE_PROFILE_CHANNEL_COLOR_3">0;0;0;0</color>
+            <string id="MIN_JUNCTION_COUNT">0</string>
+            <string id="IMAGE_FILTER_HYPERSTACK"/>
+            <string id="IMAGE_NAME_HYPERSTACK">20230801_LZ22225_60min_uninf.003.tif - T=4</string>
+            <string id="FEATURE_SOURCE">Width</string>
+            <string id="CALIBRATION_PIXELSIZE">1</string>
+            <string id="POLE_FACTOR">1.3</string>
+            <string id="THRESHOLD_OUTLIER_FACTOR">0</string>
+            <string id="FEATURE_PROFILE_THICKNESS">auto</string>
+            <integer id="INTERPOLATION_WIDTHMODE">1</integer>
+            <string id="AREA_CUTOFF">1000</string>
+            <string id="SIGNAL_TEXTURE_STEP">1</string>
+            <string id="THRESHOLD_TEMPLATE_MIN">0.75</string>
+            <string id="POSITION_MAX">max</string>
+            <string id="SLICE_MIN">3</string>
+            <string id="INTERPOLATION_WIDTH">5</string>
+            <integer id="THRESHOLD_INTERPOLATION_METHOD">1</integer>
+            <integer id="FEATURE_MODE_POSITION">0</integer>
+            <boolean id="SIGNAL_REGION_BODY">false</boolean>
+            <string id="FEATURE_PROFILE_THICKNESS_RATIO">1</string>
+            <boolean id="SIGNAL_REGION">false</boolean>
+            <string id="MAX_FEATURE_COUNT">max</string>
+            <string id="SIGNAL_ZSCORE_CH4">2</string>
+            <string id="SIGNAL_ZSCORE_CH3">2</string>
+            <string id="SIGNAL_ZSCORE_CH2">2</string>
+            <string id="ORIENTATION_LONGITUDINAL"/>
+            <string id="CALIBRATION_UNIT">pixel</string>
+            <string id="MAX_ZSCORE">max</string>
+            <string id="SIGNAL_ZSCORE_CH1">2</string>
+            <string id="SIGNAL_RESOLUTION">1</string>
+            <string id="MIN_VARIATION_ANGULARITY">0</string>
+            <boolean id="OPTION">true</boolean>
+            <string id="MIN_POLE_COUNT">0</string>
+            <color id="DISTANCE_COLOR">0;0;0;0</color>
+            <string id="AXIS_CORRECTION_WIDTH">2</string>
+            <boolean id="AXIS_CORRECTION">false</boolean>
+            <string id="STRAIGHTEN_LENGTH">100</string>
+            <integer id="ASSOCIATION_RESULT_MODE">0</integer>
+            <boolean id="SHAPE">true</boolean>
+            <string id="FEATURE_PROFILE_DILATE">0</string>
+            <string id="NB_LIMIT">10000</string>
+            <string id="SIGNAL_REGION_MEMBRANE_THICKNESS">0.5</string>
+            <boolean id="ORIENTATION">false</boolean>
+            <string id="THRESHOLD_METHOD">Minimum</string>
+            <string id="NB_MAX_ASSOCIATION_PROPERTY"/>
+            <integer id="IMG_ORIGIN_MODE">0</integer>
+            <string id="TIME_RESOLUTION_TEXT">1</string>
+            <boolean id="ASSOCIATION_SPACING">false</boolean>
+            <integer id="INSIDE_MODE">0</integer>
+            <boolean id="OUTSIDE_ASSOCIATION">true</boolean>
+            <string id="EDGE_CORRECTION_THICKNESS">10</string>
+            <boolean id="SIGNAL_TEXTURE_SYMETRY">false</boolean>
+            <string id="SEGMENTATION_NB_ITERATION">2</string>
+            <boolean id="ASSOCIATION_SET_CENTER">false</boolean>
+            <boolean id="SIGNAL_REGION_SIDE">false</boolean>
+            <string id="AXIS_RESOLUTION">2</string>
+            <string id="MIN_ANGULARITY">0</string>
+            <boolean id="AXIS_SIMPLIFICATION">true</boolean>
+            <boolean id="SIGNAL">false</boolean>
+            <string id="THRESHOLD_DEEPIJ_MODEL"/>
+            <integer id="SEGMENTATION_MODE">0</integer>
+            <string id="BOUNDARY_RESOLUTION">1</string>
+            <string id="IMAGE_FILTER_BINARY"/>
+            <boolean id="THRESHOLD_STACK_HISTOGRAM">false</boolean>
+            <string id="MIN_FEATURE_COUNT">0</string>
+            <string id="MAX_VARIATION_ANGULARITY">max</string>
+            <string id="PARTICLE_LABEL"/>
+            <color id="COLOR_INNER">0;0;0;0</color>
+            <string id="SIGNAL_BACKGROUND_LOCAL_GRID_SIZE">10</string>
+            <array class="com.ducret.resultJ.Property" dimension="1" id="FEATURES" type="">
+              <property class="com.ducret.resultJ.Property" index="0" name="">
+                <string id="FEATURE_ROIMANAGER_SUFFIX"/>
+                <string id="STRAIGHTEN_DILATE">0</string>
+                <string id="MAX_WIDTH">max</string>
+                <boolean id="SHAPE_CONTOUR">false</boolean>
+                <integer id="SIGNAL_TEXTURE_ANGLE">0</integer>
+                <string id="INSIDE_TOLERANCE">0</string>
+                <string id="MAX_AREA">max</string>
+                <boolean id="TYPE_DETECTION">false</boolean>
+                <color id="REJECTED">255;0;0;255</color>
+                <string id="STRAIGHTEN_WIDTH">20</string>
+                <float id="FEATURE_THRESHOLD_OFFSET">0.0</float>
+                <string id="MIN_RELATIVE_POSITION">0</string>
+                <string id="OUTSIDE_CRITERIUM"/>
+                <boolean id="SIGNAL_TEXTURE_SCALING">true</boolean>
+                <string id="SIGNAL_ZSCORE">2</string>
+                <boolean id="SIGNAL_REGION_INTERSECTION">false</boolean>
+                <integer id="SOURCE_INDEX">0</integer>
+                <color id="LABEL_COLOR">0;0;0;0</color>
+                <integer id="COLOCALIZATION_INDEX">0</integer>
+                <boolean id="COLOCALIZATION">false</boolean>
+                <boolean id="ASSOCIATION_OPTION">true</boolean>
+                <boolean id="ASSOCIATION_RESULT_LIST">false</boolean>
+                <string id="OUTSIDE_DISTMAX">0</string>
+                <string id="GAUSSIAN_FIT_AMPLITUDE_MAX">max</string>
+                <string id="GAUSSIAN_FIT_RADIUS">2</string>
+                <string id="MIN_GAUSSIAN_FWHM">0</string>
+                <boolean id="STRAIGHTEN">false</boolean>
+                <string id="FEATURE_MIN_DELTA">0</string>
+                <integer id="ASSOCIATION_LOCATION_ORIGIN">0</integer>
+                <boolean id="GAUSSIAN_FIT">false</boolean>
+                <integer id="FEATURE_PROFILE_METHOD">0</integer>
+                <boolean id="FEATURE_PROFILE_BOUNDARY">true</boolean>
+                <boolean id="SIGNAL_REGION_HALF">false</boolean>
+                <string id="MAX_GAUSSIAN_R2">max</string>
+                <string id="INSIDE_DISTMAX">0</string>
+                <boolean id="SIGNAL_TEXTURE">false</boolean>
+                <string id="GAUSSIAN_FIT_THRESHOLD_DISTANCE">2</string>
+                <float id="FEATURE_TOLERANCE_MAXIMA">1.0</float>
+                <string id="INSIDE_CRITERIUM"/>
+                <boolean id="FILTER_ASSOCIATION">false</boolean>
+                <boolean id="FEATURE_PROFILE_INTERSECTION">false</boolean>
+                <integer id="FEATURE_PROFILE_FILTER">1</integer>
+                <boolean id="ASSOCIATION_POLYGON">false</boolean>
+                <font id="LABEL_FONT" name="SansSerif.plain" size="1" style="0"/>
+                <array class="com.ducret.resultJ.Property" dimension="1" id="TYPES" type="">
+                  <property class="com.ducret.resultJ.Property" index="0" name="">
+                    <array dimension="5" id="CRITERIUM" type="string">
+                      <string index="0"/>
+                      <string index="1"/>
+                      <string index="2"/>
+                      <string index="3"/>
+                      <string index="4"/>
+                    </array>
+                    <string id="UNIT">µm</string>
+                    <boolean id="ACTIVE">true</boolean>
+                    <integer id="TYPE_MODE">0</integer>
+                    <integer id="COLOR_LUT_MODE">0</integer>
+                    <string id="BIN_MAX">100</string>
+                    <string id="SEED_THRESHOLD"/>
+                    <string id="SEED_PATH"/>
+                    <string id="NAME"/>
+                    <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+                    <string id="BIN_PROPERTY"/>
+                    <integer id="PANEL_MODE">0</integer>
+                    <array class="java.awt.Color" dimension="5" id="COLOR" type="">
+                      <color index="0">0;255;0;255</color>
+                      <color index="1">0;255;0;255</color>
+                      <color index="2">0;255;0;255</color>
+                      <color index="3">0;255;0;255</color>
+                      <color index="4">0;255;0;255</color>
+                    </array>
+                    <integer id="COLOR_MODE">0</integer>
+                    <string id="SEED_PROPERTY"/>
+                    <boolean id="ENABLED">false</boolean>
+                    <array dimension="5" id="TITLE" type="string">
+                      <string index="0"/>
+                      <string index="1"/>
+                      <string index="2"/>
+                      <string index="3"/>
+                      <string index="4"/>
+                    </array>
+                    <boolean id="ASSOCIATION">true</boolean>
+                    <string id="BIN_MIN">0</string>
+                  </property>
+                </array>
+                <boolean id="OUTSIDE_EXCLUSIVE">false</boolean>
+                <string id="LABEL"/>
+                <boolean id="SIGNAL_REGION_MEMBRANE">false</boolean>
+                <boolean id="ASSOCIATION_SPACING_LIST">false</boolean>
+                <integer id="FEATURE_MODE">0</integer>
+                <boolean id="FEATURE_CHART">false</boolean>
+                <string id="FEATURE_PROFILE_DERIVATIVE_DELTA">2</string>
+                <integer id="FILTER_TYPE">0</integer>
+                <string id="MIN_AREA">0</string>
+                <string id="NAME"/>
+                <string id="GAUSSIAN_FIT_THRESHOLD">0</string>
+                <integer id="SIGNAL_ZSCORE_MODE">0</integer>
+                <string id="POLAR_LOCALISATION">auto</string>
+                <string id="MAX_GAUSSIAN_AMPLITUDE">max</string>
+                <string id="SIGNAL_BACKGROUND_TREATEMENT_CYCLE_COUNT">0</string>
+                <integer id="COLOR_BOUNDARY_STROKE">0</integer>
+                <string id="FEATURE_PROFILE_CHANNEL_FACTOR_5">1</string>
+                <boolean id="ASSOCIATION_LOCATION">true</boolean>
+                <string id="OUTSIDE_ANGLE_MAX">180</string>
+                <boolean id="ASSOCIATION_COVERAGE">false</boolean>
+                <string id="MIN_LENGTH">0</string>
+                <integer id="FEATURE_POSITION_TYPE">0</integer>
+                <property class="com.ducret.resultJ.Property" id="TRACKING" name="TRACKING">
+                  <boolean id="TIME_CORRECTION_ACCELERATION">true</boolean>
+                  <boolean id="SUBRUN_RESULT">false</boolean>
+                  <color id="TRAJECTORY_COLOR_DEFAULT">0;255;0;255</color>
+                  <string id="LINEAGE_DELTAY_MAX">max</string>
+                  <color id="TRAJECTORY_COLOR_ROTATING">255;255;0;255</color>
+                  <string id="SUBRUN_DISPLACEMENT_DIRECTION_MIN">0</string>
+                  <integer id="TIME_MARK_SIZE">1</integer>
+                  <integer id="TIME_INTERPOLATION_MODE">0</integer>
+                  <boolean id="LINEAGE_DIVISION_RESULT">false</boolean>
+                  <string id="LINEAGE_DELTAY_MIN">0</string>
+                  <string id="ACCELERATION_MIN">0</string>
+                  <string id="LIFESPAN_MAX">max</string>
+                  <string id="SUBRUN_DELTA_PRE_EVENT">5</string>
+                  <boolean id="TYPE_DETECTION">false</boolean>
+                  <integer id="LINEAGE_MODE">0</integer>
+                  <string id="REVERSION_DIRECTION_MIN">0</string>
+                  <string id="LINEAGE_DIST_MAX">1</string>
+                  <boolean id="TIME_INTERPOLATION_BEZIER">false</boolean>
+                  <boolean id="TIME_CORRECTION">true</boolean>
+                  <integer id="TRACKING_COORDINATE_MODE">0</integer>
+                  <boolean id="TYPE_DISPLACEMENT_ADVANCED">false</boolean>
+                  <boolean id="SUBRUN_ROTATION_DIRECTION">false</boolean>
+                  <string id="INTENSITY_MAX">max</string>
+                  <boolean id="TYPE_DISPLACEMENT_MSD_RESULT">false</boolean>
+                  <integer id="TRAJECTORY_MODE">0</integer>
+                  <boolean id="SUBRUN_DISPLACEMENT_DIRECTION">false</boolean>
+                  <color id="TIME_LABEL_COLOR">0;0;0;0</color>
+                  <color id="TRAJECTORY_COLOR_DIFFUSING">0;0;255;255</color>
+                  <string id="TIME_LABEL"/>
+                  <boolean id="SUBRUN_DISPLACEMENT_DISTANCE">false</boolean>
+                  <integer id="SUBRUN_MODE">0</integer>
+                  <string id="SUBRUN_LIFESPAN_MAX">max</string>
+                  <boolean id="TIME_CORRECTION_INTENSITY">true</boolean>
+                  <string id="ROTATION_MIN">0.2</string>
+                  <color id="VECTOR_VELOCITY">0;0;0;0</color>
+                  <boolean id="TIME_CORRECTION_DIST">true</boolean>
+                  <integer id="TRACKING_MODE">0</integer>
+                  <boolean id="MOTION_DESCRIPTORS">false</boolean>
+                  <font id="TIME_LABEL_FONT" name="SansSerif.plain" size="1" style="0"/>
+                  <string id="TIME_POLARITY_OFFSET">0</string>
+                  <boolean id="TIME_ANALYSIS">true</boolean>
+                  <integer id="TIME_POLARITY_MODE">0</integer>
+                  <string id="INTENSITY_MIN">0</string>
+                  <string id="DIST_MOVING_THRESHOLD">1</string>
+                  <string id="SUBRUN_DISPLACEMENT_DIRECTION_MAX">45</string>
+                  <string id="SUBRUN_LIFESPAN_MIN">0</string>
+                  <boolean id="LINEAGE">false</boolean>
+                  <string id="SUBRUN_PROPERTY_RATIO_MAX">1</string>
+                  <integer id="TIME_FILTER_TYPE">0</integer>
+                  <boolean id="SUBRUN_DETECTION">false</boolean>
+                  <string id="TIME_DIVISION_DELTA">2</string>
+                  <boolean id="TYPE_DISPLACEMENT_ADVANCED_CENTER">false</boolean>
+                  <string id="SUBRUN_DISPLACEMENT_THRESHOLD">default</string>
+                  <string id="SUBRUN_PROPERTY_RATIO_MIN">1</string>
+                  <color id="CURVATURE">0;0;0;0</color>
+                  <boolean id="REVERSION_DETECTION">false</boolean>
+                  <boolean id="SUBRUN_LIFESPAN_FILTER">false</boolean>
+                  <boolean id="TIME_CORRECTION_ANGLE">true</boolean>
+                  <boolean id="TIME_CORRECTION_AREA">true</boolean>
+                  <boolean id="TIME_FILTER">false</boolean>
+                  <boolean id="TIMEFLAG">false</boolean>
+                  <boolean id="REVERSION_LIST">false</boolean>
+                  <string id="TIME_CORRECTION_DELTA">2</string>
+                  <string id="LIFESPAN_MIN">0</string>
+                  <integer id="SUBRUN_PROPERTY_FILTER">0</integer>
+                  <array dimension="1" id="OCCURENCE" type="integer">
+                    <integer index="0">0</integer>
+                  </array>
+                  <integer id="REVERSION_DISTANCE_MODE">0</integer>
+                  <boolean id="TYPE_DISPLACEMENT">false</boolean>
+                  <string id="REVERSION_DIRECTION_MAX">30</string>
+                  <integer id="TRAJECTORY_COLOR_TYPE">0</integer>
+                  <string id="TIME_DIVISION_DISTANCE">2</string>
+                  <boolean id="SUBRUN_ROTATION_DISTANCE">false</boolean>
+                  <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+                  <string id="MOVING_MIN">auto</string>
+                  <string id="TIME_FILTER_DELTA">2</string>
+                  <string id="TYPE_DISPLACEMENT_MSD_MAXLAG">20</string>
+                  <boolean id="SUBRUN_DEBUG">false</boolean>
+                  <boolean id="ASSOCIATION">true</boolean>
+                  <property class="com.ducret.resultJ.Property" id="EVENTS" name="EVENTS">
+                    <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+                    <array dimension="1" id="CRITERIUM" type="string">
+                      <string index="0"/>
+                    </array>
+                    <array dimension="1" id="LIFESPAN" type="string">
+                      <string index="0"/>
+                    </array>
+                    <string id="UNIT">µm</string>
+                    <boolean id="ACTIVE">true</boolean>
+                    <array class="java.awt.Color" dimension="1" id="COLOR" type="">
+                      <color index="0">0;255;0;255</color>
+                    </array>
+                    <boolean id="ENABLED">false</boolean>
+                    <array dimension="1" id="TITLE" type="string">
+                      <string index="0"/>
+                    </array>
+                    <boolean id="ASSOCIATION">true</boolean>
+                  </property>
+                  <string id="LINEAGE_DELTAX_MIN">0</string>
+                  <string id="PROPERTIES"/>
+                  <color id="TRAJECTORY_COLOR_MIXED">255;0;255;255</color>
+                  <string id="START_MAX">max</string>
+                  <string id="REVERSION_DISTANCE_THRESHOLD">default</string>
+                  <color id="VECTOR_ACCELERATION">0;0;0;0</color>
+                  <boolean id="RELATIVE_FILTER">true</boolean>
+                  <color id="TRAJECTORY_COLOR_MOVING">255;200;0;255</color>
+                  <array class="com.ducret.resultJ.Property" dimension="1" id="TYPES" type="">
+                    <property class="com.ducret.resultJ.Property" index="0" name="">
+                      <array dimension="5" id="CRITERIUM" type="string">
+                        <string index="0"/>
+                        <string index="1"/>
+                        <string index="2"/>
+                        <string index="3"/>
+                        <string index="4"/>
+                      </array>
+                      <string id="UNIT">µm</string>
+                      <boolean id="ACTIVE">true</boolean>
+                      <integer id="TYPE_MODE">0</integer>
+                      <integer id="COLOR_LUT_MODE">0</integer>
+                      <string id="BIN_MAX">100</string>
+                      <string id="SEED_THRESHOLD"/>
+                      <string id="SEED_PATH"/>
+                      <string id="NAME"/>
+                      <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+                      <string id="BIN_PROPERTY"/>
+                      <integer id="PANEL_MODE">0</integer>
+                      <array class="java.awt.Color" dimension="5" id="COLOR" type="">
+                        <color index="0">0;255;0;255</color>
+                        <color index="1">0;255;0;255</color>
+                        <color index="2">0;255;0;255</color>
+                        <color index="3">0;255;0;255</color>
+                        <color index="4">0;255;0;255</color>
+                      </array>
+                      <integer id="COLOR_MODE">0</integer>
+                      <string id="SEED_PROPERTY"/>
+                      <boolean id="ENABLED">false</boolean>
+                      <array dimension="5" id="TITLE" type="string">
+                        <string index="0"/>
+                        <string index="1"/>
+                        <string index="2"/>
+                        <string index="3"/>
+                        <string index="4"/>
+                      </array>
+                      <boolean id="ASSOCIATION">true</boolean>
+                      <string id="BIN_MIN">0</string>
+                    </property>
+                  </array>
+                  <string id="FILTER_CRITERIUM"/>
+                  <color id="LINEAGE_LINKER_COLOR">0;255;255;255</color>
+                  <color id="TRAJECTORY_LINKER">0;0;0;0</color>
+                  <array class="java.awt.Color" dimension="1" id="COLOR" type="">
+                    <color index="0">0;255;0;255</color>
+                  </array>
+                  <boolean id="TIME_POLARITY">true</boolean>
+                  <boolean id="SUBRUN_ROTATION">false</boolean>
+                  <property class="com.ducret.resultJ.Property" id="FLAGS" name="FLAGS">
+                    <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+                    <array dimension="1" id="CRITERIUM" type="string">
+                      <string index="0"/>
+                    </array>
+                    <array dimension="1" id="LIFESPAN" type="integer">
+                      <integer index="0">0</integer>
+                    </array>
+                    <string id="UNIT">µm</string>
+                    <boolean id="ACTIVE">true</boolean>
+                    <array class="java.awt.Color" dimension="1" id="COLOR" type="">
+                      <color index="0">0;255;0;255</color>
+                    </array>
+                    <array dimension="1" id="OCCURENCE" type="integer">
+                      <integer index="0">0</integer>
+                    </array>
+                    <boolean id="ENABLED">false</boolean>
+                    <array dimension="1" id="TITLE" type="string">
+                      <string index="0"/>
+                    </array>
+                    <boolean id="ASSOCIATION">true</boolean>
+                  </property>
+                  <string id="LINEAGE_DELTAX_MAX">max</string>
+                  <array dimension="1" id="LIFESPAN" type="string">
+                    <string index="0"/>
+                  </array>
+                  <string id="UNIT">µm</string>
+                  <string id="SUBRUN_PROPERTY_NAME"/>
+                  <string id="SUBRUN_DELTA_POST_EVENT">5</string>
+                  <string id="TIME_CORRECTION_DISTANCE">2</string>
+                  <boolean id="TYPE_BEHAVIOR">false</boolean>
+                  <string id="NAME"/>
+                  <color id="TRAJECTORY_COLOR_DIFFUSING_CONFINED">0;255;255;255</color>
+                  <color id="REVERSION_COLOR">0;0;255;255</color>
+                  <string id="TIME_POLARITY_TOLERANCE">0</string>
+                  <boolean id="TIME_CORRECTION_OVERLAP">false</boolean>
+                  <string id="END_MIN">0</string>
+                  <array dimension="1" id="CRITERIUM" type="string">
+                    <string index="0"/>
+                  </array>
+                  <string id="ROTATION_MAX">pi</string>
+                  <boolean id="ACTIVE">false</boolean>
+                  <boolean id="TIME_MODIFICATION">false</boolean>
+                  <string id="ANGLE_MAX">180</string>
+                  <string id="DIST_MAX">2</string>
+                  <string id="END_MAX">max</string>
+                  <boolean id="SUBRUN_RECURSIVE">false</boolean>
+                  <boolean id="SUBRUN_PROPERTY">false</boolean>
+                  <string id="ANGLE_MIN">0</string>
+                  <boolean id="TIME_DIVISION">false</boolean>
+                  <boolean id="SUBRUN_DISPLACEMENT">false</boolean>
+                  <color id="TRAJECTORY_COLOR_NOT_MOVING">255;255;255;255</color>
+                  <boolean id="TIME_OPTIONS">true</boolean>
+                  <string id="CONFINEMENT_MAX">15</string>
+                  <string id="AREA_MIN">0</string>
+                  <color id="TRAJECTORY_COLOR">0;255;0;255</color>
+                  <string id="ACCELERATION_MAX">max</string>
+                  <string id="SUBRUN_PROPERTY_FILTER_SIZE">1</string>
+                  <color id="TRAJECTORY_COLOR_MOVING_CONFINED">255;255;0;255</color>
+                  <string id="START_MIN">0</string>
+                  <string id="CONFINEMENT_MIN">1</string>
+                  <string id="AREA_MAX">max</string>
+                  <integer id="SUBRUN_DISPLACEMENT_MODE">0</integer>
+                  <boolean id="ENABLED">false</boolean>
+                  <array dimension="1" id="TITLE" type="string">
+                    <string index="0"/>
+                  </array>
+                  <boolean id="TYPE_DISPLACEMENT_MSD">false</boolean>
+                  <string id="DIST_MIN">0</string>
+                  <boolean id="TIME_EVENT">false</boolean>
+                </property>
+                <boolean id="INSIDE_OVERLAP">false</boolean>
+                <string id="SIGNAL_ZSCORE_CH6">2</string>
+                <integer id="SIGNAL_REGION_MEMBRANE_MODE">0</integer>
+                <string id="FEATURE_PROFILE_FILTER_SIZE">2</string>
+                <string id="SIGNAL_ZSCORE_CH5">2</string>
+                <color id="BOND">102;178;255;100</color>
+                <integer id="SIGNAL_BACKGROUND_TREATEMENT_MODE">0</integer>
+                <integer id="ASSOCIATION_INDEX">0</integer>
+                <string id="MAX_RELATIVE_POSITION">max</string>
+                <boolean id="ASSOCIATION_DISTANCE">false</boolean>
+                <boolean id="FILTER">false</boolean>
+                <string id="FEATURE_PROFILE_RESOLUTION">auto</string>
+                <integer id="PEAK_FIT_TYPE">0</integer>
+                <string id="FEATURE_MIN_POSITION">0</string>
+                <string id="MIN_ZSCORE">0</string>
+                <color id="LONG_AXIS">0;0;0;0</color>
+                <integer id="FEATURE_TYPE">0</integer>
+                <string id="FEATURE_PROFILE_CHANNEL_FACTOR_0">1</string>
+                <string id="GAUSSIAN_FIT_ZSCORE">0-max</string>
+                <color id="PEAK">0;0;0;0</color>
+                <string id="TITLE"/>
+                <string id="FEATURE_PROFILE_CHANNEL_FACTOR_3">1</string>
+                <float id="FEATURE_TOLERANCE">0.1</float>
+                <string id="FEATURE_PROFILE_CHANNEL_FACTOR_4">1</string>
+                <boolean id="SIGNAL_REGION_POLE">false</boolean>
+                <string id="FEATURE_PROFILE_CHANNEL_FACTOR_1">1</string>
+                <string id="FEATURE_PROFILE_CHANNEL_FACTOR_2">1</string>
+                <string id="MIDCELL_LOCALISATION">auto</string>
+                <color id="FEATURE_PROFILE_CHANNEL_COLOR_2">0;0;0;0</color>
+                <color id="FEATURE_PROFILE_CHANNEL_COLOR_1">0;0;0;0</color>
+                <color id="FEATURE_PROFILE_CHANNEL_COLOR_0">0;0;0;0</color>
+                <array class="com.ducret.resultJ.Property" dimension="1" id="PROFILES" type="">
+                  <property class="com.ducret.resultJ.Property" index="0" name="">
+                    <string id="UNIT">p</string>
+                    <boolean id="ACTIVE">true</boolean>
+                    <boolean id="PLOT">true</boolean>
+                    <integer id="CENTER_INDEX">0</integer>
+                    <string id="RESOLUTION">auto</string>
+                    <boolean id="WIDTH">false</boolean>
+                    <boolean id="OPTIONS">true</boolean>
+                    <string id="NAME"/>
+                    <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+                    <boolean id="CENTER">false</boolean>
+                    <integer id="PANEL_MODE">0</integer>
+                    <string id="EXPANSION">0</string>
+                    <boolean id="CURVATURE">false</boolean>
+                    <boolean id="PLOT_RAW">false</boolean>
+                    <string id="OFFSET">0</string>
+                    <boolean id="PLOT_BOUNDARY">false</boolean>
+                    <boolean id="ENABLED">false</boolean>
+                    <integer id="INDEX">0</integer>
+                    <string id="CURVATURE_DELTA">2</string>
+                    <boolean id="ASSOCIATION">true</boolean>
+                    <string id="THICKNESS">auto</string>
+                    <integer id="PLOT_MODE">0</integer>
+                  </property>
+                </array>
+                <color id="FEATURE_PROFILE_CHANNEL_COLOR_5">0;0;0;0</color>
+                <integer id="STRAIGHTEN_MODE">0</integer>
+                <color id="FEATURE_PROFILE_CHANNEL_COLOR_4">0;0;0;0</color>
+                <color id="FEATURE_PROFILE_CHANNEL_COLOR_3">0;0;0;0</color>
+                <boolean id="OUTSIDE_OVERLAP">true</boolean>
+                <integer id="COLOCALIZATION_MODE">0</integer>
+                <string id="FEATURE_SOURCE">Width</string>
+                <string id="FEATURE_PROFILE_THICKNESS">auto</string>
+                <string id="SIGNAL_TEXTURE_STEP">1</string>
+                <string id="GAUSSIAN_FIT_ITERATION">1000</string>
+                <integer id="PANEL_MODE">0</integer>
+                <boolean id="GAUSSIAN_FIT_WARNING">false</boolean>
+                <integer id="FEATURE_MODE_POSITION">0</integer>
+                <string id="FEATURE_PROFILE_THICKNESS_RATIO">1</string>
+                <boolean id="SIGNAL_REGION_BODY">false</boolean>
+                <boolean id="SIGNAL_REGION">false</boolean>
+                <boolean id="SEGMENTATION_AXIS">true</boolean>
+                <string id="SIGNAL_ZSCORE_CH4">2</string>
+                <string id="SIGNAL_ZSCORE_CH3">2</string>
+                <string id="SIGNAL_ZSCORE_CH2">2</string>
+                <string id="SIGNAL_ZSCORE_CH1">2</string>
+                <string id="SIGNAL_RESOLUTION">1</string>
+                <string id="MAX_ZSCORE">max</string>
+                <boolean id="OPTION">true</boolean>
+                <string id="GAUSSIAN_FIT_AMPLITUDE_MIN">0</string>
+                <string id="STRAIGHTEN_LENGTH">100</string>
+                <integer id="ASSOCIATION_RESULT_MODE">0</integer>
+                <float id="FEATURE_ZSCORE">2.0</float>
+                <string id="MIN_RATIO">0</string>
+                <string id="FEATURE_PROFILE_DILATE">0</string>
+                <boolean id="SHAPE">true</boolean>
+                <boolean id="GAUSSIAN_FIT_OPTIMIZATION">false</boolean>
+                <string id="SIGNAL_REGION_MEMBRANE_THICKNESS">0.5</string>
+                <boolean id="PEAK_FIT">false</boolean>
+                <string id="NB_MAX_ASSOCIATION_PROPERTY"/>
+                <boolean id="ASSOCIATION_SPACING">false</boolean>
+                <integer id="INSIDE_MODE">0</integer>
+                <string id="COLOCALIZATION_THRESHOLD">0</string>
+                <boolean id="OUTSIDE_ASSOCIATION">true</boolean>
+                <float id="FEATURE_OFFSET">0.0</float>
+                <boolean id="SIGNAL_TEXTURE_SYMETRY">false</boolean>
+                <integer id="GAUSSIAN_FIT_METHOD">1</integer>
+                <boolean id="ASSOCIATION_SET_CENTER">false</boolean>
+                <boolean id="SIGNAL_REGION_SIDE">false</boolean>
+                <boolean id="SIGNAL">false</boolean>
+                <string id="FILTER_SIZE">1</string>
+                <string id="SIGNAL_BACKGROUND_LOCAL_GRID_SIZE">10</string>
+                <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+                <integer id="FEATURE_THRESHOLD_METHOD_INDEX">0</integer>
+                <integer id="SIGNAL_BACKGROUND_LOCAL_MODE">0</integer>
+                <boolean id="SIGNAL_CORRELATION">false</boolean>
+                <string id="FEATURE_PROFILE_CURVATURE_DELTA">2</string>
+                <integer id="FEATURE_THRESHOLD_MODE">0</integer>
+                <boolean id="ASSOCIATION">true</boolean>
+                <integer id="NB_MAX_ASSOCIATION_MODE">0</integer>
+                <boolean id="OUTSIDE_BEZIER_LINK">false</boolean>
+                <string id="MIN_GAUSSIAN_R2">0</string>
+                <boolean id="LOCALISATION">false</boolean>
+                <integer id="FEATURE_METHOD">0</integer>
+                <string id="MIN_GAUSSIAN_AMPLITUDE">0</string>
+                <string id="MAX_RATIO">max</string>
+                <boolean id="INSIDE_EXCLUSIVE">true</boolean>
+                <integer id="OUTSIDE_MODE">0</integer>
+                <integer id="ASSOCIATION_SPACING_MODE">0</integer>
+                <string id="FEATURE_THRESHOLD_METHOD">Default</string>
+                <string id="OUTSIDE_BEZIER_FACTOR">1</string>
+                <string id="NB_MAX_ASSOCIATION">1</string>
+                <string id="MIN_INTENSITY">0</string>
+                <string id="MIN_WIDTH">0</string>
+                <string id="CRITERIA"/>
+                <string id="UNIT">µm</string>
+                <string id="ASSOCIATION_NAME">Bacteria</string>
+                <string id="MAX_LENGTH">max</string>
+                <boolean id="SIGNAL_BACKGROUND_LOCAL_ACTIVE">false</boolean>
+                <boolean id="SEGMENTATION">false</boolean>
+                <string id="SEGMENTATION_THICKNESS">0.1</string>
+                <boolean id="SIGNAL_RAW">false</boolean>
+                <string id="MAX_GAUSSIAN_FWHM">max</string>
+                <boolean id="ACTIVE">true</boolean>
+                <boolean id="SIGNAL_BACKGROUND_TREATEMENT_DEBUG">false</boolean>
+                <string id="FILTER_OPTION">0</string>
+                <string id="FEATURE_MIN_THRESHOLD">0</string>
+                <string id="FEATURE_MODE_LABEL">Normal</string>
+                <string id="STRAIGHTEN_FACTOR">2</string>
+                <boolean id="PROFILE">false</boolean>
+                <string id="INSIDE_ZSCORE">0</string>
+                <boolean id="SIGNAL_BACKGROUND_TREATEMENT">false</boolean>
+                <boolean id="SIGNAL_BACKGROUND_LOCAL_DEBUG">false</boolean>
+                <boolean id="SIGNAL_RATIO">true</boolean>
+                <integer id="COLOCALIZATION_DISTANCE_MODE">0</integer>
+                <string id="FEATURE_MAX_DELTA">max</string>
+                <string id="OUTSIDE_ANGLE_MIN">0</string>
+                <color id="COLOR_BOUNDARY">255;200;0;255</color>
+                <color id="COLOR_MEMBRANE">0;0;0;0</color>
+                <string id="FEATURE_MAX_POSITION">1</string>
+                <boolean id="INSIDE_ASSOCIATION">true</boolean>
+                <string id="MAX_INTENSITY">max</string>
+                <string id="MIDCELL_THRESHOLD">0.1</string>
+                <string id="FEATURE_MAX_THRESHOLD">max</string>
+                <string id="PEAK_FIT_RSQUARED">0.8</string>
+                <string id="SIGNAL_DILATE">0</string>
+                <color id="COLOCALIZATION_COLOR">255;255;0;255</color>
+                <boolean id="SIGNAL_OPTIONS">true</boolean>
+                <boolean id="ENABLED">false</boolean>
+                <color id="LINKER">255;0;255;255</color>
+              </property>
+            </array>
+            <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+            <integer id="SIGNAL_BACKGROUND_LOCAL_MODE">0</integer>
+            <boolean id="SIGNAL_CORRELATION">false</boolean>
+            <string id="FEATURE_PROFILE_CURVATURE_DELTA">2</string>
+            <boolean id="THRESHOLD_TEMPLATE_OPTIMIZE">false</boolean>
+            <string id="CLUMP_AREA">0</string>
+            <boolean id="SEGMENTATION_EDGE">true</boolean>
+            <boolean id="ASSOCIATION">true</boolean>
+            <integer id="NB_MAX_ASSOCIATION_MODE">0</integer>
+            <boolean id="CONTACT">false</boolean>
+            <boolean id="OUTSIDE_BEZIER_LINK">false</boolean>
+            <integer id="EDGE_CORRECTION_CHANNEL">0</integer>
+            <string id="ORIENTATION_LATERAL"/>
+            <boolean id="LOCALISATION">false</boolean>
+            <integer id="MODE">2</integer>
+            <integer id="THRESHOLD_METHOD_INDEX">9</integer>
+            <array class="com.ducret.microbeJ.SegmentationMethod" dimension="5" id="SEGMENTATION_METHODS" type="">
+              <segmentationMethod active="true" class="com.ducret.microbeJ.SegmentationMethod" filter="0" index="0" macro="" mask="true" method="0" parameter1="1.0" parameter2="0.0" smooth="false"/>
+              <segmentationMethod active="true" class="com.ducret.microbeJ.SegmentationMethod" filter="1" index="1" macro="" mask="true" method="0" parameter1="1.0" parameter2="0.0" smooth="true"/>
+              <segmentationMethod active="true" class="com.ducret.microbeJ.SegmentationMethod" filter="2" index="2" macro="" mask="true" method="0" parameter1="0.0" parameter2="0.0" smooth="true"/>
+              <segmentationMethod active="true" class="com.ducret.microbeJ.SegmentationMethod" filter="4" index="3" macro="" mask="true" method="0" parameter1="0.0" parameter2="0.0" smooth="false"/>
+              <segmentationMethod active="false" class="com.ducret.microbeJ.SegmentationMethod" filter="5" index="4" macro="" mask="true" method="0" parameter1="0.0" parameter2="0.0" smooth="false"/>
+            </array>
+            <integer id="FEATURE_METHOD">0</integer>
+            <boolean id="THRESHOLD_CALCULATOR">false</boolean>
+            <boolean id="SEGMENTATION_OPTIMIZATION">true</boolean>
+            <integer id="CHANNEL_INDEX">0</integer>
+            <string id="MAX_VARIATION_WIDTH">max</string>
+            <string id="IMG_ORIGIN_Y">0</string>
+            <array dimension="6" id="IMAGE_NAMES" type="string">
+              <string index="0">*none*</string>
+              <string index="1">*none*</string>
+              <string index="2">*none*</string>
+              <string index="3">*none*</string>
+              <string index="4">*none*</string>
+              <string index="5">*none*</string>
+            </array>
+            <string id="DISTANCE_THRESHOLD">0</string>
+            <boolean id="THRESHOLD_ROI">false</boolean>
+            <string id="IMG_ORIGIN_X">0</string>
+            <array dimension="0" id="THRESHOLD_TEMPLATE_KERNEL" type="double"/>
+            <integer id="TIME_RESOLUTION_UNIT">0</integer>
+            <boolean id="INSIDE_EXCLUSIVE">true</boolean>
+            <string id="THRESHOLD_ROIMANAGER_PREFIX"/>
+            <integer id="OUTSIDE_MODE">0</integer>
+            <color id="QUARTER_AXIS">0;0;0;0</color>
+            <integer id="ASSOCIATION_SPACING_MODE">0</integer>
+            <string id="MIN_CIRCULARITY">0</string>
+            <boolean id="SECTION_HALVES">false</boolean>
+            <string id="OUTSIDE_BEZIER_FACTOR">1</string>
+            <string id="NB_MAX_ASSOCIATION">1</string>
+            <integer id="INTERPOLATION_MODE">0</integer>
+            <string id="MIN_INTENSITY">0</string>
+            <string id="MIN_WIDTH">0</string>
+            <string id="CRITERIA"/>
+            <string id="POLE_RESOLUTION">0</string>
+            <integer id="DISTANCE_MODE">0</integer>
+            <string id="UNIT">µm</string>
+            <string id="EDGE_CORRECTION_SIGMA">1</string>
+            <boolean id="SECTION_SIDES">false</boolean>
+            <string id="ASSOCIATION_NAME">Bacteria</string>
+            <string id="BOUNDARY_SMOOTH_ORDER">2</string>
+            <color id="TRANS_AXIS">0;0;0;0</color>
+            <string id="MAX_LENGTH">max</string>
+            <boolean id="ORIENTATION_LATERAL_SIGN">false</boolean>
+            <string id="THRESHOLD_TEMPLATE_TOLERANCE">0.75</string>
+            <color id="HALF_1">0;0;0;0</color>
+            <boolean id="THRESHOLD">false</boolean>
+            <color id="HALF_2">0;0;0;0</color>
+            <boolean id="SIGNAL_BACKGROUND_LOCAL_ACTIVE">false</boolean>
+            <boolean id="CONVEXHULL">false</boolean>
+            <string id="OUTPUT_BINARY_SCALE">1</string>
+            <boolean id="SEGMENTATION">false</boolean>
+            <color id="BODY">0;0;0;0</color>
+            <boolean id="SECTION_POLES">false</boolean>
+            <string id="BOUNDARY_DILATE">0</string>
+            <color id="COLOR_CONVEXHULL">0;0;0;0</color>
+            <boolean id="OUTPUT_BINARY">false</boolean>
+            <string id="MAX_JUNCTION_COUNT">max</string>
+            <boolean id="SIGNAL_RAW">false</boolean>
+            <boolean id="ACTIVE">true</boolean>
+            <boolean id="SIGNAL_BACKGROUND_TREATEMENT_DEBUG">false</boolean>
+            <boolean id="EXCLUDE_ON_EDGE">true</boolean>
+            <boolean id="BRANCHING">false</boolean>
+            <string id="MIN_SKELETON_SIZE">0</string>
+            <string id="FEATURE_MIN_THRESHOLD">0</string>
+            <string id="FEATURE_MODE_LABEL">Normal</string>
+            <integer id="THRESHOLD_TEMPLATE_KERNEL_WIDTH">0</integer>
+            <array dimension="6" id="IMAGE_FILTERS" type="string">
+              <string index="0"/>
+              <string index="1"/>
+              <string index="2"/>
+              <string index="3"/>
+              <string index="4"/>
+              <string index="5"/>
+            </array>
+            <string id="MAX_CURVATURE">max</string>
+            <boolean id="EDGE_CORRECTION">false</boolean>
+            <integer id="COLOR_LONG_AXIS_STROKE">0</integer>
+            <string id="STRAIGHTEN_FACTOR">2</string>
+            <boolean id="PROFILE">false</boolean>
+            <string id="INSIDE_ZSCORE">0</string>
+            <boolean id="SIGNAL_BACKGROUND_TREATEMENT">false</boolean>
+            <boolean id="SIGNAL_BACKGROUND_LOCAL_DEBUG">false</boolean>
+            <boolean id="SIGNAL_RATIO">true</boolean>
+            <array class="com.ducret.microbeJ.ImMaskAction" dimension="0" id="THRESHOLD_CALCULATOR_ACTIONS" type="object"/>
+            <string id="MAX_CIRCULARITY">max</string>
+            <string id="MIN_SOLIDITY">0</string>
+            <string id="OUTSIDE_ANGLE_MIN">0</string>
+            <color id="COLOR_BOUNDARY">178;255;102;255</color>
+            <color id="COLOR_MEMBRANE">0;0;0;0</color>
+            <string id="FEATURE_MAX_POSITION">1</string>
+            <boolean id="INSIDE_ASSOCIATION">true</boolean>
+            <string id="MAX_INTENSITY">max</string>
+            <string id="MIDCELL_THRESHOLD">0.1</string>
+            <string id="FEATURE_MAX_THRESHOLD">max</string>
+            <string id="SIGNAL_DILATE">0</string>
+            <integer id="MODE_DETECTION">-1</integer>
+            <boolean id="SIGNAL_OPTIONS">true</boolean>
+            <boolean id="ENABLED">false</boolean>
+            <integer id="THRESHOLD_TEMPLATE_KERNEL_HEIGHT">0</integer>
+            <color id="LINKER">0;0;255;255</color>
+          </property>
+          <color id="BODY">0;0;0;0</color>
+          <boolean id="SECTION_POLES">true</boolean>
+          <string id="BOUNDARY_DILATE">0</string>
+          <color id="COLOR_CONVEXHULL">0;0;0;0</color>
+          <string id="MAX_JUNCTION_COUNT">max</string>
+          <boolean id="SIGNAL_RAW">false</boolean>
+          <boolean id="ACTIVE">true</boolean>
+          <boolean id="SIGNAL_BACKGROUND_TREATEMENT_DEBUG">false</boolean>
+          <boolean id="EXCLUDE_ON_EDGE">true</boolean>
+          <boolean id="BRANCHING">false</boolean>
+          <string id="MIN_SKELETON_SIZE">0</string>
+          <string id="FEATURE_MIN_THRESHOLD">0</string>
+          <string id="FEATURE_MODE_LABEL">Normal</string>
+          <string id="MAX_CURVATURE">max</string>
+          <boolean id="EDGE_CORRECTION">true</boolean>
+          <integer id="COLOR_LONG_AXIS_STROKE">0</integer>
+          <string id="STRAIGHTEN_FACTOR">2</string>
+          <boolean id="PROFILE">true</boolean>
+          <string id="INSIDE_ZSCORE">0</string>
+          <boolean id="SIGNAL_BACKGROUND_TREATEMENT">false</boolean>
+          <boolean id="SIGNAL_BACKGROUND_LOCAL_DEBUG">false</boolean>
+          <boolean id="SIGNAL_RATIO">true</boolean>
+          <string id="MAX_CIRCULARITY">max</string>
+          <string id="MIN_SOLIDITY">0</string>
+          <string id="OUTSIDE_ANGLE_MIN">0</string>
+          <color id="COLOR_BOUNDARY">178;255;102;255</color>
+          <color id="COLOR_MEMBRANE">0;0;0;0</color>
+          <string id="FEATURE_MAX_POSITION">1</string>
+          <boolean id="INSIDE_ASSOCIATION">false</boolean>
+          <string id="MAX_INTENSITY">max</string>
+          <string id="MIDCELL_THRESHOLD">0.1</string>
+          <string id="FEATURE_MAX_THRESHOLD">max</string>
+          <string id="SIGNAL_DILATE">0</string>
+          <integer id="MODE_DETECTION">-1</integer>
+          <boolean id="SIGNAL_OPTIONS">true</boolean>
+          <boolean id="ENABLED">false</boolean>
+          <color id="LINKER">0;0;255;255</color>
+        </property>
+      </array>
+      <string id="POSITION_MIN">1</string>
+      <string id="CALIBRATION_UNIT">pixel</string>
+      <integer id="OUTPUT_BINARY_TYPE">0</integer>
+      <string id="OUTSIDE_CRITERIUM"/>
+      <integer id="ASSOCIATION_RESULT_MODE">0</integer>
+      <boolean id="THRESHOLD_TREATMENT_ACTIVE">false</boolean>
+      <boolean id="ASSOCIATION_OPTION">true</boolean>
+      <boolean id="ASSOCIATION_RESULT_LIST">false</boolean>
+      <string id="THRESHOLD_DEEPIJ_PATCH"/>
+      <string id="THRESHOLD_METHOD">Minimum</string>
+      <string id="OUTSIDE_DISTMAX">0</string>
+      <string id="NB_MAX_ASSOCIATION_PROPERTY"/>
+      <integer id="IMG_ORIGIN_MODE">0</integer>
+      <string id="TIME_RESOLUTION_TEXT">1</string>
+      <integer id="THRESHOLD_PROJECTION_METHOD">0</integer>
+      <boolean id="CALIBRATION_ACTIVE">false</boolean>
+      <boolean id="ASSOCIATION_SPACING">false</boolean>
+      <integer id="INSIDE_MODE">0</integer>
+      <string id="THRESHOLD_LOCAL_RADIUS">0</string>
+      <boolean id="OUTSIDE_ASSOCIATION">false</boolean>
+      <boolean id="TIME_RESOLUTION_ACTIVE">false</boolean>
+      <boolean id="ASSOCIATION_SET_CENTER">false</boolean>
+      <string id="THRESHOLD_RESOLUTION">0.5</string>
+      <integer id="ASSOCIATION_LOCATION_ORIGIN">0</integer>
+      <string id="THRESHOLD_DEEPIJ_MODEL"/>
+      <string id="IMAGE_FILTER_BINARY"/>
+      <boolean id="THRESHOLD_STACK_HISTOGRAM">false</boolean>
+      <string id="PARTICLE_LABEL"/>
+      <string id="INSIDE_DISTMAX">0</string>
+      <integer id="THRESHOLD_MODE">2</integer>
+      <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+      <string id="INSIDE_CRITERIUM"/>
+      <boolean id="FILTER_ASSOCIATION">false</boolean>
+      <boolean id="THRESHOLD_TEMPLATE_OPTIMIZE">false</boolean>
+      <boolean id="ASSOCIATION_POLYGON">false</boolean>
+      <boolean id="ASSOCIATION">true</boolean>
+      <boolean id="VIRTUAL">false</boolean>
+      <integer id="NB_MAX_ASSOCIATION_MODE">0</integer>
+      <boolean id="OUTSIDE_BEZIER_LINK">false</boolean>
+      <boolean id="LOCALISATION">false</boolean>
+      <integer id="THRESHOLD_METHOD_INDEX">9</integer>
+      <boolean id="THRESHOLD_CALCULATOR">false</boolean>
+      <integer id="CHANNEL_INDEX">0</integer>
+      <string id="IMG_ORIGIN_Y">0</string>
+      <array dimension="6" id="IMAGE_NAMES" type="string">
+        <string index="0">*none*</string>
+        <string index="1">*none*</string>
+        <string index="2">*none*</string>
+        <string index="3">*none*</string>
+        <string index="4">*none*</string>
+        <string index="5">*none*</string>
+      </array>
+      <boolean id="THRESHOLD_ROI">false</boolean>
+      <string id="IMG_ORIGIN_X">0</string>
+      <array dimension="0" id="THRESHOLD_TEMPLATE_KERNEL" type="double"/>
+      <integer id="TIME_RESOLUTION_UNIT">0</integer>
+      <boolean id="INSIDE_EXCLUSIVE">true</boolean>
+      <boolean id="OUTSIDE_EXCLUSIVE">false</boolean>
+      <string id="THRESHOLD_ROIMANAGER_PREFIX"/>
+      <integer id="OUTSIDE_MODE">0</integer>
+      <integer id="ASSOCIATION_SPACING_MODE">0</integer>
+      <string id="OUTSIDE_BEZIER_FACTOR">1</string>
+      <string id="NB_MAX_ASSOCIATION">1</string>
+      <boolean id="DETECTION">true</boolean>
+      <boolean id="ASSOCIATION_SPACING_LIST">false</boolean>
+      <boolean id="IMG_ORIGIN">false</boolean>
+      <string id="UNIT">µm</string>
+      <string id="ASSOCIATION_NAME">Bacteria</string>
+      <string id="IMAGE_NAME_BINARY">*none*</string>
+      <integer id="BACKGROUND">1</integer>
+      <string id="NAME"/>
+      <integer id="OUTPUT_BINARY_MODE">0</integer>
+      <string id="THRESHOLD_TEMPLATE_TOLERANCE">0.75</string>
+      <boolean id="THRESHOLD">false</boolean>
+      <array dimension="0" id="LOCATION_AREA" type="string"/>
+      <string id="POLAR_LOCALISATION">auto</string>
+      <string id="OUTPUT_BINARY_SCALE">1</string>
+      <calibration class="com.ducret.resultJ.ImCalibration" fps="1.0" frameInterval="0.0" height="0.0" id="CALIBRATION" info="" pixelDepth="1.0" pixelHeight="1.0" pixelWidth="1.0" timeUnit="sec" unit="pixel" units="" width="0.0" xOrigin="0.0" yOrigin="0.0" yunit="" zOrigin="0.0" zunit=""/>
+      <boolean id="OUTPUT_BINARY">false</boolean>
+      <boolean id="SET_BINARY">true</boolean>
+      <boolean id="ASSOCIATION_LOCATION">true</boolean>
+      <boolean id="ACTIVE">true</boolean>
+      <boolean id="LOCATION_RANGE">false</boolean>
+      <boolean id="BINARY">false</boolean>
+      <string id="THRESHOLD_TEMPLATE_COUNT">1</string>
+      <string id="OUTSIDE_ANGLE_MAX">180</string>
+      <integer id="THRESHOLD_TEMPLATE_KERNEL_WIDTH">0</integer>
+      <array dimension="6" id="IMAGE_FILTERS" type="string">
+        <string index="0"/>
+        <string index="1"/>
+        <string index="2"/>
+        <string index="3"/>
+        <string index="4"/>
+        <string index="5"/>
+      </array>
+      <string id="THRESHOLD_TREATMENT"/>
+      <boolean id="ASSOCIATION_COVERAGE">false</boolean>
+      <string id="INSIDE_ZSCORE">0</string>
+      <property class="com.ducret.resultJ.Property" id="TRACKING" name="TRACKING">
+        <boolean id="TIME_CORRECTION_ACCELERATION">true</boolean>
+        <boolean id="SUBRUN_RESULT">false</boolean>
+        <color id="TRAJECTORY_COLOR_DEFAULT">0;255;0;255</color>
+        <string id="LINEAGE_DELTAY_MAX">max</string>
+        <color id="TRAJECTORY_COLOR_ROTATING">255;255;0;255</color>
+        <string id="SUBRUN_DISPLACEMENT_DIRECTION_MIN">0</string>
+        <integer id="TIME_MARK_SIZE">1</integer>
+        <integer id="TIME_INTERPOLATION_MODE">0</integer>
+        <boolean id="LINEAGE_DIVISION_RESULT">false</boolean>
+        <string id="LINEAGE_DELTAY_MIN">0</string>
+        <string id="ACCELERATION_MIN">0</string>
+        <string id="LIFESPAN_MAX">max</string>
+        <string id="SUBRUN_DELTA_PRE_EVENT">5</string>
+        <boolean id="TYPE_DETECTION">false</boolean>
+        <integer id="LINEAGE_MODE">0</integer>
+        <string id="REVERSION_DIRECTION_MIN">0</string>
+        <string id="LINEAGE_DIST_MAX">1</string>
+        <boolean id="TIME_INTERPOLATION_BEZIER">false</boolean>
+        <boolean id="TIME_CORRECTION">true</boolean>
+        <integer id="TRACKING_COORDINATE_MODE">0</integer>
+        <boolean id="TYPE_DISPLACEMENT_ADVANCED">false</boolean>
+        <boolean id="SUBRUN_ROTATION_DIRECTION">false</boolean>
+        <string id="INTENSITY_MAX">max</string>
+        <boolean id="TYPE_DISPLACEMENT_MSD_RESULT">false</boolean>
+        <integer id="TRAJECTORY_MODE">0</integer>
+        <boolean id="SUBRUN_DISPLACEMENT_DIRECTION">false</boolean>
+        <color id="TIME_LABEL_COLOR">0;0;0;0</color>
+        <color id="TRAJECTORY_COLOR_DIFFUSING">0;0;255;255</color>
+        <string id="TIME_LABEL"/>
+        <boolean id="SUBRUN_DISPLACEMENT_DISTANCE">false</boolean>
+        <integer id="SUBRUN_MODE">0</integer>
+        <string id="SUBRUN_LIFESPAN_MAX">max</string>
+        <boolean id="TIME_CORRECTION_INTENSITY">true</boolean>
+        <string id="ROTATION_MIN">0.2</string>
+        <color id="VECTOR_VELOCITY">0;0;0;0</color>
+        <boolean id="TIME_CORRECTION_DIST">true</boolean>
+        <integer id="TRACKING_MODE">0</integer>
+        <boolean id="MOTION_DESCRIPTORS">false</boolean>
+        <font id="TIME_LABEL_FONT" name="SansSerif.plain" size="1" style="0"/>
+        <string id="TIME_POLARITY_OFFSET">0</string>
+        <boolean id="TIME_ANALYSIS">true</boolean>
+        <integer id="TIME_POLARITY_MODE">0</integer>
+        <string id="INTENSITY_MIN">0</string>
+        <string id="DIST_MOVING_THRESHOLD">1</string>
+        <string id="SUBRUN_DISPLACEMENT_DIRECTION_MAX">45</string>
+        <string id="SUBRUN_LIFESPAN_MIN">0</string>
+        <boolean id="LINEAGE">false</boolean>
+        <string id="SUBRUN_PROPERTY_RATIO_MAX">1</string>
+        <integer id="TIME_FILTER_TYPE">0</integer>
+        <boolean id="SUBRUN_DETECTION">false</boolean>
+        <string id="TIME_DIVISION_DELTA">2</string>
+        <boolean id="TYPE_DISPLACEMENT_ADVANCED_CENTER">false</boolean>
+        <string id="SUBRUN_DISPLACEMENT_THRESHOLD">default</string>
+        <string id="SUBRUN_PROPERTY_RATIO_MIN">1</string>
+        <color id="CURVATURE">0;0;0;0</color>
+        <boolean id="REVERSION_DETECTION">false</boolean>
+        <boolean id="SUBRUN_LIFESPAN_FILTER">false</boolean>
+        <boolean id="TIME_CORRECTION_ANGLE">true</boolean>
+        <boolean id="TIME_CORRECTION_AREA">true</boolean>
+        <boolean id="TIME_FILTER">false</boolean>
+        <boolean id="TIMEFLAG">false</boolean>
+        <boolean id="REVERSION_LIST">false</boolean>
+        <string id="TIME_CORRECTION_DELTA">2</string>
+        <string id="LIFESPAN_MIN">0</string>
+        <integer id="SUBRUN_PROPERTY_FILTER">0</integer>
+        <array dimension="1" id="OCCURENCE" type="integer">
+          <integer index="0">0</integer>
+        </array>
+        <integer id="REVERSION_DISTANCE_MODE">0</integer>
+        <boolean id="TYPE_DISPLACEMENT">false</boolean>
+        <string id="REVERSION_DIRECTION_MAX">30</string>
+        <integer id="TRAJECTORY_COLOR_TYPE">0</integer>
+        <string id="TIME_DIVISION_DISTANCE">2</string>
+        <boolean id="SUBRUN_ROTATION_DISTANCE">false</boolean>
+        <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+        <string id="MOVING_MIN">auto</string>
+        <string id="TIME_FILTER_DELTA">2</string>
+        <string id="TYPE_DISPLACEMENT_MSD_MAXLAG">20</string>
+        <boolean id="SUBRUN_DEBUG">false</boolean>
+        <boolean id="ASSOCIATION">true</boolean>
+        <property class="com.ducret.resultJ.Property" id="EVENTS" name="EVENTS">
+          <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+          <array dimension="1" id="CRITERIUM" type="string">
+            <string index="0"/>
+          </array>
+          <array dimension="1" id="LIFESPAN" type="string">
+            <string index="0"/>
+          </array>
+          <string id="UNIT">µm</string>
+          <boolean id="ACTIVE">true</boolean>
+          <array class="java.awt.Color" dimension="1" id="COLOR" type="">
+            <color index="0">0;255;0;255</color>
+          </array>
+          <boolean id="ENABLED">false</boolean>
+          <array dimension="1" id="TITLE" type="string">
+            <string index="0"/>
+          </array>
+          <boolean id="ASSOCIATION">true</boolean>
+        </property>
+        <string id="LINEAGE_DELTAX_MIN">0</string>
+        <string id="PROPERTIES"/>
+        <color id="TRAJECTORY_COLOR_MIXED">255;0;255;255</color>
+        <string id="START_MAX">max</string>
+        <string id="REVERSION_DISTANCE_THRESHOLD">default</string>
+        <color id="VECTOR_ACCELERATION">0;0;0;0</color>
+        <boolean id="RELATIVE_FILTER">true</boolean>
+        <color id="TRAJECTORY_COLOR_MOVING">255;200;0;255</color>
+        <array class="com.ducret.resultJ.Property" dimension="1" id="TYPES" type="">
+          <property class="com.ducret.resultJ.Property" index="0" name="">
+            <array dimension="5" id="CRITERIUM" type="string">
+              <string index="0"/>
+              <string index="1"/>
+              <string index="2"/>
+              <string index="3"/>
+              <string index="4"/>
+            </array>
+            <string id="UNIT">µm</string>
+            <boolean id="ACTIVE">true</boolean>
+            <integer id="TYPE_MODE">0</integer>
+            <integer id="COLOR_LUT_MODE">0</integer>
+            <string id="BIN_MAX">100</string>
+            <string id="SEED_THRESHOLD"/>
+            <string id="SEED_PATH"/>
+            <string id="NAME"/>
+            <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+            <string id="BIN_PROPERTY"/>
+            <integer id="PANEL_MODE">0</integer>
+            <array class="java.awt.Color" dimension="5" id="COLOR" type="">
+              <color index="0">0;255;0;255</color>
+              <color index="1">0;255;0;255</color>
+              <color index="2">0;255;0;255</color>
+              <color index="3">0;255;0;255</color>
+              <color index="4">0;255;0;255</color>
+            </array>
+            <integer id="COLOR_MODE">0</integer>
+            <string id="SEED_PROPERTY"/>
+            <boolean id="ENABLED">false</boolean>
+            <array dimension="5" id="TITLE" type="string">
+              <string index="0"/>
+              <string index="1"/>
+              <string index="2"/>
+              <string index="3"/>
+              <string index="4"/>
+            </array>
+            <boolean id="ASSOCIATION">true</boolean>
+            <string id="BIN_MIN">0</string>
+          </property>
+        </array>
+        <string id="FILTER_CRITERIUM"/>
+        <color id="LINEAGE_LINKER_COLOR">0;255;255;255</color>
+        <color id="TRAJECTORY_LINKER">0;0;0;0</color>
+        <array class="java.awt.Color" dimension="1" id="COLOR" type="">
+          <color index="0">0;255;0;255</color>
+        </array>
+        <boolean id="TIME_POLARITY">true</boolean>
+        <boolean id="SUBRUN_ROTATION">false</boolean>
+        <property class="com.ducret.resultJ.Property" id="FLAGS" name="FLAGS">
+          <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+          <array dimension="1" id="CRITERIUM" type="string">
+            <string index="0"/>
+          </array>
+          <array dimension="1" id="LIFESPAN" type="integer">
+            <integer index="0">0</integer>
+          </array>
+          <string id="UNIT">µm</string>
+          <boolean id="ACTIVE">true</boolean>
+          <array class="java.awt.Color" dimension="1" id="COLOR" type="">
+            <color index="0">0;255;0;255</color>
+          </array>
+          <array dimension="1" id="OCCURENCE" type="integer">
+            <integer index="0">0</integer>
+          </array>
+          <boolean id="ENABLED">false</boolean>
+          <array dimension="1" id="TITLE" type="string">
+            <string index="0"/>
+          </array>
+          <boolean id="ASSOCIATION">true</boolean>
+        </property>
+        <string id="LINEAGE_DELTAX_MAX">max</string>
+        <array dimension="1" id="LIFESPAN" type="string">
+          <string index="0"/>
+        </array>
+        <string id="UNIT">µm</string>
+        <string id="SUBRUN_PROPERTY_NAME"/>
+        <string id="SUBRUN_DELTA_POST_EVENT">5</string>
+        <string id="TIME_CORRECTION_DISTANCE">2</string>
+        <boolean id="TYPE_BEHAVIOR">false</boolean>
+        <string id="NAME"/>
+        <color id="TRAJECTORY_COLOR_DIFFUSING_CONFINED">0;255;255;255</color>
+        <color id="REVERSION_COLOR">0;0;255;255</color>
+        <string id="TIME_POLARITY_TOLERANCE">0</string>
+        <boolean id="TIME_CORRECTION_OVERLAP">false</boolean>
+        <string id="END_MIN">0</string>
+        <array dimension="1" id="CRITERIUM" type="string">
+          <string index="0"/>
+        </array>
+        <string id="ROTATION_MAX">pi</string>
+        <boolean id="ACTIVE">false</boolean>
+        <boolean id="TIME_MODIFICATION">false</boolean>
+        <string id="ANGLE_MAX">180</string>
+        <string id="DIST_MAX">2</string>
+        <string id="END_MAX">max</string>
+        <boolean id="SUBRUN_RECURSIVE">false</boolean>
+        <boolean id="SUBRUN_PROPERTY">false</boolean>
+        <string id="ANGLE_MIN">0</string>
+        <boolean id="TIME_DIVISION">false</boolean>
+        <boolean id="SUBRUN_DISPLACEMENT">false</boolean>
+        <color id="TRAJECTORY_COLOR_NOT_MOVING">255;255;255;255</color>
+        <boolean id="TIME_OPTIONS">true</boolean>
+        <string id="CONFINEMENT_MAX">15</string>
+        <string id="AREA_MIN">0</string>
+        <color id="TRAJECTORY_COLOR">0;255;0;255</color>
+        <string id="ACCELERATION_MAX">max</string>
+        <string id="SUBRUN_PROPERTY_FILTER_SIZE">1</string>
+        <color id="TRAJECTORY_COLOR_MOVING_CONFINED">255;255;0;255</color>
+        <string id="START_MIN">0</string>
+        <string id="CONFINEMENT_MIN">1</string>
+        <string id="AREA_MAX">max</string>
+        <integer id="SUBRUN_DISPLACEMENT_MODE">0</integer>
+        <boolean id="ENABLED">false</boolean>
+        <array dimension="1" id="TITLE" type="string">
+          <string index="0"/>
+        </array>
+        <boolean id="TYPE_DISPLACEMENT_MSD">false</boolean>
+        <string id="DIST_MIN">0</string>
+        <boolean id="TIME_EVENT">false</boolean>
+      </property>
+      <integer id="THRESHOLD_OFFSET">-11</integer>
+      <boolean id="INSIDE_OVERLAP">false</boolean>
+      <array class="com.ducret.microbeJ.ImMaskAction" dimension="0" id="THRESHOLD_CALCULATOR_ACTIONS" type="object"/>
+      <integer id="ASSOCIATION_INDEX">0</integer>
+      <string id="OUTSIDE_ANGLE_MIN">0</string>
+      <boolean id="ASSOCIATION_DISTANCE">false</boolean>
+      <boolean id="INSIDE_ASSOCIATION">false</boolean>
+      <string id="MIDCELL_THRESHOLD">0.1</string>
+      <boolean id="INCLUDE_HOLES">false</boolean>
+      <integer id="MODE_DETECTION">-1</integer>
+      <boolean id="BIOFORMAT_CONCATENATE_SERIES">true</boolean>
+      <boolean id="ENABLED">false</boolean>
+      <integer id="THRESHOLD_TEMPLATE_KERNEL_HEIGHT">0</integer>
+      <string id="MIDCELL_LOCALISATION">auto</string>
+    </property>
+    <boolean id="LOCATION_RANGE">false</boolean>
+    <string id="SLICE_MAX">3</string>
+    <string id="IMAGE_FILTER_HYPERSTACK"/>
+    <string id="IMAGE_NAME_HYPERSTACK">20230801_LZ22225_60min_uninf.003.tif - T=4</string>
+    <boolean id="POSITION_RANGE">false</boolean>
+    <string id="CALIBRATION_PIXELSIZE">1</string>
+    <array dimension="6" id="IMAGE_FILTERS" type="string">
+      <string index="0"/>
+      <string index="1"/>
+      <string index="2"/>
+      <string index="3"/>
+      <string index="4"/>
+      <string index="5"/>
+    </array>
+    <string id="IMG_ORIGIN_Y">0</string>
+    <array dimension="6" id="IMAGE_NAMES" type="string">
+      <string index="0">*none*</string>
+      <string index="1">*none*</string>
+      <string index="2">*none*</string>
+      <string index="3">*none*</string>
+      <string index="4">*none*</string>
+      <string index="5">*none*</string>
+    </array>
+    <boolean id="TIME_RESOLUTION_ACTIVE">false</boolean>
+    <string id="POSITION_MAX">max</string>
+    <string id="DESCRIPTION"/>
+    <string id="IMG_ORIGIN_X">0</string>
+    <template active="true" class="com.ducret.resultJ.Template" id="RESULT_TEMPLATE" name="">
+      <array class="com.ducret.resultJ.ResultTemplate" dimension="0" id="list" type="object"/>
+    </template>
+    <array class="com.ducret.resultJ.Property" dimension="1" id="maxima" type="">
+      <property class="com.ducret.resultJ.Property" index="0" name="">
+        <string id="STRAIGHTEN_DILATE">0</string>
+        <string id="MAX_WIDTH">max</string>
+        <boolean id="SHAPE_CONTOUR">false</boolean>
+        <string id="SLICE_MAX">3</string>
+        <integer id="SIGNAL_TEXTURE_ANGLE">0</integer>
+        <boolean id="POSITION_RANGE">false</boolean>
+        <string id="INSIDE_TOLERANCE">0</string>
+        <string id="MAX_AREA">max</string>
+        <boolean id="TYPE_DETECTION">true</boolean>
+        <color id="REJECTED">255;0;0;255</color>
+        <boolean id="CURRENT_POSITION">false</boolean>
+        <string id="STRAIGHTEN_WIDTH">20</string>
+        <boolean id="DISTANCE">false</boolean>
+        <boolean id="BIOFORMAT_OPENALL_SERIES">true</boolean>
+        <string id="IMAGE_DIRECTORY"/>
+        <string id="POSITION_MIN">1</string>
+        <string id="OUTSIDE_CRITERIUM"/>
+        <boolean id="SIGNAL_TEXTURE_SCALING">true</boolean>
+        <string id="MIN_SLICE_COUNT">0</string>
+        <string id="SIGNAL_ZSCORE">2</string>
+        <boolean id="SIGNAL_REGION_INTERSECTION">false</boolean>
+        <color id="LABEL_COLOR">255;255;255;255</color>
+        <integer id="COLOCALIZATION_INDEX">0</integer>
+        <boolean id="COLOCALIZATION">false</boolean>
+        <boolean id="ASSOCIATION_OPTION">true</boolean>
+        <boolean id="ASSOCIATION_RESULT_LIST">false</boolean>
+        <string id="OUTSIDE_DISTMAX">0</string>
+        <string id="GAUSSIAN_FIT_AMPLITUDE_MAX">max</string>
+        <boolean id="CALIBRATION_ACTIVE">false</boolean>
+        <string id="BOUNDARY_SMOOTH_CUTOFF">0.1</string>
+        <string id="AXIS_SMOOTH">1</string>
+        <boolean id="SHAPE_FIT">true</boolean>
+        <float id="TOLERANCE">1340.0</float>
+        <string id="MAX_SKELETON_SIZE">max</string>
+        <string id="GAUSSIAN_FIT_RADIUS">2</string>
+        <string id="CONTACT_DISTMAX">0</string>
+        <string id="MAX_SKELETON">max</string>
+        <boolean id="TIME_RESOLUTION_ACTIVE">false</boolean>
+        <boolean id="SHAPE_FIT_COORD">false</boolean>
+        <boolean id="STRAIGHTEN">false</boolean>
+        <string id="AXIS_CORRECTION_TOLERANCE">0</string>
+        <integer id="ASSOCIATION_LOCATION_ORIGIN">0</integer>
+        <boolean id="GAUSSIAN_FIT">true</boolean>
+        <boolean id="SIGNAL_REGION_HALF">false</boolean>
+        <string id="INSIDE_DISTMAX">0</string>
+        <boolean id="SIGNAL_TEXTURE">false</boolean>
+        <string id="GAUSSIAN_FIT_THRESHOLD_DISTANCE">2</string>
+        <string id="INSIDE_CRITERIUM"/>
+        <boolean id="FILTER_ASSOCIATION">false</boolean>
+        <boolean id="ASSOCIATION_POLYGON">false</boolean>
+        <boolean id="VIRTUAL">false</boolean>
+        <color id="COLOR_INTERSECTION">0;0;0;0</color>
+        <integer id="POINT_TYPE">0</integer>
+        <font id="LABEL_FONT" name="SansSerif.plain" size="1" style="0"/>
+        <array class="com.ducret.resultJ.Property" dimension="1" id="TYPES" type="">
+          <property class="com.ducret.resultJ.Property" index="0" name="">
+            <array dimension="5" id="CRITERIUM" type="string">
+              <string index="0"/>
+              <string index="1"/>
+              <string index="2"/>
+              <string index="3"/>
+              <string index="4"/>
+            </array>
+            <string id="UNIT">µm</string>
+            <boolean id="ACTIVE">true</boolean>
+            <integer id="TYPE_MODE">0</integer>
+            <integer id="COLOR_LUT_MODE">0</integer>
+            <string id="BIN_MAX">100</string>
+            <string id="SEED_THRESHOLD"/>
+            <string id="SEED_PATH"/>
+            <string id="NAME"/>
+            <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+            <string id="BIN_PROPERTY"/>
+            <integer id="PANEL_MODE">0</integer>
+            <array class="java.awt.Color" dimension="5" id="COLOR" type="">
+              <color index="0">0;255;0;255</color>
+              <color index="1">0;255;0;255</color>
+              <color index="2">0;255;0;255</color>
+              <color index="3">0;255;0;255</color>
+              <color index="4">0;255;0;255</color>
+            </array>
+            <integer id="COLOR_MODE">0</integer>
+            <string id="SEED_PROPERTY"/>
+            <boolean id="ENABLED">true</boolean>
+            <array dimension="5" id="TITLE" type="string">
+              <string index="0"/>
+              <string index="1"/>
+              <string index="2"/>
+              <string index="3"/>
+              <string index="4"/>
+            </array>
+            <boolean id="ASSOCIATION">true</boolean>
+            <string id="BIN_MIN">0</string>
+          </property>
+        </array>
+        <boolean id="OUTSIDE_EXCLUSIVE">false</boolean>
+        <string id="LABEL"/>
+        <boolean id="DETECTION">true</boolean>
+        <boolean id="SIGNAL_REGION_MEMBRANE">false</boolean>
+        <boolean id="ASSOCIATION_SPACING_LIST">false</boolean>
+        <boolean id="IMG_ORIGIN">false</boolean>
+        <integer id="POLE_MODE">0</integer>
+        <boolean id="DISTANCE_LIST">false</boolean>
+        <string id="IMAGE_NAME_BINARY">*none*</string>
+        <integer id="FILTER_TYPE">0</integer>
+        <integer id="BACKGROUND">0</integer>
+        <string id="MIN_AREA">4</string>
+        <string id="NAME"/>
+        <string id="GAUSSIAN_FIT_THRESHOLD">0</string>
+        <array dimension="0" id="LOCATION_AREA" type="string"/>
+        <integer id="SIGNAL_ZSCORE_MODE">0</integer>
+        <string id="POLAR_LOCALISATION">auto</string>
+        <color id="MAIN_AXIS">0;0;0;0</color>
+        <string id="SIDE_FACTOR">0.9</string>
+        <string id="SIGNAL_BACKGROUND_TREATEMENT_CYCLE_COUNT">0</string>
+        <calibration class="com.ducret.resultJ.ImCalibration" fps="1.0" frameInterval="0.0" height="0.0" id="CALIBRATION" info="" pixelDepth="1.0" pixelHeight="1.0" pixelWidth="1.0" timeUnit="sec" unit="pixel" units="" width="0.0" xOrigin="0.0" yOrigin="0.0" yunit="" zOrigin="0.0" zunit=""/>
+        <boolean id="SET_BINARY">true</boolean>
+        <boolean id="ASSOCIATION_LOCATION">true</boolean>
+        <boolean id="LOCATION_RANGE">false</boolean>
+        <boolean id="BINARY">false</boolean>
+        <string id="OUTSIDE_ANGLE_MAX">180</string>
+        <string id="MAX_SLICE_COUNT">max</string>
+        <boolean id="ASSOCIATION_COVERAGE">false</boolean>
+        <string id="BOUNDARY_SMOOTH">1</string>
+        <string id="MIN_LENGTH">0</string>
+        <property class="com.ducret.resultJ.Property" id="TRACKING" name="TRACKING">
+          <boolean id="TIME_CORRECTION_ACCELERATION">true</boolean>
+          <boolean id="SUBRUN_RESULT">false</boolean>
+          <color id="TRAJECTORY_COLOR_DEFAULT">0;255;0;255</color>
+          <string id="LINEAGE_DELTAY_MAX">max</string>
+          <color id="TRAJECTORY_COLOR_ROTATING">255;255;0;255</color>
+          <string id="SUBRUN_DISPLACEMENT_DIRECTION_MIN">0</string>
+          <integer id="TIME_MARK_SIZE">1</integer>
+          <integer id="TIME_INTERPOLATION_MODE">0</integer>
+          <boolean id="LINEAGE_DIVISION_RESULT">false</boolean>
+          <string id="LINEAGE_DELTAY_MIN">0</string>
+          <string id="ACCELERATION_MIN">0</string>
+          <string id="LIFESPAN_MAX">max</string>
+          <string id="SUBRUN_DELTA_PRE_EVENT">5</string>
+          <boolean id="TYPE_DETECTION">false</boolean>
+          <integer id="LINEAGE_MODE">0</integer>
+          <string id="REVERSION_DIRECTION_MIN">0</string>
+          <string id="LINEAGE_DIST_MAX">1</string>
+          <boolean id="TIME_INTERPOLATION_BEZIER">false</boolean>
+          <boolean id="TIME_CORRECTION">true</boolean>
+          <integer id="TRACKING_COORDINATE_MODE">0</integer>
+          <boolean id="TYPE_DISPLACEMENT_ADVANCED">false</boolean>
+          <boolean id="SUBRUN_ROTATION_DIRECTION">false</boolean>
+          <string id="INTENSITY_MAX">max</string>
+          <boolean id="TYPE_DISPLACEMENT_MSD_RESULT">false</boolean>
+          <integer id="TRAJECTORY_MODE">0</integer>
+          <boolean id="SUBRUN_DISPLACEMENT_DIRECTION">false</boolean>
+          <color id="TIME_LABEL_COLOR">0;0;0;0</color>
+          <color id="TRAJECTORY_COLOR_DIFFUSING">0;0;255;255</color>
+          <string id="TIME_LABEL"/>
+          <boolean id="SUBRUN_DISPLACEMENT_DISTANCE">false</boolean>
+          <integer id="SUBRUN_MODE">0</integer>
+          <string id="SUBRUN_LIFESPAN_MAX">max</string>
+          <boolean id="TIME_CORRECTION_INTENSITY">true</boolean>
+          <string id="ROTATION_MIN">0.2</string>
+          <color id="VECTOR_VELOCITY">0;0;0;0</color>
+          <boolean id="TIME_CORRECTION_DIST">true</boolean>
+          <integer id="TRACKING_MODE">0</integer>
+          <boolean id="MOTION_DESCRIPTORS">false</boolean>
+          <font id="TIME_LABEL_FONT" name="SansSerif.plain" size="1" style="0"/>
+          <string id="TIME_POLARITY_OFFSET">0</string>
+          <boolean id="TIME_ANALYSIS">true</boolean>
+          <integer id="TIME_POLARITY_MODE">0</integer>
+          <string id="INTENSITY_MIN">0</string>
+          <string id="DIST_MOVING_THRESHOLD">1</string>
+          <string id="SUBRUN_DISPLACEMENT_DIRECTION_MAX">45</string>
+          <string id="SUBRUN_LIFESPAN_MIN">0</string>
+          <boolean id="LINEAGE">false</boolean>
+          <string id="SUBRUN_PROPERTY_RATIO_MAX">1</string>
+          <integer id="TIME_FILTER_TYPE">0</integer>
+          <boolean id="SUBRUN_DETECTION">false</boolean>
+          <string id="TIME_DIVISION_DELTA">2</string>
+          <boolean id="TYPE_DISPLACEMENT_ADVANCED_CENTER">false</boolean>
+          <string id="SUBRUN_DISPLACEMENT_THRESHOLD">default</string>
+          <string id="SUBRUN_PROPERTY_RATIO_MIN">1</string>
+          <color id="CURVATURE">0;0;0;0</color>
+          <boolean id="REVERSION_DETECTION">false</boolean>
+          <boolean id="SUBRUN_LIFESPAN_FILTER">false</boolean>
+          <boolean id="TIME_CORRECTION_ANGLE">true</boolean>
+          <boolean id="TIME_CORRECTION_AREA">true</boolean>
+          <boolean id="TIME_FILTER">false</boolean>
+          <boolean id="TIMEFLAG">false</boolean>
+          <boolean id="REVERSION_LIST">false</boolean>
+          <string id="TIME_CORRECTION_DELTA">2</string>
+          <string id="LIFESPAN_MIN">0</string>
+          <integer id="SUBRUN_PROPERTY_FILTER">0</integer>
+          <array dimension="1" id="OCCURENCE" type="integer">
+            <integer index="0">0</integer>
+          </array>
+          <integer id="REVERSION_DISTANCE_MODE">0</integer>
+          <boolean id="TYPE_DISPLACEMENT">false</boolean>
+          <string id="REVERSION_DIRECTION_MAX">30</string>
+          <integer id="TRAJECTORY_COLOR_TYPE">0</integer>
+          <string id="TIME_DIVISION_DISTANCE">2</string>
+          <boolean id="SUBRUN_ROTATION_DISTANCE">false</boolean>
+          <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+          <string id="MOVING_MIN">auto</string>
+          <string id="TIME_FILTER_DELTA">2</string>
+          <string id="TYPE_DISPLACEMENT_MSD_MAXLAG">20</string>
+          <boolean id="SUBRUN_DEBUG">false</boolean>
+          <boolean id="ASSOCIATION">true</boolean>
+          <property class="com.ducret.resultJ.Property" id="EVENTS" name="EVENTS">
+            <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+            <array dimension="1" id="CRITERIUM" type="string">
+              <string index="0"/>
+            </array>
+            <array dimension="1" id="LIFESPAN" type="string">
+              <string index="0"/>
+            </array>
+            <string id="UNIT">µm</string>
+            <boolean id="ACTIVE">true</boolean>
+            <array class="java.awt.Color" dimension="1" id="COLOR" type="">
+              <color index="0">0;255;0;255</color>
+            </array>
+            <boolean id="ENABLED">false</boolean>
+            <array dimension="1" id="TITLE" type="string">
+              <string index="0"/>
+            </array>
+            <boolean id="ASSOCIATION">true</boolean>
+          </property>
+          <string id="LINEAGE_DELTAX_MIN">0</string>
+          <string id="PROPERTIES"/>
+          <color id="TRAJECTORY_COLOR_MIXED">255;0;255;255</color>
+          <string id="START_MAX">max</string>
+          <string id="REVERSION_DISTANCE_THRESHOLD">default</string>
+          <color id="VECTOR_ACCELERATION">0;0;0;0</color>
+          <boolean id="RELATIVE_FILTER">true</boolean>
+          <color id="TRAJECTORY_COLOR_MOVING">255;200;0;255</color>
+          <array class="com.ducret.resultJ.Property" dimension="1" id="TYPES" type="">
+            <property class="com.ducret.resultJ.Property" index="0" name="">
+              <array dimension="5" id="CRITERIUM" type="string">
+                <string index="0"/>
+                <string index="1"/>
+                <string index="2"/>
+                <string index="3"/>
+                <string index="4"/>
+              </array>
+              <string id="UNIT">µm</string>
+              <boolean id="ACTIVE">true</boolean>
+              <integer id="TYPE_MODE">0</integer>
+              <integer id="COLOR_LUT_MODE">0</integer>
+              <string id="BIN_MAX">100</string>
+              <string id="SEED_THRESHOLD"/>
+              <string id="SEED_PATH"/>
+              <string id="NAME"/>
+              <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+              <string id="BIN_PROPERTY"/>
+              <integer id="PANEL_MODE">0</integer>
+              <array class="java.awt.Color" dimension="5" id="COLOR" type="">
+                <color index="0">0;255;0;255</color>
+                <color index="1">0;255;0;255</color>
+                <color index="2">0;255;0;255</color>
+                <color index="3">0;255;0;255</color>
+                <color index="4">0;255;0;255</color>
+              </array>
+              <integer id="COLOR_MODE">0</integer>
+              <string id="SEED_PROPERTY"/>
+              <boolean id="ENABLED">false</boolean>
+              <array dimension="5" id="TITLE" type="string">
+                <string index="0"/>
+                <string index="1"/>
+                <string index="2"/>
+                <string index="3"/>
+                <string index="4"/>
+              </array>
+              <boolean id="ASSOCIATION">true</boolean>
+              <string id="BIN_MIN">0</string>
+            </property>
+          </array>
+          <string id="FILTER_CRITERIUM"/>
+          <color id="LINEAGE_LINKER_COLOR">0;255;255;255</color>
+          <color id="TRAJECTORY_LINKER">0;0;0;0</color>
+          <array class="java.awt.Color" dimension="1" id="COLOR" type="">
+            <color index="0">0;255;0;255</color>
+          </array>
+          <boolean id="TIME_POLARITY">true</boolean>
+          <boolean id="SUBRUN_ROTATION">false</boolean>
+          <property class="com.ducret.resultJ.Property" id="FLAGS" name="FLAGS">
+            <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+            <array dimension="1" id="CRITERIUM" type="string">
+              <string index="0"/>
+            </array>
+            <array dimension="1" id="LIFESPAN" type="integer">
+              <integer index="0">0</integer>
+            </array>
+            <string id="UNIT">µm</string>
+            <boolean id="ACTIVE">true</boolean>
+            <array class="java.awt.Color" dimension="1" id="COLOR" type="">
+              <color index="0">0;255;0;255</color>
+            </array>
+            <array dimension="1" id="OCCURENCE" type="integer">
+              <integer index="0">0</integer>
+            </array>
+            <boolean id="ENABLED">false</boolean>
+            <array dimension="1" id="TITLE" type="string">
+              <string index="0"/>
+            </array>
+            <boolean id="ASSOCIATION">true</boolean>
+          </property>
+          <string id="LINEAGE_DELTAX_MAX">max</string>
+          <array dimension="1" id="LIFESPAN" type="string">
+            <string index="0"/>
+          </array>
+          <string id="UNIT">µm</string>
+          <string id="SUBRUN_PROPERTY_NAME"/>
+          <string id="SUBRUN_DELTA_POST_EVENT">5</string>
+          <string id="TIME_CORRECTION_DISTANCE">2</string>
+          <boolean id="TYPE_BEHAVIOR">false</boolean>
+          <string id="NAME"/>
+          <color id="TRAJECTORY_COLOR_DIFFUSING_CONFINED">0;255;255;255</color>
+          <color id="REVERSION_COLOR">0;0;255;255</color>
+          <string id="TIME_POLARITY_TOLERANCE">0</string>
+          <boolean id="TIME_CORRECTION_OVERLAP">false</boolean>
+          <string id="END_MIN">0</string>
+          <array dimension="1" id="CRITERIUM" type="string">
+            <string index="0"/>
+          </array>
+          <string id="ROTATION_MAX">pi</string>
+          <boolean id="ACTIVE">false</boolean>
+          <boolean id="TIME_MODIFICATION">false</boolean>
+          <string id="ANGLE_MAX">180</string>
+          <string id="DIST_MAX">2</string>
+          <string id="END_MAX">max</string>
+          <boolean id="SUBRUN_RECURSIVE">false</boolean>
+          <boolean id="SUBRUN_PROPERTY">false</boolean>
+          <string id="ANGLE_MIN">0</string>
+          <boolean id="TIME_DIVISION">false</boolean>
+          <boolean id="SUBRUN_DISPLACEMENT">false</boolean>
+          <color id="TRAJECTORY_COLOR_NOT_MOVING">255;255;255;255</color>
+          <boolean id="TIME_OPTIONS">true</boolean>
+          <string id="CONFINEMENT_MAX">15</string>
+          <string id="AREA_MIN">0</string>
+          <color id="TRAJECTORY_COLOR">0;255;0;255</color>
+          <string id="ACCELERATION_MAX">max</string>
+          <string id="SUBRUN_PROPERTY_FILTER_SIZE">1</string>
+          <color id="TRAJECTORY_COLOR_MOVING_CONFINED">255;255;0;255</color>
+          <string id="START_MIN">0</string>
+          <string id="CONFINEMENT_MIN">1</string>
+          <string id="AREA_MAX">max</string>
+          <integer id="SUBRUN_DISPLACEMENT_MODE">0</integer>
+          <boolean id="ENABLED">false</boolean>
+          <array dimension="1" id="TITLE" type="string">
+            <string index="0"/>
+          </array>
+          <boolean id="TYPE_DISPLACEMENT_MSD">false</boolean>
+          <string id="DIST_MIN">0</string>
+          <boolean id="TIME_EVENT">false</boolean>
+        </property>
+        <boolean id="INSIDE_OVERLAP">false</boolean>
+        <string id="SIGNAL_ZSCORE_CH6">2</string>
+        <integer id="SIGNAL_REGION_MEMBRANE_MODE">0</integer>
+        <string id="SIGNAL_ZSCORE_CH5">2</string>
+        <color id="BOND">102;178;255;100</color>
+        <integer id="SIGNAL_BACKGROUND_TREATEMENT_MODE">0</integer>
+        <integer id="ASSOCIATION_INDEX">0</integer>
+        <boolean id="BOUNDARY_FITSPLINE">false</boolean>
+        <boolean id="ASSOCIATION_DISTANCE">false</boolean>
+        <boolean id="FILTER">false</boolean>
+        <integer id="BOUNDARY_SMOOTH_MODE">0</integer>
+        <boolean id="CONTACT_DISTANCE">false</boolean>
+        <string id="MIN_ZSCORE">0</string>
+        <boolean id="BIOFORMAT_CONCATENATE_SERIES">true</boolean>
+        <color id="LONG_AXIS">255;200;0;255</color>
+        <color id="CONTACT_COLOR">0;0;0;0</color>
+        <integer id="MODE_AREA">0</integer>
+        <float id="ADJUSTED_ZSCORE">50.0</float>
+        <string id="GAUSSIAN_FIT_ZSCORE">0-max</string>
+        <boolean id="SIGNAL_REGION_POLE">false</boolean>
+        <string id="MIDCELL_LOCALISATION">auto</string>
+        <array class="com.ducret.resultJ.Property" dimension="1" id="PROFILES" type="">
+          <property class="com.ducret.resultJ.Property" index="0" name="">
+            <string id="UNIT">p</string>
+            <boolean id="ACTIVE">true</boolean>
+            <boolean id="PLOT">true</boolean>
+            <integer id="CENTER_INDEX">0</integer>
+            <string id="RESOLUTION">auto</string>
+            <boolean id="WIDTH">false</boolean>
+            <boolean id="OPTIONS">true</boolean>
+            <string id="NAME"/>
+            <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+            <boolean id="CENTER">false</boolean>
+            <integer id="PANEL_MODE">0</integer>
+            <string id="EXPANSION">0</string>
+            <boolean id="CURVATURE">false</boolean>
+            <boolean id="PLOT_RAW">false</boolean>
+            <string id="OFFSET">0</string>
+            <boolean id="PLOT_BOUNDARY">false</boolean>
+            <boolean id="ENABLED">true</boolean>
+            <integer id="INDEX">0</integer>
+            <string id="CURVATURE_DELTA">2</string>
+            <boolean id="ASSOCIATION">true</boolean>
+            <string id="THICKNESS">auto</string>
+            <integer id="PLOT_MODE">0</integer>
+          </property>
+        </array>
+        <integer id="IMAGE_OPENING_MODE">0</integer>
+        <integer id="STRAIGHTEN_MODE">0</integer>
+        <boolean id="OUTSIDE_OVERLAP">true</boolean>
+        <integer id="COLOCALIZATION_MODE">0</integer>
+        <string id="IMAGE_FILTER_HYPERSTACK"/>
+        <string id="IMAGE_NAME_HYPERSTACK">20230801_LZ22225_60min_uninf.003.tif - T=4</string>
+        <string id="CALIBRATION_PIXELSIZE">1</string>
+        <string id="POLE_FACTOR">1.3</string>
+        <integer id="INTERPOLATION_WIDTHMODE">1</integer>
+        <string id="SIGNAL_TEXTURE_STEP">1</string>
+        <string id="GAUSSIAN_FIT_ITERATION">1000</string>
+        <integer id="PANEL_MODE">0</integer>
+        <string id="POSITION_MAX">max</string>
+        <boolean id="GAUSSIAN_FIT_WARNING">false</boolean>
+        <string id="SLICE_MIN">3</string>
+        <string id="INTERPOLATION_WIDTH">5</string>
+        <boolean id="SIGNAL_REGION_BODY">false</boolean>
+        <boolean id="SIGNAL_REGION">false</boolean>
+        <boolean id="SEGMENTATION_AXIS">true</boolean>
+        <string id="SIGNAL_ZSCORE_CH4">2</string>
+        <boolean id="EXCLUDE_BOUNDARY">false</boolean>
+        <string id="SIGNAL_ZSCORE_CH3">2</string>
+        <string id="SIGNAL_ZSCORE_CH2">2</string>
+        <string id="CALIBRATION_UNIT">pixel</string>
+        <string id="SIGNAL_ZSCORE_CH1">2</string>
+        <string id="SIGNAL_RESOLUTION">1</string>
+        <string id="MAX_ZSCORE">max</string>
+        <boolean id="OPTION">true</boolean>
+        <string id="AXIS_CORRECTION_WIDTH">2</string>
+        <color id="DISTANCE_COLOR">0;0;0;0</color>
+        <boolean id="AXIS_CORRECTION">false</boolean>
+        <string id="GAUSSIAN_FIT_AMPLITUDE_MIN">0</string>
+        <string id="STRAIGHTEN_LENGTH">100</string>
+        <integer id="ASSOCIATION_RESULT_MODE">0</integer>
+        <boolean id="SHAPE">true</boolean>
+        <boolean id="GAUSSIAN_FIT_OPTIMIZATION">false</boolean>
+        <string id="NB_LIMIT">10000</string>
+        <string id="SIGNAL_REGION_MEMBRANE_THICKNESS">0.5</string>
+        <string id="NB_MAX_ASSOCIATION_PROPERTY"/>
+        <integer id="IMG_ORIGIN_MODE">0</integer>
+        <string id="TIME_RESOLUTION_TEXT">1</string>
+        <boolean id="ASSOCIATION_SPACING">false</boolean>
+        <integer id="INSIDE_MODE">0</integer>
+        <string id="COLOCALIZATION_THRESHOLD">0</string>
+        <boolean id="OUTSIDE_ASSOCIATION">false</boolean>
+        <boolean id="SIGNAL_TEXTURE_SYMETRY">false</boolean>
+        <string id="MIN_SKELETON">0</string>
+        <integer id="GAUSSIAN_FIT_METHOD">1</integer>
+        <boolean id="ASSOCIATION_SET_CENTER">false</boolean>
+        <integer id="POINT_SIZE">1</integer>
+        <string id="AXIS_RESOLUTION">2</string>
+        <boolean id="SIGNAL_REGION_SIDE">false</boolean>
+        <string id="EXCLUDE_BOUNDARY_DILATE">1</string>
+        <boolean id="AXIS_SIMPLIFICATION">true</boolean>
+        <boolean id="SIGNAL">true</boolean>
+        <string id="FILTER_SIZE">1</string>
+        <string id="MAX_BACKGROUND_AREA">max</string>
+        <string id="BOUNDARY_RESOLUTION">1</string>
+        <string id="IMAGE_FILTER_BINARY"/>
+        <string id="SIGNAL_BACKGROUND_LOCAL_GRID_SIZE">10</string>
+        <boolean id="ASSOCIATION_DISPLAYED">false</boolean>
+        <integer id="SIGNAL_BACKGROUND_LOCAL_MODE">0</integer>
+        <boolean id="SIGNAL_CORRELATION">false</boolean>
+        <boolean id="ASSOCIATION">true</boolean>
+        <integer id="COLOR_ACCESSORY_STROKE">0</integer>
+        <integer id="NB_MAX_ASSOCIATION_MODE">0</integer>
+        <boolean id="CONTACT">false</boolean>
+        <boolean id="OUTSIDE_BEZIER_LINK">false</boolean>
+        <boolean id="LOCALISATION">true</boolean>
+        <integer id="MODE">2</integer>
+        <integer id="CHANNEL_INDEX">1</integer>
+        <string id="IMG_ORIGIN_Y">0</string>
+        <array dimension="6" id="IMAGE_NAMES" type="string">
+          <string index="0">*none*</string>
+          <string index="1">*none*</string>
+          <string index="2">*none*</string>
+          <string index="3">*none*</string>
+          <string index="4">*none*</string>
+          <string index="5">*none*</string>
+        </array>
+        <string id="DISTANCE_THRESHOLD">0</string>
+        <string id="IMG_ORIGIN_X">0</string>
+        <integer id="TIME_RESOLUTION_UNIT">0</integer>
+        <boolean id="INSIDE_EXCLUSIVE">true</boolean>
+        <integer id="OUTSIDE_MODE">0</integer>
+        <integer id="ASSOCIATION_SPACING_MODE">0</integer>
+        <string id="OUTSIDE_BEZIER_FACTOR">1</string>
+        <string id="NB_MAX_ASSOCIATION">1</string>
+        <string id="MIN_CIRCULARITY">0</string>
+        <integer id="INTERPOLATION_MODE">0</integer>
+        <string id="MIN_INTENSITY">4000</string>
+        <string id="POLE_RESOLUTION">0</string>
+        <string id="MIN_WIDTH">0</string>
+        <string id="CRITERIA"/>
+        <integer id="DISTANCE_MODE">0</integer>
+        <string id="UNIT">µm</string>
+        <string id="ASSOCIATION_NAME">Bacteria</string>
+        <string id="BOUNDARY_SMOOTH_ORDER">2</string>
+        <string id="MAX_LENGTH">max</string>
+        <boolean id="SIGNAL_BACKGROUND_LOCAL_ACTIVE">false</boolean>
+        <boolean id="SEGMENTATION">true</boolean>
+        <string id="SEGMENTATION_THICKNESS">0.1</string>
+        <boolean id="OVERLAPPING">false</boolean>
+        <string id="BOUNDARY_DILATE">0</string>
+        <boolean id="SIGNAL_RAW">false</boolean>
+        <boolean id="ACTIVE">true</boolean>
+        <boolean id="SIGNAL_BACKGROUND_TREATEMENT_DEBUG">false</boolean>
+        <boolean id="EXCLUDE_ON_EDGE">true</boolean>
+        <string id="FILTER_OPTION">0</string>
+        <boolean id="BRANCHING">false</boolean>
+        <string id="MIN_SKELETON_SIZE">0</string>
+        <array dimension="6" id="IMAGE_FILTERS" type="string">
+          <string index="0"/>
+          <string index="1"/>
+          <string index="2"/>
+          <string index="3"/>
+          <string index="4"/>
+          <string index="5"/>
+        </array>
+        <string id="STRAIGHTEN_FACTOR">2</string>
+        <boolean id="PROFILE">true</boolean>
+        <string id="INSIDE_ZSCORE">0</string>
+        <boolean id="SIGNAL_BACKGROUND_TREATEMENT">false</boolean>
+        <boolean id="SIGNAL_BACKGROUND_LOCAL_DEBUG">false</boolean>
+        <boolean id="SIGNAL_RATIO">true</boolean>
+        <integer id="COLOCALIZATION_DISTANCE_MODE">0</integer>
+        <string id="MAX_CIRCULARITY">max</string>
+        <string id="OUTSIDE_ANGLE_MIN">0</string>
+        <color id="COLOR_BOUNDARY">0;255;255;255</color>
+        <color id="COLOR_MEMBRANE">0;0;0;0</color>
+        <boolean id="INSIDE_ASSOCIATION">true</boolean>
+        <string id="MAX_INTENSITY">max</string>
+        <string id="MIDCELL_THRESHOLD">0.1</string>
+        <color id="COLOR_ACCESSORY">255;200;0;255</color>
+        <string id="SIGNAL_DILATE">0</string>
+        <integer id="MODE_DETECTION">1</integer>
+        <color id="COLOCALIZATION_COLOR">255;255;0;255</color>
+        <boolean id="SIGNAL_OPTIONS">true</boolean>
+        <boolean id="ENABLED">false</boolean>
+        <color id="LINKER">255;0;255;255</color>
+      </property>
+    </array>
+    <integer id="TIME_RESOLUTION_UNIT">0</integer>
+    <string id="SLICE_MIN">3</string>
+    <boolean id="DETECTION_SUBPARTICLE">true</boolean>
+    <boolean id="TEMPLATE">false</boolean>
+    <boolean id="IMG_ORIGIN">false</boolean>
+    <boolean id="SLICE_MULTITHREAD">true</boolean>
+    <boolean id="DETECTION_BACTERIA">true</boolean>
+    <boolean id="BIOFORMAT_OPENALL_SERIES">true</boolean>
+    <string id="IMAGE_DIRECTORY"/>
+    <boolean id="CLEAR_MEMORY">false</boolean>
+    <string id="POSITION_MIN">1</string>
+    <string id="BATCH_FOLDER"/>
+    <string id="CALIBRATION_UNIT">pixel</string>
+    <string id="IMAGE_FILTER_BINARY"/>
+    <string id="IMAGE_NAME_BINARY">*none*</string>
+    <string id="NAME">Experiment_test</string>
+    <boolean id="BEEP">false</boolean>
+    <string id="DATE">11/06/2023</string>
+    <boolean id="BIOFORMAT_CONCATENATE_SERIES">true</boolean>
+    <array class="com.ducret.resultJ.Template" dimension="0" id="RESULT_TEMPLATE_LIST" type="object"/>
+    <array dimension="0" id="LOCATION_AREA" type="string"/>
+    <integer id="IMG_ORIGIN_MODE">0</integer>
+    <string id="TIME_RESOLUTION_TEXT">1</string>
+    <boolean id="VIRTUAL">false</boolean>
+  </property>
+</settings>
