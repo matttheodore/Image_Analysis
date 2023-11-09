@@ -12,4 +12,4 @@ def list_files_to_txt(startpath):
                 txt_file.write(f"{subindent}{f}\n")
 
 # Usage example; replace the directory path with the one you want to explore.
-list_files_to_txt(r"C:\Users\Nikon\anaconda3\envs\omnipose")
+list_files_to_txt(r"F:\Matthew Theodore_Microscopy\RNA Phages\FISH\biorep_1_FISH_test")
