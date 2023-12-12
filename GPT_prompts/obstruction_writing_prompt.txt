@@ -1,0 +1,152 @@
+Obstruction 
+
+I need to write a few more methods sections for experiments I would call pilus obstruction where I used C5-maleimide michael addition conjugation of objects and fluoroescent object to pili to see if they would mimick the PhiCb5 phage and cause detachment of pili. 
+
+Here is the protocol I used for C5 maleimide labeling with PEG 5,000. 
+
+Pilus Obstruction PEG-5000      		        file under: P
+Paper or Adapted From: https://pubmed.ncbi.nlm.nih.gov/31028374/
+Ellison, Brun 2019
+								
+
+
+
+
+Grow cells between OD 0.1-0.3 and dilute to 0.1 OD into PYE for a sample into a tube. 
+Spin cells at 5,000g for 1 min at RT.
+Resuspend in PBS or buffer/media lacking free-thiols.
+Pipette 5 µl of 100 mM PEG5000-mal stock into the tube containing the cells for a final concentration of 500 µM PEG5000-mal. Quickly pipette 5 µl of 5 mg/ml fluorophore-conjugated maleimide dye (such as AF488-mal) stock into the tube and briefly vortex to mix.
+Incubate for 30 minutes.
+Spin cells at 5000kg for 1 minute to pellet and remove the supernatant completely. 
+Centrifuge 5,000xg for 1 min, resuspension volume will vary depending on the starting concentration of cells, so far 50µL has been slightly over concentrated; 50-100 cells per field of view is optimal.
+If looking at Pili Dynamics
+Do not ice cells, or set aside a sample from the cells. 
+Quickly make your sample pad (time from start to finish//from removing cells from tube to under the scope imaging, to ensure good dynamics and controls)
+For time-lapse imaging, first focus on the bacterial cells, and try 10 s intervals for imaging pili for at least 3 min; this interval should allow for visualization of dynamic fibers if present.
+
+and here is for labelign using streptavidin/nuetravidin 
+
+A. One-step labeling
+
+
+Pipette 100µL-1mL up to have 1 OD unit equivalent of early exponential growth culture PYE into a tube. 
+Spin cells at 5,000g for 1 min at RT.
+Resuspend in PBS or buffer/media lacking free-thiols.
+Pipette 50 µl of 100 mM PEG5000-mal stock into the tube containing the cells for a final concentration of 500 µM PEG5000-mal. Quickly pipette 0.5 µl of 5 mg/ml fluorophore-conjugated maleimide dye (such as AF488-mal) stock into the tube, and briefly vortex to mix.
+Incubate for 5-30minutes.
+Centrifuge at 5,000xg for 1 min and resuspend in 1 mL of fresh PBS or PYE/media.
+Resuspension volume will vary depending on the starting concentration of cells; 50-100 cells per field of view is optimal.
+
+B. Two-step labeling
+Do steps 1-4 as in one-step labeling. 
+Pipette 5 µl of 5 mg/ml biotin-mal stock into the tube containing the cells for a final concentration of 25 µg/ml. Quickly pipette 5 µl of a 5 mg/ml fluorophore-conjugated maleimide dye (such as AF488-mal) into the tube and briefly vortex to mix.
+Incubate for 5-30 minutes
+Centrifuge at 5,000xg for 1 min and resuspend in 1 mL of fresh PBS.
+Repeat step 4 wash step.
+Resuspension volume will vary depending on the starting concentration of cells; 50-100 cells per field of view is optimal.
+Add an appropriate amount of NeutrAvidin stock to achieve a 1.32 mg/ml final concentration and incubate the cells for an additional 30 min at RT.
+CRITICAL STEP Failure to add sufficient NeutrAvidin will result in incomplete blocking of dynamic pilus activity.
+CRITICAL STEP Failure to incubate with NeutrAvidin for a sufficient length of time will result in incomplete blocking of dynamic pilus activity.
+CRITICAL STEP 30 min of incubation may not be necessary to achieve complete blocking of every system; optimize by testing different incubation times.
+(Optional) For time-lapse imaging, first focus on the bacterial cells, and try 10 s intervals for imaging pili for at least 1 min; this interval should allow for visualization of dynamic fibers if present.
+
+
+which was adapted from this protocol here. 
+
+Preparation for maleimide labeling ● Timing ~25 min 4 Prepare a solution of 1% (wt/vol) agarose (option A) or 0.2% (wt/vol) Gelzan (option B) to make a pad for imaging bacteria. Gelzan is useful for making pads quickly because of its lower melting temperature and fast solidification. Agarose is useful for obtaining images with less background fluorescence if labeling efficiency is poor.
+CRITICAL STEP Make pads no more than 1 h before labeling, as they can dry out.
+(A) For a 1% (wt/vol) agarose pad (i) Mix 0.1 g of agarose into 10 ml of medium or buffer. (ii) Microwave until boiling to melt agarose. ! CAUTION Agarose solutions easily boil over and can cause burns if not handled properly.
+(B) For a 0.2% (wt/vol) Gelzan pad (i) Mix 0.02 g of Gelzan into 10 ml of PBS or 7 g/l of Instant Ocean buffer. (ii) Microwave until boiling to melt Gelzan.
+5 Spot ~80 µl of melted solution onto a glass slide, cover it with a 22 × 22-cm glass coverslip, and apply pressure until the solution is thinly spread between the two glass surfaces without creating excessive bubbles or holes in the agarose.
+CRITICAL STEP Applying too much pressure will result in tearing of the pad and difficulty with imaging; applying insufficient pressure may result in an uneven pad and difficulty with imaging. 6 Let the pad solidify for at least 10 min at RT to dry appropriately.
+CRITICAL STEP If the pad does not dry sufficiently, bacteria will not be confined, and imaging will be difficult.
+PAUSE POINT The pads can be stored at RT for up to several hours if left covered or stored in humid conditions until use in Step 8.
+Labeling with maleimide dyes 7 Label the pili with maleimide dyes. For labeling with fluorophore-conjugated maleimides, follow option A. For labeling with bulky maleimide compounds for disruption of dynamic pilus activity,
+follow option B for the one-step approach and option C for the two-step approach (see ‘Experimental design’ section for details on the different labeling strategies). (A) Labeling with maleimide dyes for observation of dynamic pilus activity ● Timing 7–35 min (i) Pipette 100 µl of culture at the appropriate growth phase from Step 3 into a 1.5-ml Eppendorf centrifuge tube and centrifuge the cells at the appropriate speed for species of interest for 1 min (e.g., 5,000g for C. crescentus; 16,000g for V. cholerae) at RT and resuspend in 100 µl of buffer lacking free thiols, such as PBS or Instant Ocean buffer.
+CRITICAL STEP If there are excess free thiols in the culture medium (such as in rich, complex media), they will compete with the cysteines in the pili for binding of the maleimide dye.
+(ii) Pipette 0.5 µl of 5 mg/ml fluorophore-conjugated maleimide dye (such as AF488-mal) stock into the tube containing the cells, for a final concentration of 25 µg/ml dye, and briefly vortex to mix.
+(iii) Incubate at RT for 5–30 min.
+CRITICAL STEP Some pili may need longer labeling times for best results; optimize by testing various labeling times before imaging
+
+
+
+c c c c c c c c c c PROTOCOL NATURE PROTOCOLS
+CRITICAL STEP Some species may have more active pili if incubated at different temperatures. For best results, optimize by testing labeling at different temperatures such as RT and 37 °C.
+(iv) Centrifuge the cells at the appropriate speed for the species of interest for 1 min and discard the supernatant.
+(v) Add 100 µl of fresh buffer or medium to the tube, and centrifuge the cells at the appropriate speed for species of interest for 1 min again.
+CRITICAL STEP Failure to wash the cells may result in high background fluorescence, which will make imaging of surface structures difficult.
+(vi) Discard the supernatant and resuspend the cells in an appropriate volume for imaging.
+CRITICAL STEP The resuspension volume will vary depending on the starting concentration of cells; 200–1,000 cells per field of view is optimal.
+(B) One-step labeling with maleimide compounds for disruption of dynamic pilus activity ● Timing 7–35 min (i) Pipette 100 µL of culture at the appropriate growth phase from Step 3 into a 1.5-ml Eppendorf centrifuge tube and centrifuge the cells at maximum speed for the species of interest for 1 min (e.g., 5,000g for C. crescentus; 16,000g for V. cholerae) at RT and resuspend in 100 µl of buffer lacking free thiols, such as PBS or Instant Ocean buffer.
+CRITICAL STEP If there are excess free thiols in the culture medium (such as in rich, complex media), they will compete with the cysteines in the pili for binding of the maleimide dye.
+(ii) Pipette 5 µl of 100 mM PEG5000-mal stock into the tube containing the cells for a final concentration of 500 µM PEG5000-mal. Quickly pipette 0.5 µl of 5 mg/ml fluorophoreconjugated maleimide dye (such as AF488-mal) stock into the tube, and briefly vortex to mix.
+CRITICAL STEP PEG5000-mal must be added before the fluorophore-conjugated maleimide dye because adding the dye first will reduce the number of cysteines available for binding of the PEG5000-mal, possibly resulting in incomplete blocking (iii) Incubate at RT for 5–30 min.
+CRITICAL STEP Some pili may need longer labeling times for best results; optimize by testing various labeling times before imaging
+CRITICAL STEP Some species may have more active pili if incubated at different temperatures. For best results, optimize by testing labeling at different temperatures, such as RT and 37 °C.
+(iv) Centrifuge the cells at the appropriate speed for the species of interest for 1 min and discard the supernatant.
+(v) Add 100 µl of fresh buffer or medium to the tube, and centrifuge the cells again at the appropriate speed for the species of interest for 1 min.
+CRITICAL STEP Failure to wash the cells may result in high background fluorescence, which will make imaging of surface structures difficult.
+(vi) Discard the supernatant and resuspend the cells in an appropriate volume for imaging. CRITICAL STEP Resuspension volume will vary depending on the starting concentration of cells; 200–1,000 cells per field of view is optimal.
+(C) Two-step labeling with maleimide compounds for disruption of dynamic pilus activity ● Timing 7–70 min (i) Pipette 100 µl of culture at the appropriate growth phase from Step 3 into a 1.5-ml Eppendorf centrifuge tube and centrifuge the cells at maximum speed for the species of interest for 1 min (e.g., 5,000g for C. crescentus; 16,000g for V. cholerae) at RT and resuspend in 100 µl of buffer lacking free thiols, such as PBS or Instant Ocean buffer.
+CRITICAL STEP If there are excess free thiols in the culture medium (such as in rich, complex media), they will compete with the cysteines in the pili for binding of the maleimide dye.
+(ii) Pipette 0.5 µl of 5 mg/ml biotin-mal stock into the tube containing the cells for a final concentration of 25 µg/ml. Quickly pipette 0.5 µl of a 5 mg/ml fluorophore-conjugated maleimide dye (such as AF488-mal) into the tube, and briefly vortex to mix. CRITICAL STEP Biotin-mal must be added before the fluorophore-conjugated maleimide
+dye because adding the dye first will reduce the number of cysteines available for binding of the biotin-mal, possibly resulting in incomplete blockingiii) Incubate at RT for 5–30 min.
+CRITICAL STEP Some pili may need longer labeling times for best results; optimize by testing various labeling times before imaging.
+CRITICAL STEP Some species may have more active pili if incubated at different temperatures. For best results, optimize by testing labeling at different temperatures, such as RT and 37 °C.
+(iv) Centrifuge the cells at the appropriate speed for the species of interest for 1 min and discard the supernatant.
+(v) Pipette 100 µl of fresh buffer or medium into the tube, and centrifuge the cells at the appropriate speed for the species of interest for 1 min again.
+CRITICAL STEP Failure to wash the cells may result in high background fluorescence that will make imaging of surface structures difficult.
+CRITICAL STEP Failure to wash cells may result in NeutrAvidin binding to excess biotinmal in the media, causing incomplete blocking of dynamic pilus activity.
+(vi) Discard the supernatant and resuspend the cells in an appropriate volume for imaging.
+CRITICAL STEP The resuspension volume will vary depending on the starting concentration of cells; 200–1,000 cells per field of view is optimal.
+(vii) Add an appropriate amount of NeutrAvidin stock to achieve a 1.32 mg/ml final concentration and incubate the cells for an additional 30 min at RT.
+CRITICAL STEP Failure to add sufficient NeutrAvidin will result in incomplete blocking of dynamic pilus activity.
+CRITICAL STEP Failure to incubate with NeutrAvidin for a sufficient length of time will result in incomplete blocking of dynamic pilus activity.
+CRITICAL STEP 30 min of incubation may not be necessary to achieve complete blocking of every system; optimize by testing different incubation times.
+Microscopy setup and imaging ● Timing 5 min–4 h, depending on organism and experiment 8 Remove the glass coverslip from the pad prepared in Step 6 by sliding it gently off the pad just before use.
+CRITICAL STEP Do not leave the pad exposed to air for more than 15 min, as pads will dry out, which may cause difficulty with imaging.
+9 Take 1 µl of labeled, washed cells, and spot it onto the pads.
+CRITICAL STEP Labeled pili may be difficult to see if the cells are not confined under a pad, as the pad confines the cells and pili in the field of focus, which makes visualization easier.
+10 Cover the cells with a 22 × 22-cm glass coverslip. 11 Image the cells using an epifluorescence microscope.
+CRITICAL STEP Wide-field fluorescence microscopy can be used to image pili labeled with maleimide dyes.
+CRITICAL STEP Imaging with a low-NA objective (such as a non-oil objective) may result in a
+fluorescence signal that is too low for visualizing pili. An example microscopy setup that works well for imaging pilus fibers includes a Plan Apo 60× oil objective with a CCD or electron-multiplying (EM) CCD camera. ? TROUBLESHOOTING
+12 (Optional) For time-lapse imaging, first focus on the bacterial cells, and try 10 s intervals for imaging pili for at least 1 min; this interval should allow for visualization of dynamic fibers, if present.
+CRITICAL STEP Different microscopes will have different light intensities and may require optimization of exposure times.
+CRITICAL STEP Some pili will not be visible by single-time-point imaging and require time-lapse imaging for visualization. For example, the pili of C. crescentus are difficult to see at single time points, yet on average, the cells produce two pili over a 1-min interval, which is only clear upon time-lapse imaging6.
+
+are there any significant differences you see between my protocols and the papers protocols  ?  -- no not really 
+
+----------------------------------------------------
+
+ok. can you write a methods section for pilus obstruction with these conjugation techniques?
+
+you will first give a small introduction to the chemistry which upon using a pilA cystein knockin pilAT36C we are able to label using these maleimide conjugation methods. You will then describe the protocol for PEG labeling. You will then mention that Streptavidin-AlexaFluor568(Invitrogen) was also conjugated and required a two-step labeling approach where cells were first incubated with biotin then washed and incubated with Streptavidin-AlexaFluor568(Invitrogen) and also mention that the same method was used for 20nm Qdot 605 Streptavidin Conjugates (Invitrogen). Then mention any experiment which also visualized pili added 25 µg/mL C5-maleimide AlexaFluor dye (Invitrogen) immediately after addition of the obstructing bioconjugate (PEG< Streptavidin, Qdot) and the rest of the procedure was carried out normally
+
+------------------------------
+
+can you write the methods section for imaging breaking it up into 2 sections one where imaging 20 minutes post bioconjugation to assay for detached pili adopting the methods from an infection experiment below, and the second section where this same protocol was used except carried out immediately after the wash steps to assay for dynamic pili which was defined as # of pilus retraction events per cell when cells were imaged every 12 seconds for 17 frames (12*17 seconds is how many seconds)
+
+Samples were prepared for microscopy by cutting 1.5% agarose pad dissolved in PYE media approximately 16mm x 16mm and adhering it to a small coverslip (18 x 18 mm, Fischer Scientific). 1 µL of sample was placed in the center of the agar side of the adhered coverslip and allowed to dry for 1 minute. Finally, the small coverslip is flipped and gently adhered agar side down onto a large coverslip (24 x 50 mm, Fisher Scientific) allowing the wave front of the agar pad to move evenly across the coverslip. A series of 5-11 Z stacks of 200 nm were used to precisely measure pili. Samples were imaged on multiple stage positions ( 20 per sample) in phase (100 ms to detect cells) and green channels (100 ms to detect pili). The images were analyzed using NIS elements software for cell and pili counts. Results include 3 biological replicate in which 400 cell were counted per time-point per replicate. 
+
+
+
+# Data Analysis
+
+
+--------------------------------
+
+I would like to give you some stats for an experiment and modeling individual measurements. The experiment is described with this text. 
+
+In exploring the dynamic interactions of pili in Caulobacter crescentus, we utilized the pilAT36C cysteine knock-in variant (Ellison 2017), which allows for specific labeling of pili using maleimide conjugation chemistry. The presence of a cysteine residue in the pilus structure provides a reactive thiol group for conjugation with maleimide-functionalized compounds, enabling the attachment of various obstructive and/or fluorescent molecules to the pili under physiological conditions. 
+The protocol for labeling involved growing C. crescentus to early-exponential phase before normalizing the cell number for optimal microscopy conditions. For pilus obstruction by the PEG-5,000 molecule PEG5000-mal (Invitrogen) was added to achieve a final concentration of 500 µM. Concurrently, fluorophore-conjugated maleimide dye (Invitrogen) was added to a final concentration of 25 µg/ml. The mixture was incubated for 10 minutes at 30°C, followed by washing with media twice before resuspending in an appropriate concentration for imaging.
+For conjugation with Streptavidin-AlexaFluor568 (Invitrogen) and Qdot605 Streptavidin conjugates (Invitrogen), a two-step labeling approach was adopted. Cells were initially incubated with 25 µg/ml Maleimide-PEG11-Biotin (Thermo Scientific) with immediate subsequent addition of 25 µg/ml AF488-mal as done previously for pilus obstruction. Following incubation the cells were washed and subsequently incubated with 1,000 streptavidin conjugates per cell which were incubated 10 min at 30°C before imaging. 
+
+
+Imaging Pilus Release and Pili Dynamics
+For assessing dynamic pili, the samples were prepared immediately following the wash steps. The protocol involved cutting 1% agarose PYE pads into approximately 16mm x 16mm sections, adhering these to small coverslips (18 x 18 mm, Fischer Scientific). 1 µL of the sample was placed on the agar side and allowed to dry for 1 minute. The coverslip was then gently placed, agar side down, onto a larger coverslip (24 x 50 mm, Fisher Scientific). Imaging was done every 12 seconds over 17 frames (204 seconds). This interval was chosen to capture pilus retraction events, and dynamic pili were defined as the number of pilus retraction events per cell. Analysis was carried out using NIS elements software.
+This method focused on imaging detached pili 20 minutes after bioconjugation. Following the same sample preparation as for dynamic pili, except the imaging process involved capturing five Z stacks with 200 nm intervals. Images were taken at multiple stage positions (20 per sample) in phase and 488 channels. 
+
+First I want us to analyze the data from the pilus release experiments where each row represents a frame for microscopy imaging and the counted metrics per frame. 
+
+

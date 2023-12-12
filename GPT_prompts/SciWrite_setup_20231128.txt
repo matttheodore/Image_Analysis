@@ -1,0 +1,21 @@
+hi SciWrite, 
+
+First let me start by giving you a draft of a paper from a few years ago. This paper is going to be reorganized to only include the caulobacter results but still discussing what these results do to shed light on what we believe is a universal infection porocess for ssRNA phage infectiosn across bacterial hosts. This background will be used in the following prompts to help write portions of a grant (will reorganize portions from there). But as a reminder, we will build ecperiment by experiment so we will separate results into different experiments and write summaries that contain all the sections to then incorporate these summa.  Read this paper and summarize the background and the discussion for me so we can discuss the takeaways from the paper and then how we want to build onto it. 
+
+
+
+second prompt 
+
+
+
+Here are my writing tasks I would like to start with and bring to a good draft. 
+
+
+	•	Preliminary Data: Compile additional data on pilus detachment, including CpaF mutants and images of detached pili. List all experiments on pilus detachment by other objects and prepare detailed figures.
+
+	•	Fluorescent Labeling of phiCb5: Document all fluorescent labeling experiments and some figures.
+
+	•	Experimental Design: Discuss pilus detachment and planned detachment based on EOP from CpaF mutants, suggest possible alternatives for 4-color imaging, contribute to the plan for CLEM and cryo-ET studies, and propose minimal systems for Tad pilus detachment.
+
+Let's  take on these tasks one by one and you can create a process for asking me questions about the experimental design, the results we want to convey in the experiment, and our conclusions and possible future experiments. 
+

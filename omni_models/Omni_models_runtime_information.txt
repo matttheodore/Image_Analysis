@@ -1,0 +1,595 @@
+(omnipose) C:\Users\Nikon>cellpose_omni --train --use_gpu --dir "C:\Users\Nikon\Downloads\Omni\omni_retrain" --pretrained_model None --diameter 0 --chan 1  --nclasses 4  --learning_rate 0.1 --RAdam --batch_size 16 --n_epochs 4000 --omni --look_one_level_down
+!NEW LOGGING SETUP! To see cellpose progress, set --verbose
+No --verbose => no progress or info printed
+2023-11-01 01:34:25,611 [INFO] ** TORCH GPU version installed and working. **
+2023-11-01 01:34:25,611 [INFO] >>>> using GPU
+Omnipose enabled. See Omnipose repo for licencing details.
+2023-11-01 01:34:25,611 [INFO] Training omni model. Setting nclasses=4, RAdam=True
+Debug: Looking in folder C:\Users\Nikon\Downloads\Omni\omni_retrain
+Debug: Folders to search: ['C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\5I_crop\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\francisella\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\models\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\serratia\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain']
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\5I_crop\/*.png
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\5I_crop\ and extension png: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\5I_crop\/*.jpg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\5I_crop\ and extension jpg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\5I_crop\/*.jpeg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\5I_crop\ and extension jpeg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\5I_crop\/*.tif
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\5I_crop\ and extension tif: ['C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\5I_crop\\5I_crop_ensemble_0.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\5I_crop\\5I_crop_ensemble_0_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\5I_crop\\5I_crop_ensemble_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\5I_crop\\5I_crop_ensemble_2_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\5I_crop\\5I_crop_ensemble_4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\5I_crop\\5I_crop_ensemble_4_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\5I_crop\\5I_crop_ensemble_6.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\5I_crop\\5I_crop_ensemble_6_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\5I_crop\\5I_crop_ensemble_8.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\5I_crop\\5I_crop_ensemble_8_masks.tif']
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\5I_crop\/*.tiff
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\5I_crop\ and extension tiff: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\A22\/*.png
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\A22\ and extension png: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\A22\/*.jpg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\A22\ and extension jpg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\A22\/*.jpeg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\A22\ and extension jpeg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\A22\/*.tif
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\A22\ and extension tif: ['C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile10_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile10_phase_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile11_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile11_phase_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile12_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile12_phase_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile13_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile13_phase_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile15_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile15_phase_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile16_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile16_phase_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile2_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile2_phase_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile3_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile3_phase_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile4_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile4_phase_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile5_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile5_phase_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile6_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile6_phase_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile7_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile7_phase_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile8_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile8_phase_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile9_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile9_phase_masks.tif']
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\A22\/*.tiff
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\A22\ and extension tiff: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\PAO1_staph\/*.png
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\PAO1_staph\ and extension png: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\PAO1_staph\/*.jpg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\PAO1_staph\ and extension jpg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\PAO1_staph\/*.jpeg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\PAO1_staph\ and extension jpeg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\PAO1_staph\/*.tif
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\PAO1_staph\ and extension tif: ['C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1andStaphXY4_tile1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1andStaphXY4_tile10.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1andStaphXY4_tile10_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1andStaphXY4_tile15.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1andStaphXY4_tile15_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1andStaphXY4_tile1_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1andStaphXY4_tile4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1andStaphXY4_tile4_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1andStaphXY4_tile8.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1andStaphXY4_tile8_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1_Staph_ensemble_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1_Staph_ensemble_1_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1_Staph_ensemble_3.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1_Staph_ensemble_3_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1_Staph_ensemble_5.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1_Staph_ensemble_5_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1_Staph_ensemble_7.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1_Staph_ensemble_7_masks.tif']
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\PAO1_staph\/*.tiff
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\PAO1_staph\ and extension tiff: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\bthai\/*.png
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\bthai\ and extension png: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\bthai\/*.jpg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\bthai\ and extension jpg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\bthai\/*.jpeg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\bthai\ and extension jpeg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\bthai\/*.tif
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\bthai\ and extension tif: ['C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_a_t001xy1_tile1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_a_t001xy1_tile1_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t001xy1_tile10.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t001xy1_tile10_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t001xy1_tile7.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t001xy1_tile7_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t001xy1_tile_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t001xy1_tile_1_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t001xy1_tile_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t001xy1_tile_2_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t001xy1_tile_3.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t001xy1_tile_3_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t001xy1_tile_4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t001xy1_tile_4_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy1_tile_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy1_tile_1_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy1_tile_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy1_tile_2_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy1_tile_3.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy1_tile_3_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy1_tile_4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy1_tile_4_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy3_tile_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy3_tile_1_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy3_tile_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy3_tile_2_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy3_tile_3.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy3_tile_3_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy3_tile_4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy3_tile_4_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\xy5_001.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\xy5_001_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\xy5_007.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\xy5_007_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\xy5_008.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\xy5_008_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\xy5_009.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\xy5_009_masks.tif']
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\bthai\/*.tiff
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\bthai\ and extension tiff: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\dnaA\/*.png
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\dnaA\ and extension png: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\dnaA\/*.jpg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\dnaA\ and extension jpg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\dnaA\/*.jpeg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\dnaA\ and extension jpeg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\dnaA\/*.tif
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\dnaA\ and extension tif: ['C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_0.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_0_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_10.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_10_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_12.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_12_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_2_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_4_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_6.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_6_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_8.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_8_masks.tif']
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\dnaA\/*.tiff
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\dnaA\ and extension tiff: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\francisella\/*.png
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\francisella\ and extension png: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\francisella\/*.jpg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\francisella\ and extension jpg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\francisella\/*.jpeg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\francisella\ and extension jpeg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\francisella\/*.tif
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\francisella\ and extension tif: ['C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\francisella\\francisella_xy3_tile3.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\francisella\\francisella_xy3_tile3_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\francisella\\francisella_xy3_tile7.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\francisella\\francisella_xy3_tile7_masks.tif']
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\francisella\/*.tiff
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\francisella\ and extension tiff: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\models\/*.png
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\models\ and extension png: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\models\/*.jpg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\models\ and extension jpg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\models\/*.jpeg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\models\ and extension jpeg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\models\/*.tif
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\models\ and extension tif: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\models\/*.tiff
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\models\ and extension tiff: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\murA\/*.png
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\murA\ and extension png: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\murA\/*.jpg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\murA\ and extension jpg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\murA\/*.jpeg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\murA\ and extension jpeg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\murA\/*.tif
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\murA\ and extension tif: ['C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\murA_ensemble_0.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\murA_ensemble_0_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\murA_ensemble_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\murA_ensemble_1_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\murA_ensemble_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\murA_ensemble_2_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\murA_ensemble_3.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\murA_ensemble_3_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\murA_ensemble_4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\murA_ensemble_4_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\murA_ensemble_5.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\murA_ensemble_5_masks.tif']
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\murA\/*.tiff
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\murA\ and extension tiff: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\serratia\/*.png
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\serratia\ and extension png: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\serratia\/*.jpg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\serratia\ and extension jpg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\serratia\/*.jpeg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\serratia\ and extension jpeg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\serratia\/*.tif
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\serratia\ and extension tif: ['C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\serratia\\Serratia_Ecoli_T14XY2C1_tile6.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\serratia\\Serratia_Ecoli_T14XY2C1_tile6_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\serratia\\Serratia_Ecoli_T14XY2C1_tile7.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\serratia\\Serratia_Ecoli_T14XY2C1_tile7_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\serratia\\Serratia_Ecoli_T14XY2C1_tile8.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\serratia\\Serratia_Ecoli_T14XY2C1_tile8_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\serratia\\Serratia_Ecoli_T14XY2C1_tile9.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\serratia\\Serratia_Ecoli_T14XY2C1_tile9_masks.tif']
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\serratia\/*.tiff
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\serratia\ and extension tiff: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\set2\/*.png
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\set2\ and extension png: ['C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0001_masks.png', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0002_masks.png', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0004_masks.png', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0006_masks.png', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0007_masks.png', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0008_masks.png', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0009_masks.png', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0010_masks.png', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0011_masks.png', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0021_masks.png', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-1100_masks.png', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-7000_masks.png']
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\set2\/*.jpg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\set2\ and extension jpg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\set2\/*.jpeg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\set2\ and extension jpeg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\set2\/*.tif
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\set2\ and extension tif: ['C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0001.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0002.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0004.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0006.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0007.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0008.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0009.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0010.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0011.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0021.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-1100.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-7000.tif']
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\set2\/*.tiff
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\set2\ and extension tiff: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\streptomyces\/*.png
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\streptomyces\ and extension png: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\streptomyces\/*.jpg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\streptomyces\ and extension jpg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\streptomyces\/*.jpeg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\streptomyces\ and extension jpeg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\streptomyces\/*.tif
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\streptomyces\ and extension tif: ['C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY13_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY13_1_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY14_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY14_1_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY14_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY14_2_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY15_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY15_2_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY15_3.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY15_3_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY15_4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY15_4_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY16_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY16_1_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY16_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY16_2_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY17_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY17_2_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY17_3.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY17_3_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY17_4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY17_4_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY17_5.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY17_5_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY1_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY1_1_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY1_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY1_2_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY2_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY2_1_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY2_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY2_2_masks.tif']
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\streptomyces\/*.tiff
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\streptomyces\ and extension tiff: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\wiggins\/*.png
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\wiggins\ and extension png: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\wiggins\/*.jpg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\wiggins\ and extension jpg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\wiggins\/*.jpeg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\wiggins\ and extension jpeg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\wiggins\/*.tif
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\wiggins\ and extension tif: ['C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000000.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000000_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000005.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000005_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000015.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000015_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000023.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000023_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000030.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000030_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000035.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000035_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000047.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000047_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_0.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_0_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_10.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_10_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_12.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_12_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_14.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_14_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_16.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_16_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_18.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_18_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_20.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_20_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_22.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_22_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_24.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_24_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_2_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_4_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_6.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_6_masks.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_8.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_8_masks.tif']
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain\wiggins\/*.tiff
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain\wiggins\ and extension tiff: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain/*.png
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain and extension png: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain/*.jpg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain and extension jpg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain/*.jpeg
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain and extension jpeg: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain/*.tif
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain and extension tif: []
+Debug: Search pattern for glob: C:\Users\Nikon\Downloads\Omni\omni_retrain/*.tiff
+Debug: Glob results for folder C:\Users\Nikon\Downloads\Omni\omni_retrain and extension tiff: []
+Debug: Folders to search: ['C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\5I_crop\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\francisella\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\models\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\serratia\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain']
+Debug: Final list of image names: ['C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\5I_crop\\5I_crop_ensemble_0.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\5I_crop\\5I_crop_ensemble_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\5I_crop\\5I_crop_ensemble_4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\5I_crop\\5I_crop_ensemble_6.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\5I_crop\\5I_crop_ensemble_8.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile2_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile3_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile4_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile5_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile6_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile7_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile8_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile9_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile10_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile11_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile12_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile13_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile15_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\A22\\s_flex_a22_t12xy5c1_tile16_phase.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1_Staph_ensemble_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1_Staph_ensemble_3.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1_Staph_ensemble_5.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1_Staph_ensemble_7.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1andStaphXY4_tile1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1andStaphXY4_tile4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1andStaphXY4_tile8.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1andStaphXY4_tile10.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\PAO1_staph\\PAO1andStaphXY4_tile15.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_a_t001xy1_tile1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t001xy1_tile7.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t001xy1_tile10.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t001xy1_tile_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t001xy1_tile_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t001xy1_tile_3.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t001xy1_tile_4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy1_tile_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy1_tile_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy1_tile_3.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy1_tile_4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy3_tile_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy3_tile_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy3_tile_3.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\bthai_f_t010xy3_tile_4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\xy5_001.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\xy5_007.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\xy5_008.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\bthai\\xy5_009.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_0.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_6.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_8.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_10.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\dnaA\\dnaA_xy1_ensemble_12.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\francisella\\francisella_xy3_tile3.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\francisella\\francisella_xy3_tile7.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\murA_ensemble_0.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\murA_ensemble_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\murA_ensemble_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\murA_ensemble_3.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\murA_ensemble_4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\murA\\murA_ensemble_5.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\serratia\\Serratia_Ecoli_T14XY2C1_tile6.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\serratia\\Serratia_Ecoli_T14XY2C1_tile7.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\serratia\\Serratia_Ecoli_T14XY2C1_tile8.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\serratia\\Serratia_Ecoli_T14XY2C1_tile9.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0001.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0002.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0004.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0006.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0007.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0008.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0009.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0010.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0011.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-0021.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-1100.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\set2\\phase-MAX-7000.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY1_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY1_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY2_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY2_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY13_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY14_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY14_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY15_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY15_3.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY15_4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY16_1.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY16_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY17_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY17_3.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY17_4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\streptomyces\\streptomyces_XY17_5.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000000.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000005.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000015.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000023.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000030.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000035.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\img_000000047.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_0.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_2.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_4.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_6.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_8.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_10.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_12.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_14.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_16.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_18.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_20.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_22.tif', 'C:\\Users\\Nikon\\Downloads\\Omni\\omni_retrain\\wiggins\\wiggins_ensemble_24.tif']
+2023-11-01 01:34:26,061 [INFO] not all flows are present, will run flow generation for all images
+2023-11-01 01:34:26,171 [INFO] training from scratch
+2023-11-01 01:34:26,171 [INFO] median diameter set to 0 => no rescaling during training
+reshape_train_test (600, 600) [1, 0] True True
+reshape_train_test_2 (2, 600, 600)
+2023-11-01 01:34:28,261 [INFO] No precomuting flows with Omnipose. Computed during training.
+2023-11-01 01:34:28,571 [INFO] >>> Using RAdam optimizer
+2023-11-01 01:34:28,571 [INFO] >>>> training network with 2 channel input <<<<
+2023-11-01 01:34:28,571 [INFO] >>>> LR: 0.10000, batch_size: 16, weight_decay: 0.00001
+2023-11-01 01:34:28,571 [INFO] >>>> ntrain = 114
+2023-11-01 01:34:28,571 [INFO] >>>> nimg_per_epoch = 114
+2023-11-01 01:35:21,051 [INFO] Epoch 0, Time 52.5s, Loss 7.5380, LR 0.1000
+2023-11-01 01:36:14,351 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 01:39:45,392 [INFO] Epoch 5, Time 316.8s, Loss 4.7767, LR 0.1000
+2023-11-01 01:44:04,346 [INFO] Epoch 10, Time 575.8s, Loss 3.6003, LR 0.1000
+2023-11-01 01:52:46,205 [INFO] Epoch 20, Time 1097.6s, Loss 3.3326, LR 0.1000
+2023-11-01 02:01:20,299 [INFO] Epoch 30, Time 1611.7s, Loss 2.8995, LR 0.1000
+2023-11-01 02:09:55,729 [INFO] Epoch 40, Time 2127.2s, Loss 2.7670, LR 0.1000
+2023-11-01 02:18:35,568 [INFO] Epoch 50, Time 2647.0s, Loss 2.8679, LR 0.1000
+2023-11-01 02:27:11,815 [INFO] Epoch 60, Time 3163.2s, Loss 2.7328, LR 0.1000
+2023-11-01 02:35:45,965 [INFO] Epoch 70, Time 3677.4s, Loss 2.5346, LR 0.1000
+2023-11-01 02:44:20,255 [INFO] Epoch 80, Time 4191.7s, Loss 2.2703, LR 0.1000
+2023-11-01 02:52:58,064 [INFO] Epoch 90, Time 4709.5s, Loss 2.2297, LR 0.1000
+2023-11-01 03:01:35,844 [INFO] Epoch 100, Time 5227.3s, Loss 2.1248, LR 0.1000
+2023-11-01 03:02:26,856 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 03:10:12,435 [INFO] Epoch 110, Time 5743.9s, Loss 2.1948, LR 0.1000
+2023-11-01 03:18:48,395 [INFO] Epoch 120, Time 6259.8s, Loss 2.1233, LR 0.1000
+2023-11-01 03:27:24,514 [INFO] Epoch 130, Time 6775.9s, Loss 2.2805, LR 0.1000
+2023-11-01 03:35:59,224 [INFO] Epoch 140, Time 7290.7s, Loss 2.0676, LR 0.1000
+2023-11-01 03:44:36,914 [INFO] Epoch 150, Time 7808.3s, Loss 2.0168, LR 0.1000
+2023-11-01 03:53:16,653 [INFO] Epoch 160, Time 8328.1s, Loss 2.0174, LR 0.1000
+2023-11-01 04:01:47,393 [INFO] Epoch 170, Time 8838.8s, Loss 1.9706, LR 0.1000
+2023-11-01 04:10:28,962 [INFO] Epoch 180, Time 9360.4s, Loss 2.0125, LR 0.1000
+2023-11-01 04:19:07,832 [INFO] Epoch 190, Time 9879.3s, Loss 1.8515, LR 0.1000
+2023-11-01 04:27:40,301 [INFO] Epoch 200, Time 10391.7s, Loss 1.8278, LR 0.1000
+2023-11-01 04:28:31,951 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 04:36:16,991 [INFO] Epoch 210, Time 10908.4s, Loss 1.8450, LR 0.1000
+2023-11-01 04:44:53,380 [INFO] Epoch 220, Time 11424.8s, Loss 1.8801, LR 0.1000
+2023-11-01 04:53:30,910 [INFO] Epoch 230, Time 11942.3s, Loss 1.9752, LR 0.1000
+2023-11-01 05:02:05,762 [INFO] Epoch 240, Time 12457.2s, Loss 1.8859, LR 0.1000
+2023-11-01 05:10:42,461 [INFO] Epoch 250, Time 12973.9s, Loss 1.8321, LR 0.1000
+2023-11-01 05:19:18,991 [INFO] Epoch 260, Time 13490.4s, Loss 1.8673, LR 0.1000
+2023-11-01 05:27:58,670 [INFO] Epoch 270, Time 14010.1s, Loss 1.9617, LR 0.1000
+2023-11-01 05:36:38,840 [INFO] Epoch 280, Time 14530.3s, Loss 1.8072, LR 0.1000
+2023-11-01 05:45:13,189 [INFO] Epoch 290, Time 15044.6s, Loss 1.7286, LR 0.1000
+2023-11-01 05:53:50,029 [INFO] Epoch 300, Time 15561.5s, Loss 1.6841, LR 0.1000
+2023-11-01 05:54:41,519 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 06:02:25,699 [INFO] Epoch 310, Time 16077.1s, Loss 1.7361, LR 0.1000
+2023-11-01 06:11:02,448 [INFO] Epoch 320, Time 16593.9s, Loss 1.7780, LR 0.1000
+2023-11-01 06:19:42,088 [INFO] Epoch 330, Time 17113.5s, Loss 1.7223, LR 0.1000
+2023-11-01 06:28:20,287 [INFO] Epoch 340, Time 17631.7s, Loss 1.7222, LR 0.1000
+2023-11-01 06:36:55,687 [INFO] Epoch 350, Time 18147.1s, Loss 1.7095, LR 0.1000
+2023-11-01 06:45:33,656 [INFO] Epoch 360, Time 18665.1s, Loss 1.7429, LR 0.1000
+2023-11-01 06:54:09,396 [INFO] Epoch 370, Time 19180.8s, Loss 1.7317, LR 0.1000
+2023-11-01 07:02:45,917 [INFO] Epoch 380, Time 19697.3s, Loss 1.8503, LR 0.1000
+2023-11-01 07:11:25,717 [INFO] Epoch 390, Time 20217.1s, Loss 1.6874, LR 0.1000
+2023-11-01 07:20:01,347 [INFO] Epoch 400, Time 20732.8s, Loss 1.6548, LR 0.1000
+2023-11-01 07:20:52,317 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 07:28:36,156 [INFO] Epoch 410, Time 21247.6s, Loss 1.7159, LR 0.1000
+2023-11-01 07:37:16,756 [INFO] Epoch 420, Time 21768.2s, Loss 1.7044, LR 0.1000
+2023-11-01 07:45:54,095 [INFO] Epoch 430, Time 22285.5s, Loss 1.8994, LR 0.1000
+2023-11-01 07:54:28,625 [INFO] Epoch 440, Time 22800.1s, Loss 1.8553, LR 0.1000
+2023-11-01 08:03:05,704 [INFO] Epoch 450, Time 23317.1s, Loss 1.7616, LR 0.1000
+2023-11-01 08:11:39,234 [INFO] Epoch 460, Time 23830.7s, Loss 1.7671, LR 0.1000
+2023-11-01 08:20:17,344 [INFO] Epoch 470, Time 24348.8s, Loss 1.6826, LR 0.1000
+2023-11-01 08:28:53,263 [INFO] Epoch 480, Time 24864.7s, Loss 1.5912, LR 0.1000
+2023-11-01 08:37:31,453 [INFO] Epoch 490, Time 25382.9s, Loss 1.5778, LR 0.1000
+2023-11-01 08:46:05,352 [INFO] Epoch 500, Time 25896.8s, Loss 1.5389, LR 0.1000
+2023-11-01 08:46:57,612 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 08:54:55,962 [INFO] Epoch 510, Time 26427.4s, Loss 1.5656, LR 0.1000
+2023-11-01 09:04:06,181 [INFO] Epoch 520, Time 26977.6s, Loss 1.5141, LR 0.1000
+2023-11-01 09:13:06,314 [INFO] Epoch 530, Time 27517.7s, Loss 1.5746, LR 0.1000
+2023-11-01 09:22:09,892 [INFO] Epoch 540, Time 28061.3s, Loss 1.5481, LR 0.1000
+2023-11-01 09:31:16,318 [INFO] Epoch 550, Time 28607.7s, Loss 1.6055, LR 0.1000
+2023-11-01 09:41:11,484 [INFO] Epoch 560, Time 29202.9s, Loss 1.5728, LR 0.1000
+2023-11-01 09:49:37,370 [INFO] Epoch 570, Time 29708.8s, Loss 1.5242, LR 0.1000
+2023-11-01 09:57:29,220 [INFO] Epoch 580, Time 30180.6s, Loss 1.4805, LR 0.1000
+2023-11-01 10:04:20,934 [INFO] Epoch 590, Time 30592.4s, Loss 1.7241, LR 0.1000
+2023-11-01 10:11:33,231 [INFO] Epoch 600, Time 31024.7s, Loss 1.6584, LR 0.1000
+2023-11-01 10:12:16,750 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 10:18:36,429 [INFO] Epoch 610, Time 31447.9s, Loss 1.5407, LR 0.1000
+2023-11-01 10:26:26,522 [INFO] Epoch 620, Time 31918.0s, Loss 1.7587, LR 0.1000
+2023-11-01 10:32:42,651 [INFO] Epoch 630, Time 32294.1s, Loss 1.7308, LR 0.1000
+2023-11-01 10:39:06,625 [INFO] Epoch 640, Time 32678.1s, Loss 1.5868, LR 0.1000
+2023-11-01 10:45:19,524 [INFO] Epoch 650, Time 33051.0s, Loss 1.6455, LR 0.1000
+2023-11-01 10:51:28,903 [INFO] Epoch 660, Time 33420.3s, Loss 1.6208, LR 0.1000
+2023-11-01 10:57:38,334 [INFO] Epoch 670, Time 33789.8s, Loss 1.5359, LR 0.1000
+2023-11-01 11:03:55,063 [INFO] Epoch 680, Time 34166.5s, Loss 1.4924, LR 0.1000
+2023-11-01 11:10:09,425 [INFO] Epoch 690, Time 34540.9s, Loss 1.4260, LR 0.1000
+2023-11-01 11:16:25,665 [INFO] Epoch 700, Time 34917.1s, Loss 1.4533, LR 0.1000
+2023-11-01 11:17:04,975 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 11:22:45,385 [INFO] Epoch 710, Time 35296.8s, Loss 1.4749, LR 0.1000
+2023-11-01 11:29:00,734 [INFO] Epoch 720, Time 35672.2s, Loss 1.4840, LR 0.1000
+2023-11-01 11:35:16,454 [INFO] Epoch 730, Time 36047.9s, Loss 1.4410, LR 0.1000
+2023-11-01 11:41:19,214 [INFO] Epoch 740, Time 36410.6s, Loss 1.5249, LR 0.1000
+2023-11-01 11:47:24,004 [INFO] Epoch 750, Time 36775.4s, Loss 1.4926, LR 0.1000
+2023-11-01 11:53:37,763 [INFO] Epoch 760, Time 37149.2s, Loss 1.4204, LR 0.1000
+2023-11-01 11:59:39,163 [INFO] Epoch 770, Time 37510.6s, Loss 1.4050, LR 0.1000
+2023-11-01 12:05:42,833 [INFO] Epoch 780, Time 37874.3s, Loss 1.4217, LR 0.1000
+2023-11-01 12:11:53,272 [INFO] Epoch 790, Time 38244.7s, Loss 1.5896, LR 0.1000
+2023-11-01 12:17:56,112 [INFO] Epoch 800, Time 38607.5s, Loss 1.5659, LR 0.1000
+2023-11-01 12:18:33,662 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 12:24:10,682 [INFO] Epoch 810, Time 38982.1s, Loss 1.5139, LR 0.1000
+2023-11-01 12:30:17,341 [INFO] Epoch 820, Time 39348.8s, Loss 1.5749, LR 0.1000
+2023-11-01 12:36:21,791 [INFO] Epoch 830, Time 39713.2s, Loss 1.4730, LR 0.1000
+2023-11-01 12:42:38,371 [INFO] Epoch 840, Time 40089.8s, Loss 1.5116, LR 0.1000
+2023-11-01 12:48:46,940 [INFO] Epoch 850, Time 40458.4s, Loss 1.4817, LR 0.1000
+2023-11-01 12:54:53,130 [INFO] Epoch 860, Time 40824.6s, Loss 1.4106, LR 0.1000
+2023-11-01 13:01:06,910 [INFO] Epoch 870, Time 41198.3s, Loss 1.4424, LR 0.1000
+2023-11-01 13:07:11,769 [INFO] Epoch 880, Time 41563.2s, Loss 1.4127, LR 0.1000
+2023-11-01 13:13:17,549 [INFO] Epoch 890, Time 41929.0s, Loss 1.4802, LR 0.1000
+2023-11-01 13:19:31,699 [INFO] Epoch 900, Time 42303.1s, Loss 1.4622, LR 0.1000
+2023-11-01 13:20:07,889 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 13:25:36,338 [INFO] Epoch 910, Time 42667.8s, Loss 1.5388, LR 0.1000
+2023-11-01 13:31:46,088 [INFO] Epoch 920, Time 43037.5s, Loss 1.4071, LR 0.1000
+2023-11-01 13:37:51,938 [INFO] Epoch 930, Time 43403.4s, Loss 1.3768, LR 0.1000
+2023-11-01 13:44:04,957 [INFO] Epoch 940, Time 43776.4s, Loss 1.3222, LR 0.1000
+2023-11-01 13:50:20,377 [INFO] Epoch 950, Time 44151.8s, Loss 1.4486, LR 0.1000
+2023-11-01 13:56:32,767 [INFO] Epoch 960, Time 44524.2s, Loss 1.5231, LR 0.1000
+2023-11-01 14:02:35,447 [INFO] Epoch 970, Time 44886.9s, Loss 1.4684, LR 0.1000
+2023-11-01 14:08:43,676 [INFO] Epoch 980, Time 45255.1s, Loss 1.3821, LR 0.1000
+2023-11-01 14:14:45,656 [INFO] Epoch 990, Time 45617.1s, Loss 1.4821, LR 0.1000
+2023-11-01 14:20:46,806 [INFO] Epoch 1000, Time 45978.2s, Loss 1.3965, LR 0.1000
+2023-11-01 14:21:25,196 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 14:26:52,975 [INFO] Epoch 1010, Time 46344.4s, Loss 1.3279, LR 0.1000
+2023-11-01 14:32:52,975 [INFO] Epoch 1020, Time 46704.4s, Loss 1.5232, LR 0.1000
+2023-11-01 14:38:56,935 [INFO] Epoch 1030, Time 47068.4s, Loss 1.4166, LR 0.1000
+2023-11-01 14:45:07,294 [INFO] Epoch 1040, Time 47438.7s, Loss 1.5385, LR 0.1000
+2023-11-01 14:51:10,474 [INFO] Epoch 1050, Time 47801.9s, Loss 1.4939, LR 0.1000
+2023-11-01 14:57:11,314 [INFO] Epoch 1060, Time 48162.7s, Loss 1.3402, LR 0.1000
+2023-11-01 15:03:20,413 [INFO] Epoch 1070, Time 48531.8s, Loss 1.3940, LR 0.1000
+2023-11-01 15:09:22,693 [INFO] Epoch 1080, Time 48894.1s, Loss 1.3326, LR 0.1000
+2023-11-01 15:15:31,822 [INFO] Epoch 1090, Time 49263.3s, Loss 1.3279, LR 0.1000
+2023-11-01 15:21:24,948 [INFO] Epoch 1100, Time 49616.4s, Loss 1.3355, LR 0.1000
+2023-11-01 15:22:01,353 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 15:27:14,434 [INFO] Epoch 1110, Time 49965.9s, Loss 1.3648, LR 0.1000
+2023-11-01 15:33:28,622 [INFO] Epoch 1120, Time 50340.1s, Loss 1.3672, LR 0.1000
+2023-11-01 15:39:37,522 [INFO] Epoch 1130, Time 50709.0s, Loss 1.2895, LR 0.1000
+2023-11-01 15:45:48,891 [INFO] Epoch 1140, Time 51080.3s, Loss 1.3525, LR 0.1000
+2023-11-01 15:51:57,261 [INFO] Epoch 1150, Time 51448.7s, Loss 1.3801, LR 0.1000
+2023-11-01 15:58:03,851 [INFO] Epoch 1160, Time 51815.3s, Loss 1.3836, LR 0.1000
+2023-11-01 16:04:06,120 [INFO] Epoch 1170, Time 52177.5s, Loss 1.3468, LR 0.1000
+2023-11-01 16:10:16,880 [INFO] Epoch 1180, Time 52548.3s, Loss 1.4421, LR 0.1000
+2023-11-01 16:16:17,470 [INFO] Epoch 1190, Time 52908.9s, Loss 1.4418, LR 0.1000
+2023-11-01 16:22:22,329 [INFO] Epoch 1200, Time 53273.8s, Loss 1.5080, LR 0.1000
+2023-11-01 16:22:58,649 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 16:28:24,449 [INFO] Epoch 1210, Time 53635.9s, Loss 1.3949, LR 0.1000
+2023-11-01 16:34:33,589 [INFO] Epoch 1220, Time 54005.0s, Loss 1.4919, LR 0.1000
+2023-11-01 16:40:42,378 [INFO] Epoch 1230, Time 54373.8s, Loss 1.4065, LR 0.1000
+2023-11-01 16:46:49,078 [INFO] Epoch 1240, Time 54740.5s, Loss 1.3023, LR 0.1000
+2023-11-01 16:53:04,508 [INFO] Epoch 1250, Time 55115.9s, Loss 1.4152, LR 0.1000
+2023-11-01 16:59:36,111 [INFO] Epoch 1260, Time 55507.5s, Loss 1.3804, LR 0.1000
+2023-11-01 17:05:48,711 [INFO] Epoch 1270, Time 55880.1s, Loss 1.4246, LR 0.1000
+2023-11-01 17:11:59,861 [INFO] Epoch 1280, Time 56251.3s, Loss 1.3806, LR 0.1000
+2023-11-01 17:18:15,770 [INFO] Epoch 1290, Time 56627.2s, Loss 1.3567, LR 0.1000
+2023-11-01 17:24:15,620 [INFO] Epoch 1300, Time 56987.0s, Loss 1.2893, LR 0.1000
+2023-11-01 17:24:52,030 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 17:30:14,170 [INFO] Epoch 1310, Time 57345.6s, Loss 1.3459, LR 0.1000
+2023-11-01 17:36:19,269 [INFO] Epoch 1320, Time 57710.7s, Loss 1.3686, LR 0.1000
+2023-11-01 17:42:24,149 [INFO] Epoch 1330, Time 58075.6s, Loss 1.3004, LR 0.1000
+2023-11-01 17:48:24,949 [INFO] Epoch 1340, Time 58436.4s, Loss 1.4586, LR 0.1000
+2023-11-01 17:54:24,249 [INFO] Epoch 1350, Time 58795.7s, Loss 1.4830, LR 0.1000
+2023-11-01 18:00:27,058 [INFO] Epoch 1360, Time 59158.5s, Loss 1.3819, LR 0.1000
+2023-11-01 18:06:27,158 [INFO] Epoch 1370, Time 59518.6s, Loss 1.3896, LR 0.1000
+2023-11-01 18:12:27,418 [INFO] Epoch 1380, Time 59878.8s, Loss 1.4195, LR 0.1000
+2023-11-01 18:18:29,677 [INFO] Epoch 1390, Time 60241.1s, Loss 1.3456, LR 0.1000
+2023-11-01 18:24:27,897 [INFO] Epoch 1400, Time 60599.3s, Loss 1.3617, LR 0.1000
+2023-11-01 18:25:04,027 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 18:30:28,017 [INFO] Epoch 1410, Time 60959.4s, Loss 1.4588, LR 0.1000
+2023-11-01 18:36:31,076 [INFO] Epoch 1420, Time 61322.5s, Loss 1.3511, LR 0.1000
+2023-11-01 18:42:30,086 [INFO] Epoch 1430, Time 61681.5s, Loss 1.3224, LR 0.1000
+2023-11-01 18:48:31,426 [INFO] Epoch 1440, Time 62042.9s, Loss 1.3770, LR 0.1000
+2023-11-01 18:54:32,125 [INFO] Epoch 1450, Time 62403.6s, Loss 1.2840, LR 0.1000
+2023-11-01 19:00:37,745 [INFO] Epoch 1460, Time 62769.2s, Loss 1.3837, LR 0.1000
+2023-11-01 19:06:37,485 [INFO] Epoch 1470, Time 63128.9s, Loss 1.3130, LR 0.1000
+2023-11-01 19:12:39,164 [INFO] Epoch 1480, Time 63490.6s, Loss 1.3529, LR 0.1000
+2023-11-01 19:18:39,244 [INFO] Epoch 1490, Time 63850.7s, Loss 1.3333, LR 0.1000
+2023-11-01 19:24:42,004 [INFO] Epoch 1500, Time 64213.4s, Loss 1.2734, LR 0.1000
+2023-11-01 19:25:17,544 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 19:30:43,524 [INFO] Epoch 1510, Time 64575.0s, Loss 1.2940, LR 0.1000
+2023-11-01 19:36:45,483 [INFO] Epoch 1520, Time 64936.9s, Loss 1.3095, LR 0.1000
+2023-11-01 19:42:45,733 [INFO] Epoch 1530, Time 65297.2s, Loss 1.2459, LR 0.1000
+2023-11-01 19:48:47,293 [INFO] Epoch 1540, Time 65658.7s, Loss 1.3467, LR 0.1000
+2023-11-01 19:54:49,562 [INFO] Epoch 1550, Time 66021.0s, Loss 1.2658, LR 0.1000
+2023-11-01 20:00:49,752 [INFO] Epoch 1560, Time 66381.2s, Loss 1.2701, LR 0.1000
+2023-11-01 20:06:50,192 [INFO] Epoch 1570, Time 66741.6s, Loss 1.2989, LR 0.1000
+2023-11-01 20:12:50,931 [INFO] Epoch 1580, Time 67102.4s, Loss 1.3017, LR 0.1000
+2023-11-01 20:18:54,441 [INFO] Epoch 1590, Time 67465.9s, Loss 1.2910, LR 0.1000
+2023-11-01 20:24:56,141 [INFO] Epoch 1600, Time 67827.6s, Loss 1.3450, LR 0.1000
+2023-11-01 20:25:31,461 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 20:30:55,860 [INFO] Epoch 1610, Time 68187.3s, Loss 1.2882, LR 0.1000
+2023-11-01 20:36:54,350 [INFO] Epoch 1620, Time 68545.8s, Loss 1.3227, LR 0.1000
+2023-11-01 20:42:53,510 [INFO] Epoch 1630, Time 68904.9s, Loss 1.2737, LR 0.1000
+2023-11-01 20:48:58,010 [INFO] Epoch 1640, Time 69269.4s, Loss 1.3363, LR 0.1000
+2023-11-01 20:55:09,596 [INFO] Epoch 1650, Time 69641.0s, Loss 1.2766, LR 0.1000
+2023-11-01 21:01:07,175 [INFO] Epoch 1660, Time 69998.6s, Loss 1.2259, LR 0.1000
+2023-11-01 21:07:06,204 [INFO] Epoch 1670, Time 70357.6s, Loss 1.2100, LR 0.1000
+2023-11-01 21:12:35,743 [INFO] Epoch 1680, Time 70687.2s, Loss 1.2601, LR 0.1000
+2023-11-01 21:18:31,134 [INFO] Epoch 1690, Time 71042.6s, Loss 1.3684, LR 0.1000
+2023-11-01 21:24:12,510 [INFO] Epoch 1700, Time 71383.9s, Loss 1.3138, LR 0.1000
+2023-11-01 21:24:46,285 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 21:29:44,198 [INFO] Epoch 1710, Time 71715.6s, Loss 1.2162, LR 0.1000
+2023-11-01 21:35:24,194 [INFO] Epoch 1720, Time 72055.6s, Loss 1.2329, LR 0.1000
+2023-11-01 21:41:18,806 [INFO] Epoch 1730, Time 72410.2s, Loss 1.2232, LR 0.1000
+2023-11-01 21:46:59,805 [INFO] Epoch 1740, Time 72751.2s, Loss 1.2337, LR 0.1000
+2023-11-01 21:52:36,594 [INFO] Epoch 1750, Time 73088.0s, Loss 1.2822, LR 0.1000
+2023-11-01 21:58:06,694 [INFO] Epoch 1760, Time 73418.1s, Loss 1.4305, LR 0.1000
+2023-11-01 22:03:40,013 [INFO] Epoch 1770, Time 73751.4s, Loss 1.3950, LR 0.1000
+2023-11-01 22:09:50,664 [INFO] Epoch 1780, Time 74122.1s, Loss 1.3339, LR 0.1000
+2023-11-01 22:15:57,944 [INFO] Epoch 1790, Time 74489.4s, Loss 1.3228, LR 0.1000
+2023-11-01 22:22:07,233 [INFO] Epoch 1800, Time 74858.7s, Loss 1.2480, LR 0.1000
+2023-11-01 22:22:44,763 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 22:28:10,303 [INFO] Epoch 1810, Time 75221.7s, Loss 1.2601, LR 0.1000
+2023-11-01 22:34:08,633 [INFO] Epoch 1820, Time 75580.1s, Loss 1.3921, LR 0.1000
+2023-11-01 22:40:08,683 [INFO] Epoch 1830, Time 75940.1s, Loss 1.2676, LR 0.1000
+2023-11-01 22:46:10,632 [INFO] Epoch 1840, Time 76302.1s, Loss 1.4878, LR 0.1000
+2023-11-01 22:52:11,882 [INFO] Epoch 1850, Time 76663.3s, Loss 1.2651, LR 0.1000
+2023-11-01 22:58:11,292 [INFO] Epoch 1860, Time 77022.7s, Loss 1.3292, LR 0.1000
+2023-11-01 23:04:08,871 [INFO] Epoch 1870, Time 77380.3s, Loss 1.3039, LR 0.1000
+2023-11-01 23:10:10,101 [INFO] Epoch 1880, Time 77741.5s, Loss 1.3342, LR 0.1000
+2023-11-01 23:16:12,691 [INFO] Epoch 1890, Time 78104.1s, Loss 1.3433, LR 0.1000
+2023-11-01 23:22:15,810 [INFO] Epoch 1900, Time 78467.2s, Loss 1.2881, LR 0.1000
+2023-11-01 23:22:51,870 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-01 23:28:13,700 [INFO] Epoch 1910, Time 78825.1s, Loss 1.4054, LR 0.1000
+2023-11-01 23:34:15,760 [INFO] Epoch 1920, Time 79187.2s, Loss 1.2437, LR 0.1000
+2023-11-01 23:40:16,589 [INFO] Epoch 1930, Time 79548.0s, Loss 1.2353, LR 0.1000
+2023-11-01 23:46:12,349 [INFO] Epoch 1940, Time 79903.8s, Loss 1.2411, LR 0.1000
+2023-11-01 23:52:16,099 [INFO] Epoch 1950, Time 80267.5s, Loss 1.2603, LR 0.1000
+2023-11-01 23:58:18,348 [INFO] Epoch 1960, Time 80629.8s, Loss 1.2050, LR 0.1000
+2023-11-02 00:04:25,958 [INFO] Epoch 1970, Time 80997.4s, Loss 1.2760, LR 0.1000
+2023-11-02 00:10:23,128 [INFO] Epoch 1980, Time 81354.6s, Loss 1.1846, LR 0.1000
+2023-11-02 00:16:22,008 [INFO] Epoch 1990, Time 81713.4s, Loss 1.2646, LR 0.1000
+2023-11-02 00:22:20,757 [INFO] Epoch 2000, Time 82072.2s, Loss 1.2581, LR 0.1000
+2023-11-02 00:22:56,427 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 00:28:19,157 [INFO] Epoch 2010, Time 82430.6s, Loss 1.1878, LR 0.1000
+2023-11-02 00:34:16,837 [INFO] Epoch 2020, Time 82788.3s, Loss 1.2109, LR 0.1000
+2023-11-02 00:40:18,686 [INFO] Epoch 2030, Time 83150.1s, Loss 1.2506, LR 0.1000
+2023-11-02 00:46:16,316 [INFO] Epoch 2040, Time 83507.7s, Loss 1.3057, LR 0.1000
+2023-11-02 00:52:13,926 [INFO] Epoch 2050, Time 83865.4s, Loss 1.2594, LR 0.1000
+2023-11-02 00:58:16,865 [INFO] Epoch 2060, Time 84228.3s, Loss 1.2214, LR 0.1000
+2023-11-02 01:04:17,675 [INFO] Epoch 2070, Time 84589.1s, Loss 1.2410, LR 0.1000
+2023-11-02 01:10:15,945 [INFO] Epoch 2080, Time 84947.4s, Loss 1.2036, LR 0.1000
+2023-11-02 01:16:18,174 [INFO] Epoch 2090, Time 85309.6s, Loss 1.2349, LR 0.1000
+2023-11-02 01:22:21,574 [INFO] Epoch 2100, Time 85673.0s, Loss 1.2180, LR 0.1000
+2023-11-02 01:22:57,164 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 01:28:22,744 [INFO] Epoch 2110, Time 86034.2s, Loss 1.1931, LR 0.1000
+2023-11-02 01:34:22,194 [INFO] Epoch 2120, Time 86393.6s, Loss 1.2115, LR 0.1000
+2023-11-02 01:40:23,303 [INFO] Epoch 2130, Time 86754.7s, Loss 1.2365, LR 0.1000
+2023-11-02 01:46:26,113 [INFO] Epoch 2140, Time 87117.5s, Loss 1.2689, LR 0.1000
+2023-11-02 01:52:27,943 [INFO] Epoch 2150, Time 87479.4s, Loss 1.2151, LR 0.1000
+2023-11-02 01:58:25,982 [INFO] Epoch 2160, Time 87837.4s, Loss 1.1874, LR 0.1000
+2023-11-02 02:04:27,612 [INFO] Epoch 2170, Time 88199.0s, Loss 1.2304, LR 0.1000
+2023-11-02 02:10:27,662 [INFO] Epoch 2180, Time 88559.1s, Loss 1.2461, LR 0.1000
+2023-11-02 02:16:23,501 [INFO] Epoch 2190, Time 88914.9s, Loss 1.2524, LR 0.1000
+2023-11-02 02:22:23,661 [INFO] Epoch 2200, Time 89275.1s, Loss 1.2605, LR 0.1000
+2023-11-02 02:22:57,461 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 02:28:22,391 [INFO] Epoch 2210, Time 89633.8s, Loss 1.2455, LR 0.1000
+2023-11-02 02:34:27,880 [INFO] Epoch 2220, Time 89999.3s, Loss 1.2317, LR 0.1000
+2023-11-02 02:40:25,310 [INFO] Epoch 2230, Time 90356.7s, Loss 1.1733, LR 0.1000
+2023-11-02 02:46:25,540 [INFO] Epoch 2240, Time 90717.0s, Loss 1.1850, LR 0.1000
+2023-11-02 02:52:27,559 [INFO] Epoch 2250, Time 91079.0s, Loss 1.1809, LR 0.1000
+2023-11-02 02:58:22,219 [INFO] Epoch 2260, Time 91433.6s, Loss 1.1691, LR 0.1000
+2023-11-02 03:04:23,839 [INFO] Epoch 2270, Time 91795.3s, Loss 1.2005, LR 0.1000
+2023-11-02 03:10:27,269 [INFO] Epoch 2280, Time 92158.7s, Loss 1.2260, LR 0.1000
+2023-11-02 03:16:27,188 [INFO] Epoch 2290, Time 92518.6s, Loss 1.2056, LR 0.1000
+2023-11-02 03:22:28,728 [INFO] Epoch 2300, Time 92880.2s, Loss 1.2495, LR 0.1000
+2023-11-02 03:23:04,508 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 03:28:29,048 [INFO] Epoch 2310, Time 93240.5s, Loss 1.2321, LR 0.1000
+2023-11-02 03:34:29,577 [INFO] Epoch 2320, Time 93601.0s, Loss 1.1972, LR 0.1000
+2023-11-02 03:40:33,157 [INFO] Epoch 2330, Time 93964.6s, Loss 1.1973, LR 0.1000
+2023-11-02 03:46:35,867 [INFO] Epoch 2340, Time 94327.3s, Loss 1.2039, LR 0.1000
+2023-11-02 03:52:40,036 [INFO] Epoch 2350, Time 94691.5s, Loss 1.2690, LR 0.1000
+2023-11-02 03:58:39,386 [INFO] Epoch 2360, Time 95050.8s, Loss 1.2768, LR 0.1000
+2023-11-02 04:04:42,416 [INFO] Epoch 2370, Time 95413.8s, Loss 1.2213, LR 0.1000
+2023-11-02 04:10:39,615 [INFO] Epoch 2380, Time 95771.0s, Loss 1.2084, LR 0.1000
+2023-11-02 04:16:40,945 [INFO] Epoch 2390, Time 96132.4s, Loss 1.2534, LR 0.1000
+2023-11-02 04:22:41,415 [INFO] Epoch 2400, Time 96492.8s, Loss 1.2459, LR 0.1000
+2023-11-02 04:23:16,085 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 04:28:36,985 [INFO] Epoch 2410, Time 96848.4s, Loss 1.2493, LR 0.1000
+2023-11-02 04:34:39,054 [INFO] Epoch 2420, Time 97210.5s, Loss 1.2435, LR 0.1000
+2023-11-02 04:40:42,484 [INFO] Epoch 2430, Time 97573.9s, Loss 1.1805, LR 0.1000
+2023-11-02 04:46:48,294 [INFO] Epoch 2440, Time 97939.7s, Loss 1.1713, LR 0.1000
+2023-11-02 04:52:51,053 [INFO] Epoch 2450, Time 98302.5s, Loss 1.2321, LR 0.1000
+2023-11-02 04:58:49,223 [INFO] Epoch 2460, Time 98660.7s, Loss 1.1958, LR 0.1000
+2023-11-02 05:04:52,713 [INFO] Epoch 2470, Time 99024.1s, Loss 1.2967, LR 0.1000
+2023-11-02 05:10:52,122 [INFO] Epoch 2480, Time 99383.6s, Loss 1.2513, LR 0.1000
+2023-11-02 05:16:52,002 [INFO] Epoch 2490, Time 99743.4s, Loss 1.2134, LR 0.1000
+2023-11-02 05:22:50,772 [INFO] Epoch 2500, Time 100102.2s, Loss 1.1657, LR 0.1000
+2023-11-02 05:23:26,052 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 05:28:51,611 [INFO] Epoch 2510, Time 100463.0s, Loss 1.2090, LR 0.1000
+2023-11-02 05:34:48,071 [INFO] Epoch 2520, Time 100819.5s, Loss 1.1573, LR 0.1000
+2023-11-02 05:40:47,881 [INFO] Epoch 2530, Time 101179.3s, Loss 1.1718, LR 0.1000
+2023-11-02 05:46:46,920 [INFO] Epoch 2540, Time 101538.3s, Loss 1.1812, LR 0.1000
+2023-11-02 05:52:45,920 [INFO] Epoch 2550, Time 101897.3s, Loss 1.1520, LR 0.1000
+2023-11-02 05:58:50,600 [INFO] Epoch 2560, Time 102262.0s, Loss 1.2020, LR 0.1000
+2023-11-02 06:04:49,890 [INFO] Epoch 2570, Time 102621.3s, Loss 1.1079, LR 0.1000
+2023-11-02 06:10:52,359 [INFO] Epoch 2580, Time 102983.8s, Loss 1.1981, LR 0.1000
+2023-11-02 06:16:53,149 [INFO] Epoch 2590, Time 103344.6s, Loss 1.1424, LR 0.1000
+2023-11-02 06:22:53,069 [INFO] Epoch 2600, Time 103704.5s, Loss 1.2267, LR 0.1000
+2023-11-02 06:23:30,059 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 06:28:55,058 [INFO] Epoch 2610, Time 104066.5s, Loss 1.2091, LR 0.1000
+2023-11-02 06:34:54,048 [INFO] Epoch 2620, Time 104425.5s, Loss 1.2076, LR 0.1000
+2023-11-02 06:40:51,548 [INFO] Epoch 2630, Time 104783.0s, Loss 1.2281, LR 0.1000
+2023-11-02 06:46:47,147 [INFO] Epoch 2640, Time 105138.6s, Loss 1.1207, LR 0.1000
+2023-11-02 06:52:45,457 [INFO] Epoch 2650, Time 105496.9s, Loss 1.2030, LR 0.1000
+2023-11-02 06:58:47,277 [INFO] Epoch 2660, Time 105858.7s, Loss 1.3835, LR 0.1000
+2023-11-02 07:04:44,736 [INFO] Epoch 2670, Time 106216.2s, Loss 1.2204, LR 0.1000
+2023-11-02 07:10:50,566 [INFO] Epoch 2680, Time 106582.0s, Loss 1.2496, LR 0.1000
+2023-11-02 07:16:47,066 [INFO] Epoch 2690, Time 106938.5s, Loss 1.1526, LR 0.1000
+2023-11-02 07:22:48,585 [INFO] Epoch 2700, Time 107300.0s, Loss 1.1818, LR 0.1000
+2023-11-02 07:23:25,065 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 07:28:46,405 [INFO] Epoch 2710, Time 107657.8s, Loss 1.1848, LR 0.1000
+2023-11-02 07:34:47,275 [INFO] Epoch 2720, Time 108018.7s, Loss 1.1554, LR 0.1000
+2023-11-02 07:40:50,585 [INFO] Epoch 2730, Time 108382.0s, Loss 1.1574, LR 0.1000
+2023-11-02 07:46:48,734 [INFO] Epoch 2740, Time 108740.2s, Loss 1.2134, LR 0.1000
+2023-11-02 07:52:54,204 [INFO] Epoch 2750, Time 109105.6s, Loss 1.1579, LR 0.1000
+2023-11-02 07:58:51,344 [INFO] Epoch 2760, Time 109462.8s, Loss 1.1432, LR 0.1000
+2023-11-02 08:04:57,783 [INFO] Epoch 2770, Time 109829.2s, Loss 1.2117, LR 0.1000
+2023-11-02 08:10:58,953 [INFO] Epoch 2780, Time 110190.4s, Loss 1.1393, LR 0.1000
+2023-11-02 08:16:56,663 [INFO] Epoch 2790, Time 110548.1s, Loss 1.1447, LR 0.1000
+2023-11-02 08:22:58,582 [INFO] Epoch 2800, Time 110910.0s, Loss 1.1167, LR 0.1000
+2023-11-02 08:23:34,462 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 08:29:00,372 [INFO] Epoch 2810, Time 111271.8s, Loss 1.1264, LR 0.1000
+2023-11-02 08:35:02,692 [INFO] Epoch 2820, Time 111634.1s, Loss 1.1601, LR 0.1000
+2023-11-02 08:41:00,271 [INFO] Epoch 2830, Time 111991.7s, Loss 1.2334, LR 0.1000
+2023-11-02 08:47:01,331 [INFO] Epoch 2840, Time 112352.8s, Loss 1.1628, LR 0.1000
+2023-11-02 08:53:06,571 [INFO] Epoch 2850, Time 112718.0s, Loss 1.2513, LR 0.1000
+2023-11-02 08:59:10,211 [INFO] Epoch 2860, Time 113081.6s, Loss 1.1801, LR 0.1000
+2023-11-02 09:05:14,620 [INFO] Epoch 2870, Time 113446.0s, Loss 1.2155, LR 0.1000
+2023-11-02 09:11:16,530 [INFO] Epoch 2880, Time 113808.0s, Loss 1.1782, LR 0.1000
+2023-11-02 09:17:21,900 [INFO] Epoch 2890, Time 114173.3s, Loss 1.2296, LR 0.1000
+2023-11-02 09:23:20,459 [INFO] Epoch 2900, Time 114531.9s, Loss 1.1738, LR 0.1000
+2023-11-02 09:23:56,239 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 09:29:21,469 [INFO] Epoch 2910, Time 114892.9s, Loss 1.1608, LR 0.1000
+2023-11-02 09:35:21,809 [INFO] Epoch 2920, Time 115253.2s, Loss 1.1245, LR 0.1000
+2023-11-02 09:41:25,028 [INFO] Epoch 2930, Time 115616.5s, Loss 1.1270, LR 0.1000
+2023-11-02 09:47:22,298 [INFO] Epoch 2940, Time 115973.7s, Loss 1.1490, LR 0.1000
+2023-11-02 09:53:23,948 [INFO] Epoch 2950, Time 116335.4s, Loss 1.1956, LR 0.1000
+2023-11-02 09:59:24,917 [INFO] Epoch 2960, Time 116696.3s, Loss 1.1350, LR 0.1000
+2023-11-02 10:05:28,397 [INFO] Epoch 2970, Time 117059.8s, Loss 1.1425, LR 0.1000
+2023-11-02 10:11:30,987 [INFO] Epoch 2980, Time 117422.4s, Loss 1.1497, LR 0.1000
+2023-11-02 10:17:31,886 [INFO] Epoch 2990, Time 117783.3s, Loss 1.1607, LR 0.1000
+2023-11-02 10:23:30,666 [INFO] Epoch 3000, Time 118142.1s, Loss 1.1094, LR 0.1000
+2023-11-02 10:24:06,796 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 10:29:29,956 [INFO] Epoch 3010, Time 118501.4s, Loss 1.1726, LR 0.1000
+2023-11-02 10:35:27,626 [INFO] Epoch 3020, Time 118859.1s, Loss 1.1030, LR 0.1000
+2023-11-02 10:41:27,825 [INFO] Epoch 3030, Time 119219.3s, Loss 1.1428, LR 0.1000
+2023-11-02 10:47:29,195 [INFO] Epoch 3040, Time 119580.6s, Loss 1.1590, LR 0.1000
+2023-11-02 10:53:27,235 [INFO] Epoch 3050, Time 119938.7s, Loss 1.1474, LR 0.1000
+2023-11-02 10:59:29,704 [INFO] Epoch 3060, Time 120301.1s, Loss 1.1744, LR 0.1000
+2023-11-02 11:05:29,334 [INFO] Epoch 3070, Time 120660.8s, Loss 1.1738, LR 0.1000
+2023-11-02 11:11:26,864 [INFO] Epoch 3080, Time 121018.3s, Loss 1.1701, LR 0.1000
+2023-11-02 11:17:27,573 [INFO] Epoch 3090, Time 121379.0s, Loss 1.1730, LR 0.1000
+2023-11-02 11:23:25,133 [INFO] Epoch 3100, Time 121736.6s, Loss 1.1522, LR 0.1000
+2023-11-02 11:24:01,653 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 11:29:25,473 [INFO] Epoch 3110, Time 122096.9s, Loss 1.1906, LR 0.1000
+2023-11-02 11:35:27,912 [INFO] Epoch 3120, Time 122459.3s, Loss 1.2312, LR 0.1000
+2023-11-02 11:41:25,722 [INFO] Epoch 3130, Time 122817.2s, Loss 1.1827, LR 0.1000
+2023-11-02 11:47:26,012 [INFO] Epoch 3140, Time 123177.4s, Loss 1.2316, LR 0.1000
+2023-11-02 11:53:27,661 [INFO] Epoch 3150, Time 123539.1s, Loss 1.2367, LR 0.1000
+2023-11-02 11:59:25,921 [INFO] Epoch 3160, Time 123897.4s, Loss 1.1990, LR 0.1000
+2023-11-02 12:05:29,721 [INFO] Epoch 3170, Time 124261.1s, Loss 1.2083, LR 0.1000
+2023-11-02 12:11:29,511 [INFO] Epoch 3180, Time 124620.9s, Loss 1.1604, LR 0.1000
+2023-11-02 12:17:24,480 [INFO] Epoch 3190, Time 124975.9s, Loss 1.1253, LR 0.1000
+2023-11-02 12:23:23,790 [INFO] Epoch 3200, Time 125335.2s, Loss 1.1085, LR 0.1000
+2023-11-02 12:23:59,670 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 12:29:28,410 [INFO] Epoch 3210, Time 125699.8s, Loss 1.1469, LR 0.1000
+2023-11-02 12:35:28,099 [INFO] Epoch 3220, Time 126059.5s, Loss 1.1659, LR 0.1000
+2023-11-02 12:41:27,259 [INFO] Epoch 3230, Time 126418.7s, Loss 1.1363, LR 0.1000
+2023-11-02 12:47:26,739 [INFO] Epoch 3240, Time 126778.2s, Loss 1.0867, LR 0.1000
+2023-11-02 12:53:25,368 [INFO] Epoch 3250, Time 127136.8s, Loss 1.1175, LR 0.1000
+2023-11-02 12:59:26,418 [INFO] Epoch 3260, Time 127497.8s, Loss 1.1037, LR 0.1000
+2023-11-02 13:05:29,328 [INFO] Epoch 3270, Time 127860.8s, Loss 1.1648, LR 0.1000
+2023-11-02 13:12:07,424 [INFO] Epoch 3280, Time 128258.9s, Loss 1.1479, LR 0.1000
+2023-11-02 13:19:04,012 [INFO] Epoch 3290, Time 128675.4s, Loss 1.2045, LR 0.1000
+2023-11-02 13:25:32,035 [INFO] Epoch 3300, Time 129063.5s, Loss 1.2930, LR 0.1000
+2023-11-02 13:26:11,415 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 13:31:49,943 [INFO] Epoch 3310, Time 129441.4s, Loss 1.2110, LR 0.1000
+2023-11-02 13:38:10,382 [INFO] Epoch 3320, Time 129821.8s, Loss 1.1573, LR 0.1000
+2023-11-02 13:44:28,064 [INFO] Epoch 3330, Time 130199.5s, Loss 1.1171, LR 0.1000
+2023-11-02 13:50:44,061 [INFO] Epoch 3340, Time 130575.5s, Loss 1.1150, LR 0.1000
+2023-11-02 13:56:56,193 [INFO] Epoch 3350, Time 130947.6s, Loss 1.1050, LR 0.1000
+2023-11-02 14:03:11,239 [INFO] Epoch 3360, Time 131322.7s, Loss 1.1548, LR 0.1000
+2023-11-02 14:09:23,541 [INFO] Epoch 3370, Time 131695.0s, Loss 1.1711, LR 0.1000
+2023-11-02 14:15:37,518 [INFO] Epoch 3380, Time 132068.9s, Loss 1.1351, LR 0.1000
+2023-11-02 14:21:53,856 [INFO] Epoch 3390, Time 132445.3s, Loss 1.1442, LR 0.1000
+2023-11-02 14:28:04,784 [INFO] Epoch 3400, Time 132816.2s, Loss 1.1464, LR 0.1000
+2023-11-02 14:28:41,424 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 14:34:09,094 [INFO] Epoch 3410, Time 133180.5s, Loss 1.1282, LR 0.1000
+2023-11-02 14:40:22,434 [INFO] Epoch 3420, Time 133553.9s, Loss 1.0979, LR 0.1000
+2023-11-02 14:46:45,613 [INFO] Epoch 3430, Time 133937.0s, Loss 1.1265, LR 0.1000
+2023-11-02 14:53:03,743 [INFO] Epoch 3440, Time 134315.2s, Loss 1.1004, LR 0.1000
+2023-11-02 14:59:13,553 [INFO] Epoch 3450, Time 134685.0s, Loss 1.1112, LR 0.1000
+2023-11-02 15:05:18,212 [INFO] Epoch 3460, Time 135049.6s, Loss 1.1316, LR 0.1000
+2023-11-02 15:11:29,162 [INFO] Epoch 3470, Time 135420.6s, Loss 1.1352, LR 0.1000
+2023-11-02 15:17:49,472 [INFO] Epoch 3480, Time 135800.9s, Loss 1.2482, LR 0.1000
+2023-11-02 15:24:08,581 [INFO] Epoch 3490, Time 136180.0s, Loss 1.1187, LR 0.1000
+2023-11-02 15:30:17,361 [INFO] Epoch 3500, Time 136548.8s, Loss 1.1109, LR 0.1000
+2023-11-02 15:30:55,101 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 15:36:20,701 [INFO] Epoch 3510, Time 136912.1s, Loss 1.1606, LR 0.1000
+2023-11-02 15:42:18,471 [INFO] Epoch 3520, Time 137269.9s, Loss 1.1439, LR 0.1000
+2023-11-02 15:48:23,260 [INFO] Epoch 3530, Time 137634.7s, Loss 1.1593, LR 0.1000
+2023-11-02 15:54:23,520 [INFO] Epoch 3540, Time 137994.9s, Loss 1.0835, LR 0.1000
+2023-11-02 16:00:32,640 [INFO] Epoch 3550, Time 138364.1s, Loss 1.1608, LR 0.1000
+2023-11-02 16:06:32,709 [INFO] Epoch 3560, Time 138724.1s, Loss 1.1026, LR 0.1000
+2023-11-02 16:12:37,189 [INFO] Epoch 3570, Time 139088.6s, Loss 1.1044, LR 0.1000
+2023-11-02 16:18:44,909 [INFO] Epoch 3580, Time 139456.3s, Loss 1.1839, LR 0.1000
+2023-11-02 16:24:47,408 [INFO] Epoch 3590, Time 139818.8s, Loss 1.1947, LR 0.1000
+2023-11-02 16:30:46,478 [INFO] Epoch 3600, Time 140177.9s, Loss 1.1845, LR 0.1000
+2023-11-02 16:31:22,538 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 16:36:51,298 [INFO] Epoch 3610, Time 140542.7s, Loss 1.1295, LR 0.1000
+2023-11-02 16:42:50,277 [INFO] Epoch 3620, Time 140901.7s, Loss 1.1609, LR 0.1000
+2023-11-02 16:48:55,807 [INFO] Epoch 3630, Time 141267.2s, Loss 1.1926, LR 0.1000
+2023-11-02 16:54:57,987 [INFO] Epoch 3640, Time 141629.4s, Loss 1.1309, LR 0.1000
+2023-11-02 17:01:07,806 [INFO] Epoch 3650, Time 141999.2s, Loss 1.1233, LR 0.1000
+2023-11-02 17:07:12,196 [INFO] Epoch 3660, Time 142363.6s, Loss 1.1554, LR 0.1000
+2023-11-02 17:13:23,906 [INFO] Epoch 3670, Time 142735.3s, Loss 1.1565, LR 0.1000
+2023-11-02 17:19:29,455 [INFO] Epoch 3680, Time 143100.9s, Loss 1.1343, LR 0.1000
+2023-11-02 17:25:32,505 [INFO] Epoch 3690, Time 143463.9s, Loss 1.1497, LR 0.1000
+2023-11-02 17:31:40,045 [INFO] Epoch 3700, Time 143831.5s, Loss 1.1794, LR 0.1000
+2023-11-02 17:32:17,575 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 17:37:45,465 [INFO] Epoch 3710, Time 144196.9s, Loss 1.1644, LR 0.1000
+2023-11-02 17:43:44,194 [INFO] Epoch 3720, Time 144555.6s, Loss 1.1298, LR 0.1000
+2023-11-02 17:49:48,454 [INFO] Epoch 3730, Time 144919.9s, Loss 1.1105, LR 0.1000
+2023-11-02 17:55:52,364 [INFO] Epoch 3740, Time 145283.8s, Loss 1.0917, LR 0.1000
+2023-11-02 18:01:58,503 [INFO] Epoch 3750, Time 145649.9s, Loss 1.1793, LR 0.1000
+2023-11-02 18:08:05,603 [INFO] Epoch 3760, Time 146017.0s, Loss 1.1740, LR 0.1000
+2023-11-02 18:14:12,233 [INFO] Epoch 3770, Time 146383.7s, Loss 1.2598, LR 0.1000
+2023-11-02 18:20:12,672 [INFO] Epoch 3780, Time 146744.1s, Loss 1.2129, LR 0.1000
+2023-11-02 18:26:14,182 [INFO] Epoch 3790, Time 147105.6s, Loss 1.1866, LR 0.1000
+2023-11-02 18:32:17,272 [INFO] Epoch 3800, Time 147468.7s, Loss 1.1192, LR 0.1000
+2023-11-02 18:32:55,012 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 18:38:20,171 [INFO] Epoch 3810, Time 147831.6s, Loss 1.0882, LR 0.1000
+2023-11-02 18:44:26,871 [INFO] Epoch 3820, Time 148198.3s, Loss 1.1346, LR 0.1000
+2023-11-02 18:50:26,201 [INFO] Epoch 3830, Time 148557.6s, Loss 1.0952, LR 0.1000
+2023-11-02 18:56:31,710 [INFO] Epoch 3840, Time 148923.1s, Loss 1.1357, LR 0.1000
+2023-11-02 19:02:33,930 [INFO] Epoch 3850, Time 149285.4s, Loss 1.0706, LR 0.1000
+2023-11-02 19:08:36,110 [INFO] Epoch 3860, Time 149647.5s, Loss 1.1015, LR 0.1000
+2023-11-02 19:14:41,110 [INFO] Epoch 3870, Time 150012.5s, Loss 1.1082, LR 0.1000
+2023-11-02 19:20:51,529 [INFO] Epoch 3880, Time 150383.0s, Loss 1.2011, LR 0.1000
+2023-11-02 19:26:54,919 [INFO] Epoch 3890, Time 150746.3s, Loss 1.0829, LR 0.1000
+2023-11-02 19:32:56,739 [INFO] Epoch 3900, Time 151108.2s, Loss 1.0805, LR 0.1000
+2023-11-02 19:33:33,079 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 19:39:03,848 [INFO] Epoch 3910, Time 151475.3s, Loss 1.1889, LR 0.1000
+2023-11-02 19:45:07,428 [INFO] Epoch 3920, Time 151838.9s, Loss 1.1182, LR 0.1000
+2023-11-02 19:51:11,988 [INFO] Epoch 3930, Time 152203.4s, Loss 1.1147, LR 0.1000
+2023-11-02 19:57:10,487 [INFO] Epoch 3940, Time 152561.9s, Loss 1.0993, LR 0.1000
+2023-11-02 20:03:13,007 [INFO] Epoch 3950, Time 152924.4s, Loss 1.1302, LR 0.1000
+2023-11-02 20:09:15,407 [INFO] Epoch 3960, Time 153286.8s, Loss 1.1233, LR 0.1000
+2023-11-02 20:15:20,166 [INFO] Epoch 3970, Time 153651.6s, Loss 1.1679, LR 0.1000
+2023-11-02 20:21:19,256 [INFO] Epoch 3980, Time 154010.7s, Loss 1.1071, LR 0.1000
+2023-11-02 20:27:20,866 [INFO] Epoch 3990, Time 154372.3s, Loss 1.1560, LR 0.1000
+2023-11-02 20:32:43,815 [INFO] saving network parameters to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
+2023-11-02 20:32:43,875 [INFO] model trained and saved to C:\Users\Nikon\Downloads\Omni\omni_retrain\models/cellpose_residual_on_style_on_concatenation_off_omni_nclasses_4_omni_retrain_2023_11_01_01_34_28.551587
