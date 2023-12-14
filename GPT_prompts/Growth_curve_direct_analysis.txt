@@ -1,0 +1,9 @@
+The following data is from a growth curve of caulobacter crescentus with multiple strains which carry various mutations. I want you to plot the growth curve data, analyze the growth curve data, and extrapolate its doubling time during its exponential phase of growth based on what you know about bacterial growth and compare that to any known results of doubling of caulobacter in PYE media. Could you do that ?
+
+The strains are as follows LZ22221 is bNY30a which is wildtype, LZ22225 is considered our "parent" or "compliment" strain which carries mutations ▲hsfDAB pilAT36C ▲cpaF + pMR10 cpaF, with cpaF being the gene responsible for enconding the ATPase responsible for extension and retraction of caulobacter pili. Then we have mutations in cpaF on a plasmid like the parent which are LZ22228, ▲hsfDAB pilAT36C ▲cpaF + pMR10 cpaF(I355C), LZ22229 ▲hsfDAB pilAT36C ▲cpaF + pMR10 cpaF (D310N), and LZ22230 ▲hsfDAB pilAT36C ▲cpaF + pMR10 cpaF(F244L/K245R).
+
+here is the data. The strains were diluted 1:400 at 9:45PM and shaken at 30C 180RPM. ODs were taken at 8:15AM, 9:30AM, 10:32AM, and 1:50PM 
+
+I will probably need you to extrap[olate growth points (up to you) because the OD600 readings were not taken at regular time intervals, is that necessary and do you think you could do that ? 
+
+LZ22221 measurements were 0.157	0.262	0.355	0.562	LZ22225 were 0.069	0.111	0.153	0.344 LZ22229 was 0.050	0.078	0.107	0.260	LZ22230 was 0.061	0.097	0.133	0.313
