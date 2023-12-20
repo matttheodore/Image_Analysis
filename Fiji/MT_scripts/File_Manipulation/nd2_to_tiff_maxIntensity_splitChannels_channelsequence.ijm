@@ -28,9 +28,6 @@ for (i = 0; i < fileList.length; i++) {
     // Open the current image file
     run("Bio-Formats Importer", "open=[" + tmp + fileList[i] + "] autoscale color_mode=Default concatenate_series open_all_series rois_import=[ROI manager] view=Hyperstack stack_order=XYCZT");
 
-    // Get metadata and save it to a text file
-    metadata = getMetadata();
-    saveAs("Text", imageDir + "metadata.txt");
 
     // Get the dimensions of the image to find out the number of channels
     var width, height, channels, slices, frames;

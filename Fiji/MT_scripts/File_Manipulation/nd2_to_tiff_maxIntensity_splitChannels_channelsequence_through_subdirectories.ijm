@@ -1,5 +1,5 @@
 // Turn on batch mode to reduce GUI updates
-//setBatchMode(true);
+setBatchMode(true);
 
 // Get the path to the main directory
 mainDir = getDirectory("Data");
@@ -118,4 +118,4 @@ for (i = 0; i < fileList.length; i++) {
 	}
 
 // Turn off batch mode
-//setBatchMode(false);
+setBatchMode(false);
