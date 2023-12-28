@@ -27,6 +27,7 @@ for (i = 0; i < fileList.length; i++) {
 
     // Open the current image file
     run("Bio-Formats Importer", "open=[" + tmp + fileList[i] + "] autoscale color_mode=Default concatenate_series open_all_series rois_import=[ROI manager] view=Hyperstack stack_order=XYCZT");
+	run("Bio-Formats Exporter", "save=[" + imageDir + fileList[i].replace('.nd2', '_OME.ome.tiff') + "] compression=Uncompressed");
 
 
     // Get the dimensions of the image to find out the number of channels
