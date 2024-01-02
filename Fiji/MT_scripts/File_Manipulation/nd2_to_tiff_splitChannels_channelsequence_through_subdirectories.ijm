@@ -47,7 +47,7 @@ for (i = 0; i < fileList.length; i++) {
 
     // Open the current image file, export as OMEtiff to preserve metadata before channel operations
     run("Bio-Formats Importer", "open=[" + tmp + fileList[i] + "] autoscale color_mode=Default concatenate_series open_all_series rois_import=[ROI manager] view=Hyperstack stack_order=XYCZT");
-	run("Bio-Formats Exporter", "save=[" + imageDir + fileList[i].replace('.nd2', '_OME.ome.tiff') + "] compression=Uncompressed");
+	run("Bio-Formats Exporter", "save=[" + imageDir + fileList[i].replace('.tif', '_OME.ome.tiff') + "] compression=Uncompressed");
 
     // Get the dimensions of the image to find out the number of channels
     var width, height, channels, slices, frames;
@@ -59,11 +59,6 @@ for (i = 0; i < fileList.length; i++) {
     
     // Update fileList[i] to .tif after conversion
     fileList[i] = fileList[i].replace('.nd2', '.tif');
-
-    
-    // Create directory for max image later
-    sequenceDir = imageDir + "MAX" + File.separator;
-    File.makeDirectory(sequenceDir);
 
     // Split the channels
     run("Split Channels");
