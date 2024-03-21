@@ -12,5 +12,5 @@ def list_files_to_txt(startpath):
                 txt_file.write(f"{subindent}{f}\n")
 
 # Usage example; replace the directory path with the one you want to explore.
-list_files_to_txt(r"C:\Users\mattt\Documents\mutants")
+list_files_to_txt(r"C:\Users\mattt\Downloads\CpaF_from_pdb100_temp_0a631.result\CpaF_from_pdb100_temp_0a631")
 

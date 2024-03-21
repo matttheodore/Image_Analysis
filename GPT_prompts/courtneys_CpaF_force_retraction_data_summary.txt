@@ -1,0 +1,59 @@
+CpaF Information from COurtneys Supplemental 
+
+ok great. I settled on this paragraph for the final writing 
+
+ΦCb5 can Bind and Cleave bNY30a T4cP.
+To examine the scope of T4P detachment by ssRNA phage infection, we set out to visualize the T4cP of C. crescentus upon infection by ssRNA phage ΦCb5. We utilized a previously established hyper-piliated C. crescentus strain harboring T4cP containing a non-deleterious cysteine knock-in mutant of the major pilin protein, PilAT36C, (YB9040) and infected with ΦCb5 (15, 16). To assess the behavior of T4cP after the addition of ΦCb5 particles, pili were labeled with thiol-reactive Alexa Fluor 488 (Fig. 1A-B), and mixed with purified ΦCb5 at an MOI of 5, or phage buffer (Fig. 1C). We observed a substantial time-dependent increase in the frequency of detached pili in our infected samples (Fig. 1D), similar to the case of the F-pilus system when infected with ssRNA phages MS2 and Qbeta (17). Upon addition of ΦCb5 there is  >5-fold increase of detached pili per cell from 0.04 to 0.23 within the first 5 minutes, eventually saturating at ~0.53 detached pili per cell by 20 minutes (Fig. 1D). Conversely, cells not exposed to ΦCb5 demonstrated consistently low levels of detached pili per cell, with minimal fluctuations over time, highlighting the specific pilus detachment phenomenon associated with early stages of ΦCb5 infection. Statistical analysis, utilizing a two-way ANOVA, decisively confirms that ΦCb5 infection and the elapsed time post-infection critically influence pilus detachment, revealing a complex, time-dependent phenotype indicative of the phage's dynamic impact on the host's pili.
+
+
+
+now I would like to incorporate more quantitation into my next paragraph which highlights the rest of the data present in the data_master /wildtype_plot_data dataset corresponding to the strains LZ25, LZ28, LZ29, and LZ30 which are mutants CpaF,  CpaFI355C, CpaFD310N, and CpaFF244L/K245R respectively. 
+
+ΦCb5 Infection and Pilus Detachment Require Sufficient Retraction Force.
+C. crescentus employs a single bi-functional ATPase CpaF for extension and retraction of its T4cP through polymerization and depolymerization of its major pilin protein PilA (18). The dual function of CpaF in extension and retraction left us unable to directly test if retraction is required for ΦCb5 infection by disabling the pilus retraction, as in previous ssRNA phage studies (17). Instead, we took advantage of previously published C. crescentus strains with mutations in the ATP binding site of CpaF. These mutations diminish ATPase activity, resulting in reduced extension/retraction speeds and force (18). Firstly, we assessed the ΦCb5 plaquing efficiency via a standard titer assay utilizing hosts with ΔcpaF deletion complemented by CpaF/CpaFmutant to characterize their efficiency of plating (EOP) (Fig. 2A ). Remarkably, even at a high concentration of 1011 pfu/mL, ΦCb5 failed to form any plaques on strains representing the lowest retraction forces, specifically the CpaFF244L/K245R and CpaFD310N mutants. Additionally, ΦCb5 exhibited reduced EOP on the CpaFI355C host with an intermediate retraction force, in comparison to wild-type. This absence of plaque formation and reduced EOP, highlights the role of host-generated retraction force in facilitating ΦCb5 infection. The lack of any evolutionary phage escapee, despite the high mutation rate within the ssRNA genome replication, suggests that the phage cannot compensate for the diminished retraction force in the host. This finding suggests that host retraction force is a critical factor in the infection process of ssRNA phages. 
+
+Subsequently, we employed fluorescence microscopy to investigate the relationship between pilus release at the single-cell level and plaque formation. We fluorescently labeled CpaF mutant cells and infected with ΦCb5 as described above. In the ΦCb5 treated sample, strains expressing CpaF and CpaFI355C exhibited an increase in released pili overtime, while  samples expressing CpaFF244L/K245R  and CpaFD310N  remained at near background levels(Fig. 2B1D,Fig. S2A-D). These data establish a clear correlation between ΦCb5 plaque formation, a proxy for successful infection, and pilus detachment. 
+
+first I need to more adequately set up the explanation of the mutants by discussing how the mutations in their ATP binding domain effect their ATPase activity, the retraction/extension rates observed under the microscope, and the restraction/extension forces (I guess always retrsaction based on the micropillar assay) 
+
+here is the discussion of these mutants from the original manuscript I am citing them from. 
+
+By fluorescence microscopy,
+these mutants had reduced extension and retraction rates (Fig. 3,
+A and B, and movies S4 to S6), with extension and retraction exhibiting
+a correlated reduction in rates for each mutation (fig. S7).
+The above mutations fall near the predicted ATPase active site.
+We therefore hypothesized that the reduction in extension and retraction
+rates is a result of altered ATP-hydrolyzing activity. ATP
+hydrolysis assays of mutant CpaF proteins revealed that they exhibited
+reduced ATP hydrolysis (Fig. 3, C and D). Furthermore, ATP
+hydrolysis was reduced by varying amounts in different mutants, and
+this reduction was highly correlated with the reduction in both extension
+and retraction rates. Together, these data support a model
+whereby CpaF is a bifunctional motor protein that drives both extension
+and retraction through ATP hydrolysis. In line with this, we
+hypothesized that if CpaF was the motor driving forceful pilus retraction,
+then retraction force should likewise be reduced in ATPase
+mutants. To measure retraction forces, we used a micropillar-based
+assay in which retracting pili bind to elastic micropillars and mediate
+micropillar bending, enabling force measurement (3, 29). cpaF
+point mutants exhibited reduced forces of retraction comparable and
+correlated to reductions of both ATPase activity and extension/retraction
+rates for individual mutants (Fig. 3E and fig. S8), demonstrating that
+ATP hydrolysis by CpaF drives force generation for tad pilus retraction.
+
+The original data is not available to me .... so for quantitation I am relying on their numbers cited in their table or that I read from their graphical representations. here is the figure legend 
+
+Quantification of extension and retraction rates in indicated strains.
+White boxes show extension rates, and gray boxes show retraction rates. Box and whisker plots show 5 to 95% confidence intervals. Data were collected from three independent,
+biological replicates. cpaF extension n = 30, retraction n = 30; cpaFI355C extension n = 30, retraction n = 30; cpaFF244LK245R extension n = 30, retraction n = 30; and
+cpaFD310N extension n = 30, retraction n = 30. Statistics were determined using Sidak’s multiple comparisons test. ****P < 0.0001. ns, not significant. (C and D) Correlated
+averages of extension (C) or retraction (D) rates from data shown in (B) and ATPase activity from in vitro ATPase assays. Error bars show SEM. ATPase activity was determined
+from three replicates of a coupled-enzyme assay, where ATPase activity is depicted as the change in NADH min−1 M protein−1. (E) Correlated averages of retraction
+forces and retraction rates. Error bars show SEM. Retraction force measurements of indicated strains were determined from micropillar assays. cpaF n = 33, cpaFI355C
+n = 34, cpaFF244LK245R n = 34, and cpaFD310N n = 7.
+
+but no numbers are mentioned so I will mention them below as CpaF mean force of retraction is >9 or ~9.2 picoNewtons, ATPase activity ~6000 min-1 microMole protein-1 with retraction of ~80nm sec-1 extension of ~70 nm sec-1. All other numbers in same format as follows, CpaFI355C ~7, ~2,300, ~40, ~37, CpaF D310N,  ~4.5, ~1,200, ~12, ~13,  CpaF F244L/K245R,  ~6.1, ~2150, ~22, ~24. 
+
+so how can I incorporate these into the text and for my reference can you make a table of these different values for the mutants for retraction/extension, force, and atpase with their units ?
+
